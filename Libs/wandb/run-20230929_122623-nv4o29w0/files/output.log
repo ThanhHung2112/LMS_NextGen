@@ -1,0 +1,137 @@
+
+Unexpected exception formatting exception. Falling back to standard exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3508, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "/tmp/ipykernel_28/4032920361.py", line 1, in <module>
+    trainer.train()
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 1553, in train
+    )
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 1927, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 2254, in _maybe_log_save_evaluate
+    if self.control.should_log:
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer_seq2seq.py", line 159, in evaluate
+    return super().evaluate(eval_dataset, ignore_keys=ignore_keys, metric_key_prefix=metric_key_prefix)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 2968, in evaluate
+    You can also subclass and override this method to inject custom behavior.
+  File "/opt/conda/lib/python3.10/site-packages/transformers/trainer.py", line 3147, in evaluation_loop
+  File "/opt/conda/lib/python3.10/site-packages/accelerate/data_loader.py", line 394, in __iter__
+    next_batch = next(dataloader_iter)
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 634, in __next__
+    data = self._next_data()
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 678, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/tmp/ipykernel_28/357309245.py", line 36, in __getitem__
+    inputs = self.tokenize_data(self.dataset[index])
+  File "/tmp/ipykernel_28/357309245.py", line 23, in tokenize_data
+    tokenized_targets = tokenizer(target_, pad_to_max_length=self.pad_to_max_length,
+  File "/opt/conda/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2596, in __call__
+    raise ValueError(
+ValueError: You need to specify either `text` or `text_target`.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 2105, in showtraceback
+    stb = self.InteractiveTB.structured_traceback(
+  File "/opt/conda/lib/python3.10/site-packages/IPython/core/ultratb.py", line 1428, in structured_traceback
+    return FormattedTB.structured_traceback(
+  File "/opt/conda/lib/python3.10/site-packages/IPython/core/ultratb.py", line 1319, in structured_traceback
+    return VerboseTB.structured_traceback(
+  File "/opt/conda/lib/python3.10/site-packages/IPython/core/ultratb.py", line 1172, in structured_traceback
+    formatted_exception = self.format_exception_as_a_whole(etype, evalue, etb, number_of_lines_of_context,
+  File "/opt/conda/lib/python3.10/site-packages/IPython/core/ultratb.py", line 1087, in format_exception_as_a_whole
+    frames.append(self.format_record(record))
+  File "/opt/conda/lib/python3.10/site-packages/IPython/core/ultratb.py", line 969, in format_record
+    frame_info.lines, Colors, self.has_colors, lvals
+  File "/opt/conda/lib/python3.10/site-packages/IPython/core/ultratb.py", line 792, in lines
+    return self._sd.lines
+  File "/opt/conda/lib/python3.10/site-packages/stack_data/utils.py", line 144, in cached_property_wrapper
+    value = obj.__dict__[self.func.__name__] = self.func(obj)
+  File "/opt/conda/lib/python3.10/site-packages/stack_data/core.py", line 734, in lines
+    pieces = self.included_pieces
+  File "/opt/conda/lib/python3.10/site-packages/stack_data/utils.py", line 144, in cached_property_wrapper
+    value = obj.__dict__[self.func.__name__] = self.func(obj)
+  File "/opt/conda/lib/python3.10/site-packages/stack_data/core.py", line 681, in included_pieces
+    pos = scope_pieces.index(self.executing_piece)
+  File "/opt/conda/lib/python3.10/site-packages/stack_data/utils.py", line 144, in cached_property_wrapper
+    value = obj.__dict__[self.func.__name__] = self.func(obj)
+  File "/opt/conda/lib/python3.10/site-packages/stack_data/core.py", line 660, in executing_piece
+    return only(
+  File "/opt/conda/lib/python3.10/site-packages/executing/executing.py", line 190, in only
+    raise NotOneValueFound('Expected one value, found 0')
+executing.executing.NotOneValueFound: Expected one value, found 0
+['I enjoy writing articles on AI and I also enjoy writing articles on AI.']
+/opt/conda/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:362: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `1.5` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  logger.info(f"Configuration saved in {output_config_file}")
+['They could cultivate more land and grow food a lot more.', 'They could culture more land and grow food a lot more.']
+['he is a teacher.']
+['he is a teacher.', 'he is also a teacher.']
+  adding: kaggle/working/t5_gec_model_02/ (stored 0%)
+  adding: kaggle/working/t5_gec_model_02/training_args.bin (deflated 49%)
+  adding: kaggle/working/t5_gec_model_02/pytorch_model.bin (deflated 8%)
+  adding: kaggle/working/t5_gec_model_02/generation_config.json (deflated 29%)
+  adding: kaggle/working/t5_gec_model_02/special_tokens_map.json (deflated 86%)
+  adding: kaggle/working/t5_gec_model_02/spiece.model (deflated 48%)
+  adding: kaggle/working/t5_gec_model_02/tokenizer_config.json (deflated 83%)
+  adding: kaggle/working/t5_gec_model_02/config.json (deflated 62%)
+UsageError: Line magic function `%` not found.
+/opt/conda/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:362: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `1.5` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  logger.info(f"Configuration saved in {output_config_file}")
+['I enjoy writing articles on AI and I also enjoy writing articles on AI.']
+['They could cultivate more land and grow food a lot more.', 'They could culture more land and grow food a lot more.']
+['They could cultivate more land and grow food a lot more.', 'They could culture more land and grow food a lot more.', 'They could grow more land and grow food a lot more.']
+['he is a teacher.', 'he is also a teacher.']
+['he is a teacher.', 'he is an educator.']
+['The pie charts illustrate the number of houses owned and rented in the UK in 1991 and 2007. Overall, homeowners were the most popular type of housing, with more than half the total over the period shown. In addition, the number of people with private renting was stable, whereas the figures for social renting and social', 'The pie charts illustrate the number of houses owned and rented in the UK between 1991 and 2007. Overall, homeowners were the most popular type of housing, with more than half the total over the period shown. In addition, the number of people with private renting was stable, whereas the figures for social renting and social']
+['The pie charts illustrate the number of houses owned and rented in the UK in 1991 and 2007. Overall, homeowners were the most popular type of housing, with more than half the total over the period shown. In addition, the number of people with private renting was stable, whereas the figures for social renting and social']
+Khác trong text1: Overall, homeowners were the most popular typing housing, with more than half the total over the period shown. In addition, the number of people with private renting was stable, whereas the figures for social renting and social housing experienced a decrease.
+Khác trong text2: Overall, homeowners were the most popular type of housing, with more than half the total over the period shown. In addition, the number of people with private renting was stable, whereas the figures for social renting and social housing experienced a decrease.
+  T  h  e     p  i  e     c  h  a  r  t  s     i  l  l  u  s  t  r  a  t  e     t  h  e     n  u  m  b  e  r     o  f     h  o  u  s  e  s     o  w  n  e  d     a  n  d     r  e  n  t  e  d     i  n     t  h  e     U  K     i  n     1  9  9  1     a  n  d     2  0  0  7  .<font color="red">-  </font>+
++
+  O  v  e  r  a  l  l  ,     h  o  m  e  o  w  n  e  r  s     w  e  r  e     t  h  e     m  o  s  t     p  o  p  u  l  a  r     t  y  p+ i+ n+ g<font color="red">- e</font><font color="red">-  </font><font color="red">- o</font><font color="red">- f</font>     h  o  u  s  i  n  g  ,     w  i  t  h     m  o  r  e     t  h  a  n     h  a  l  f     t  h  e     t  o  t  a  l     o  v  e  r     t  h  e     p  e  r  i  o  d     s  h  o  w  n  .     I  n     a  d  d  i  t  i  o  n  ,     t  h  e     n  u  m  b  e  r     o  f     p  e  o  p  l  e     w  i  t  h     p  r  i  v  a  t  e     r  e  n  t  i  n  g     w  a  s     s  t  a  b  l  e  ,     w  h  e  r  e  a  s     t  h  e     f  i  g  u  r  e  s     f  o  r     s  o  c  i  a  l     r  e  n  t  i  n  g     a  n  d     s  o  c  i  a  l     h  o  u  s  i  n  g     e  x  p  e  r  i  e  n  c  e  d     a     d  e  c  r  e  a  s  e  .
+  The pie charts illustrate the number of houses owned and rented in the UK in 1991 and 2007.
+[31m+ 
+  Overall, homeowners were the most popular typing housing, with more than half the total over the period shown. In addition, the number of people with private renting was stable, whereas the figures for social renting and social housing experienced a decrease.
+█
+█ Hello
+[31mColored Text
+[31ming housing, with more than half the total over the period shown. In adition, the number of people with private renting was stable, whereas the figures for social renting and social housing experienced a decrease.
+The pie charts illustrate the number of houses owned and rented in the UK in 1991 and 2007.
+Overall, homeowners were the most popular type of housing, with more than half the total over the period shown. In addition, the number of people with private renting was stable, whereas the figures for social renting and social housing experienced a decrease.
+[31mThe pie[39m [31mcharts illustrate the numb[39mer[31m of hous[39me[31ms owned and[39m [31mrented in the UK[39m [31min 1991 and 2007. Overall, [39mh[31momeowners were the most popular type of housing, with[39m [31mmore than half the total over th[39me [31mp[39me[31mriod shown. In addition, the numbe[39mr[31m of people with pr[39mi[31mvate renting was [39ms[31mtabl[39me[31m, whereas the figures 
+The pie charts illustrate the number of houses owned and rented in the UK in 1991 and 2007.[31m Overall, homeowners wer[39me[31m the most po[39mp[31mular type of housing, with more than half the total over the period shown.
+[31mIn ad[39md[31mition, the number of people with private renting was stable, whereas the figures for social renting and social
+The pie charts illustrate the number of houses owned and rented in the UK in 1991 and 2007.[31m [39mOverall, homeowners were the most popular typ[31me of housing, with more than half the total over the period shown.
+[31mIn a[39md[31mdition, the number of people with private renting was stable, whereas the figures for social renting and social
+The pie charts illustrate the number of houses owned and rented in the UK in 1991 and 2007.
+Overall, homeowners were the most popular typ[31me of housing, with more than half the total over the period shown.[39mIn addition, the number of people with private renting was stable, whereas the figures for social renting and social
+The pie charts illustrate the number of houses owned and rented in the UK in 1991 and 2007.
+Overall, homeowners were the most popular typ[31me of housing, with more than half the total over the period shown.[39mIn addition, the number of people with private renting was stable, whereas the figures for social renting and social
+  adding: kaggle/working/t5_gec_model_02/ (stored 0%)
+  adding: kaggle/working/t5_gec_model_02/training_args.bin (deflated 49%)
+  adding: kaggle/working/t5_gec_model_02/pytorch_model.bin (deflated 8%)
+  adding: kaggle/working/t5_gec_model_02/generation_config.json (deflated 29%)
+  adding: kaggle/working/t5_gec_model_02/special_tokens_map.json (deflated 86%)
+  adding: kaggle/working/t5_gec_model_02/spiece.model (deflated 48%)
+  adding: kaggle/working/t5_gec_model_02/tokenizer_config.json (deflated 83%)
+  adding: kaggle/working/t5_gec_model_02/config.json (deflated 62%)
+[31mColored Text
+['The pie charts illustrate the number of houses owned and rented in the UK in 1991 and 2007. Overall, homeowners were the most popular type of housing, with more than half the total over the period shown. In addition, the number of people with private renting was stable, whereas the figures for social renting and social']
+['The pie charts illustrate the number of houses owned and rented in the UK in 1991 and 2007. Overall, homeowners were the most popular type of housing, with more than half the total over the period shown. In addition, the number of people with private renting was stable, whereas the figures for social renting and social']
+[31mColored Text
+The pie charts illustrate the number of houses owned and rented in the UK in 1991 and 2007.
+Overall, homeowners were the most popular typ[31me of housing, with more than half the total over the period shown.[39mIn addition, the number of people with private renting was stable, whereas the figures for social renting and social
+The pie charts illustrate the number of houses owned and rented in the UK in 1991 and 2007.
+Overall, homeowners were the most popular typ[31me of housing, with more than half the total over the period shown. In a[39md[31mdition, the number of people with private renting was stable, whereas the figures for social renting and social
+  adding: t5_gec_model_02/ (stored 0%)
+  adding: t5_gec_model_02/training_args.bin (deflated 49%)
+  adding: t5_gec_model_02/pytorch_model.bin (deflated 8%)
+  adding: t5_gec_model_02/generation_config.json (deflated 29%)
+  adding: t5_gec_model_02/special_tokens_map.json (deflated 86%)
+  adding: t5_gec_model_02/spiece.model (deflated 48%)
+  adding: t5_gec_model_02/tokenizer_config.json (deflated 83%)
+  adding: t5_gec_model_02/config.json (deflated 62%)
