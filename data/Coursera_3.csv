@@ -1,0 +1,556 @@
+User_id,History_course_id,History_course_name
+user0001,"0687, 0355, 1677","Sequence Models, Natural Language Processing with Probabilistic Models, NLP: Twitter Sentiment Analysis"
+user0002,"0636, 0637, 1787","Exploratory Data Analysis, Exploratory Data Analysis, R Programming"
+user0003,"0120, 0286, 2712","Managing Big Data with MySQL, Introduction to Data Analysis Using Excel, Introduction to Deep Learning & Neural Networks with Keras"
+user0004,"0406, 0603, 0840","Data Visualization and Communication with Tableau, Practical Predictive Analytics: Models and Methods, Enjoyable Econometrics, Data Modeling and Regression Analysis in Business"
+user0005,"0241, 2558, 3025, 3503","Deploy Models with TensorFlow Serving and Flask, Linear Regression with Python, Build a Data Science Web App with Streamlit and Python"
+user0006,"0450, 0662, 2696","Hyperparameter Tuning with Neural Network Intelligence, Classification Trees in Python, Clustering Geolocation Data Intelligently in Python"
+user0007,"0391, 1808, 3454","Understanding China, 1700-2000: A Data Analytic Approach, Part 2, Social Network Analysis, Visual Analytics with Tableau"
+user0008,"2533, 2543, 2564","Explainable Machine Learning with LIME and H2O in R, Machine Learning: Predict Poisonous Mushrooms using a Random Forest Model and the FFTrees Package in R, Deep Learning Inference with Azure ML Studio"
+user0009,"2919, 3097, 3260","Building Data Visualization Tools, Google Cloud Platform Big Data and Machine Learning Fundamentals, TensorFlow for CNNs: Learn and Practice CNNs"
+user0010,"1581, 2154, 2725","SQL for Data Science, Statistical Forecasting Techniques in Google Sheets, Introduction to Artificial Intelligence (AI)"
+user0011,"0088, 0112, 0233","Build Random Forests in R with Azure ML Studio, Bayesian Statistics: Mixture Models, Reproducible Research"
+user0012,"0211, 0220, 0241","Text Retrieval and Search Engines, Understanding China, 1700-2000: A Data Analytic Approach, Part 1, Deploy Models with TensorFlow Serving and Flask"
+user0013,"0149, 0211, 0288","Analyze Website Visitors with Google Analytics Segments, Text Retrieval and Search Engines, Developing AI Applications on Azure"
+user0014,"0220, 0241, 0288","Understanding China, 1700-2000: A Data Analytic Approach, Part 1, Deploy Models with TensorFlow Serving and Flask, Developing AI Applications on Azure"
+user0015,"0199, 0211, 0241","Data Science in Stratified Healthcare and Precision Medicine, Text Retrieval and Search Engines, Deploy Models with TensorFlow Serving and Flask"
+user0016,"0120, 0286, 0413","Managing Big Data with MySQL, Introduction to Data Analysis Using Excel, Machine Learning: Clustering & Retrieval"
+user0017,"0066, 0149, 0396","Introduction to Recommender Systems: Non-Personalized and Content-Based, Analyze Website Visitors with Google Analytics Segments, Production Machine Learning Systems"
+user0018,"0108, 0279, 0687","Introduction to Genomic Technologies, Getting Started with AI using IBM Watson, Sequence Models"
+user0019,"0330, 0376, 0530","Building a Data Science Team, TensorFlow for CNNs: Transfer Learning, Practical Time Series Analysis"
+user0020,"0058, 0221, 0849","Prediction and Control with Function Approximation, Statistical Data Visualization with Seaborn, Build Multilayer Perceptron Models with Keras"
+user0021,"0485, 1210, 1792","Draw Insights with Crosstabs Reports in Google Sheets, Code Free Data Science, Data Visualization with Python"
+user0022,"1366, 2486, 3352","Merge, Sort and Filter Data in Python Pandas, Feature Engineering, Graph Analytics for Big Data"
+user0023,"3399, 3423, 3454","Fake News Detection with Machine Learning, Improving your statistical inferences, Visual Analytics with Tableau"
+user0024,"0543, 2854, 3352","Creating Custom Callbacks in Keras, Managing, Describing, and Analyzing Data, Graph Analytics for Big Data"
+user0025,"2845, 3349, 3361","Managing, Describing, and Analyzing Data, Data Visualization with Tableau, Data Exploration and Visualization with Python"
+user0026,"3352, 3369, 3399","Graph Analytics for Big Data, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning"
+user0027,"3334, 3352, 3361","Linear Regression for Business Statistics, Graph Analytics for Big Data, Data Exploration and Visualization with Python"
+user0028,"3361, 3369, 3370","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow"
+user0029,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0030,"3352, 3369, 3376","Graph Analytics for Big Data, Image Compression with K-Means Clustering, Image Data Augmentation with Keras"
+user0031,"3352, 3369, 3423","Graph Analytics for Big Data, Image Compression with K-Means Clustering, Improving your statistical inferences"
+user0032,"3454, 3465, 3472","Visual Analytics with Tableau, Big Data Integration and Processing, Optimizing Machine Learning Performance"
+user0033,"3465, 3472, 3475","Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn"
+user0034,"3475, 3483, 3491","Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone"
+user0035,"0636, 0637, 1787, 2353","Exploratory Data Analysis, Exploratory Data Analysis, R Programming, Intro to Time Series Analysis in R"
+user0036,"0241, 2558, 3025, 3503","Deploy Models with TensorFlow Serving and Flask, Linear Regression with Python, Build a Data Science Web App with Streamlit and Python"
+user0037,"3361, 3369, 3399","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning"
+user0038,"3361, 3369, 3399","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning"
+user0039,"2087, 2157, 2202, 2306, 2814, 2896","Advanced Business Analytics Capstone, Excel Basics for Data Analysis, Big Data - Capstone Project, Basic Sentiment Analysis with TensorFlow, Practical Machine Learning on H2O"
+user0040,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0041,"0075, 0343, 0913","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Getting started with TensorFlow 2, Data Modeling and Regression Analysis in Business"
+user0042,"1045, 1586","Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Functional Programming in Scala Capstone"
+user0043,"2862, 2896, 2946","Introduction to Data Analytics for Business, Performing Network, Path, and Text Analyses in SAS Visual Analytics, AI Workflow: AI in Production"
+user0044,"2144, 2202, 2215, 2306, 2353, 2401, 2402","AI Workflow: Enterprise Model Deployment, Hyperparameter Tuning with Keras Tuner, Data Science for Business Innovation, AI Workflow: Business Priorities and Data Ingestion, Intro to Time Series Analysis in R, Supervised Learning: Regression, Supervised Learning: Regression"
+user0045,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0046,"0075, 0343, 0913, 1045, 1586, 1588","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O"
+user0047,"3384, 3398, 3465, 3472, 3475, 3483","Applied AI with Deep Learning, Population Health: Predictive Analytics, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project"
+user0048,"3475, 3483, 3491, 3503, 3361, 3369, 3370","Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business, Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow"
+user0049,"3465, 3472, 3475, 3483, 3491, 3503","Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0050,"0241, 2558, 3025, 3503","Deploy Models with TensorFlow Serving and Flask, Linear Regression with Python, Build a Data Science Web App with Streamlit and Python, Data Modeling and Regression Analysis in Business"
+user0051,"3361, 3369, 3399, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning, Data Modeling and Regression Analysis in Business"
+user0052,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0053,"0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0054,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0055,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0056,"3361, 3369, 3399, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning, Data Modeling and Regression Analysis in Business"
+user0057,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0058,"0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0059,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0060,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0061,"0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0062,"3361, 3369, 3399, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning, Data Modeling and Regression Analysis in Business"
+user0063,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0064,"0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0065,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0066,"3361, 3369, 3399, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning, Data Modeling and Regression Analysis in Business"
+user0067,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0068,"0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0069,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0070,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0071,"0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0072,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0073,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion,"
+user0074,"0385, 0992, 0670, 3469","Introduction to Machine Learning, Neural Networks and Deep Learning, Mining Quality Prediction Using Machine & Deep Learning, Getting started with TensorFlow 2"
+user0075,"0687, 0355, 1677","Sequence Models, Natural Language Processing with Probabilistic Models, NLP: Twitter Sentiment Analysis"
+user0076,"1677, 2924, 1755, 2754, 2570, 2497, 1838","NLP: Twitter Sentiment Analysis, Machine Learning: Regression, Natural Language Processing with Sequence Models, Natural Language Processing with Classification and Vector Spaces, Text Mining and Analytics, Transfer Learning for NLP with TensorFlow Hub, Convolutions for Text Classification with Keras"
+user0077,"0385, 0992, 0670, 3469","Introduction to Machine Learning, Neural Networks and Deep Learning, Mining Quality Prediction Using Machine & Deep Learning, Getting started with TensorFlow 2"
+user0078,"0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0079,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0080,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0081,"3361, 3369, 3399, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning, Data Modeling and Regression Analysis in Business"
+user0082,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0083,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0084,"0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0085,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0086,"0385, 0992, 0670, 3469","Introduction to Machine Learning, Neural Networks and Deep Learning, Mining Quality Prediction Using Machine & Deep Learning, Getting started with TensorFlow 2"
+user0087,"0687, 0355, 1677","Sequence Models, Natural Language Processing with Probabilistic Models, NLP: Twitter Sentiment Analysis"
+user0088,"1677, 2924, 1755, 2754, 2570, 2497, 1838","NLP: Twitter Sentiment Analysis, Machine Learning: Regression, Natural Language Processing with Sequence Models, Natural Language Processing with Classification and Vector Spaces, Text Mining and Analytics, Transfer Learning for NLP with TensorFlow Hub, Convolutions for Text Classification with Keras"
+user0089,"2450, 2530, 2588, 2602    ","Building Recommendation Engines in Python, Building Deep Learning Models with TensorFlow, Building Chatbots in Python, Building and Deploying Chatbots, Building a Recommendation System with Python"
+user0090,"2190, 2836, 3184   "," Statistics with SAS, Querying Databases Using SQL SELECT statement, AI Workflow: Feature Engineering and Bias Detection"
+user0091,"1677, 2154, 2530   "," NLP: Twitter Sentiment Analysis, Statistical Forecasting Techniques in Google Sheets, Building Deep Learning Models with TensorFlow"
+user0092,"0670, 0992, 3469    ","Mining Quality Prediction Using Machine & Deep Learning, Neural Networks and Deep Learning, Getting started with TensorFlow 2"
+user0093,"0992, 3469, 3503  ","Neural Networks and Deep Learning, Getting started with TensorFlow 2, Data Modeling and Regression Analysis in Business"
+user0094,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0095,"3361, 3369, 3399, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning, Data Modeling and Regression Analysis in Business"
+user0096,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0097,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0098," 0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0099,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0100,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0101,"0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0102,"0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0103,"0687, 0355, 1677","Sequence Models, Natural Language Processing with Probabilistic Models, NLP: Twitter Sentiment Analysis"
+user0104,"0687, 0355, 1677","Sequence Models, Natural Language Processing with Probabilistic Models, NLP: Twitter Sentiment Analysis"
+user0105,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0106,"1677, 2924, 1755, 2754, 2570, 2497, 1838","NLP: Twitter Sentiment Analysis, Machine Learning: Regression, Natural Language Processing with Sequence Models, Natural Language Processing with Classification and Vector Spaces, Text Mining and Analytics, Transfer Learning for NLP with TensorFlow Hub, Convolutions for Text Classification with Keras"
+user0107,"2144, 2202, 2215, 2306, 2353, 2401","AI Workflow: Enterprise Model Deployment, Hyperparameter Tuning with Keras Tuner, Data Science for Business Innovation, AI Workflow: Business Priorities and Data Ingestion, Intro to Time Series Analysis in R, Supervised Learning: Regression"
+user0108,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0109,"1677, 2924, 1755, 2754, 2570, 2497, 1838","NLP: Twitter Sentiment Analysis, Machine Learning: Regression, Natural Language Processing with Sequence Models, Natural Language Processing with Classification and Vector Spaces, Text Mining and Analytics, Transfer Learning for NLP with TensorFlow Hub, Convolutions for Text Classification with Keras"
+user0110,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0111,"1366, 2486, 3352","Merge, Sort and Filter Data in Python Pandas, Feature Engineering, Graph Analytics for Big Data"
+user0112,"1677, 2924, 1755, 2754, 2570, 2497, 1838","NLP: Twitter Sentiment Analysis, Machine Learning: Regression, Natural Language Processing with Sequence Models, Natural Language Processing with Classification and Vector Spaces, Text Mining and Analytics, Transfer Learning for NLP with TensorFlow Hub, Convolutions for Text Classification with Keras"
+user0113,"1366, 2486, 3352","Merge, Sort and Filter Data in Python Pandas, Feature Engineering, Graph Analytics for Big Data"
+user0114,"1677, 2924, 1755, 2754, 2570, 2497, 1838","NLP: Twitter Sentiment Analysis, Machine Learning: Regression, Natural Language Processing with Sequence Models, Natural Language Processing with Classification and Vector Spaces, Text Mining and Analytics, Transfer Learning for NLP with TensorFlow Hub, Convolutions for Text Classification with Keras"
+user0115,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0116,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0117,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0118,"0636, 0637, 1787","Exploratory Data Analysis, Exploratory Data Analysis, R Programming"
+user0119,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0120,"0385, 0992, 0670, 3469","Introduction to Machine Learning, Neural Networks and Deep Learning, Mining Quality Prediction Using Machine & Deep Learning, Getting started with TensorFlow 2"
+user0121,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0122,"0687, 0355, 1677","Sequence Models, Natural Language Processing with Probabilistic Models, NLP: Twitter Sentiment Analysis"
+user0123,"0636, 0637, 1787","Exploratory Data Analysis, Exploratory Data Analysis, R Programming"
+user0124,"0636, 0637, 1787","Exploratory Data Analysis, Exploratory Data Analysis, R Programming"
+user0125,"0636, 0637, 1787","Exploratory Data Analysis, Exploratory Data Analysis, R Programming"
+user0126,"3361, 2708, 0636, 0637, 1787","Data Exploration and Visualization with Python, Machine Learning for Data Analysis, Exploratory Data Analysis, Exploratory Data Analysis, R Programming"
+user0127,"3361, 2708, 0636, 0637, 1787","Data Exploration and Visualization with Python, Machine Learning for Data Analysis, Exploratory Data Analysis, Exploratory Data Analysis, R Programming"
+user0128,"0687, 0355, 1677","Sequence Models, Natural Language Processing with Probabilistic Models, NLP: Twitter Sentiment Analysis"
+user0129,"1677, 2924, 1755, 2754, 2570, 2497, 1838","NLP: Twitter Sentiment Analysis, Machine Learning: Regression, Natural Language Processing with Sequence Models, Natural Language Processing with Classification and Vector Spaces, Text Mining and Analytics, Transfer Learning for NLP with TensorFlow Hub, Convolutions for Text Classification with Keras"
+user0130,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0131,"3361, 3369, 3399, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning, Data Modeling and Regression Analysis in Business"
+user0132,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0133,"0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0134,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0135,"0385, 0992, 0670, 3469","Introduction to Machine Learning, Neural Networks and Deep Learning, Mining Quality Prediction Using Machine & Deep Learning, Getting started with TensorFlow 2"
+user0136,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0137,"3361, 3369, 3399, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning, Data Modeling and Regression Analysis in Business"
+user0138,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0139,"0075, 0343, 0913, 1045, 1586, 1588, 2144","Communicating Data Science Results, Data Analytics for Lean Six Sigma, Increasing Real Estate Management Profits: Harnessing Data Analytics, Predictive Modeling and Analytics, Algorithms for DNA Sequencing, Practical Machine Learning on H2O, AI Workflow: Enterprise Model Deployment"
+user0140,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0141,"0385, 0992, 0670, 3469","Introduction to Machine Learning, Neural Networks and Deep Learning, Mining Quality Prediction Using Machine & Deep Learning, Getting started with TensorFlow 2"
+user0142,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0143,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0144,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0145,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0146,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0147,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0148,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0149,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0150,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0151,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0152,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0153,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0154,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0155,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0156,"2842, 2993, 3108, 3469, 3503","Visualization for Data Journalism, Population Health: Responsible Data Analysis, Hyperparameter Tuning with Keras Tuner, AI Workflow: Business Priorities and Data Ingestion, Introduction to Clinical Data Science, Performing Network, Path, and Text Analyses in SAS Visual Analytics"
+user0157,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0158,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0159,"3361, 2708","Data Exploration and Visualization with Python, Machine Learning for Data Analysis"
+user0160,"0096, 0627","Making Architecture,  Chosen Issues in Holocaust History"
+user0161,"0851, 1759","Songwriting: Writing the Lyrics,  Guitar for Beginners"
+user0162,"0655, 3179","Fundamentals of Graphic Design,  The Modern World, Part Two: Global History since 1910"
+user0163,"1754, 3448","Applied Public History: Places, People, Stories,  Exploring Beethoven's Piano Sonatas Part 4"
+user0164,"1213, 1230","Cultural Competence - Aboriginal Sydney,  UX Design Fundamentals"
+user0165,"0863, 2100","The Modern World, Part One: Global History from 1760 to 1910,  The Holocaust - An Introduction (I): Nazi Germany: Ideology, The Jews and the World"
+user0166,"1755, 1756","Age of Cathedrals,  Introduction to Philosophy"
+user0167,"0152, 0622","Textual Elements of Design: Fonts, Typography, and Spacing,  Print and Digital Elements of Design: Branding and User Experience"
+user0168,"0764, 1584","The American South: Its Stories, Music, and Art,  Luther and the West"
+user0169,"0125, 0135","World Design for Video Games,  The Rooseveltian Century"
+user0170,"0807, 1759","Photography Techniques: Light, Content, and Sharing, Guitar for Beginners"
+user0171,"0135, 2012","The Rooseveltian Century, How to Make a Comic Book (Project-Centered Course)"
+user0172,"0622, 0714","Print and Digital Elements of Design: Branding and User Experience, Skepticism"
+user0173,"0605, 2722","Introduction to Research for Essay Writing, Pro Tools Basics"
+user0174,"0863, 3463","The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style"
+user0175,"0801, 2721","Introduction to Philosophy, Pro Tools Basics"
+user0176,"3179, 3180","The Modern World, Part Two: Global History since 1910, The Modern and the Postmodern (Part 1)"
+user0177,"3057, 3125","Toledo: Deciphering Secrets of Medieval Spain, Curanderismo: Traditional Healing of the Body"
+user0178,"3077, 3361","Creating Public Policy, Data Exploration and Visualization with Python"
+user0179,"3101, 3206","Introduction to Geology, Low Poly Art For Video Games"
+user0180,"3049, 0138","History of Rock, Part One, History of Rock, Part Two"
+user0181,"1980, 1451","Inequality and Democracy, The Music of the Beatles"
+user0182,"0622, 1740","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design"
+user0183,"0725, 1213","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney"
+user0184,"0256, 0257","The Art of Music Production, The Art of Music Production"
+user0185,"0256, 0257","The Art of Music Production, The Art of Music Production"
+user0186,"1980, 1451, 0622                      ","Inequality and Democracy, The Music of the Beatles, Print and Digital Elements of Design: Branding and User Experience"
+user0187,"0622, 1740, 3125                      ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body"
+user0188,"0725, 1213, 0863                     ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910"
+user0189,"0256, 0257, 3179                     ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910"
+user0190,"0256, 0257, 3057                      ","The Art of Music Production, The Art of Music Production, Toledo: Deciphering Secrets of Medieval Spain"
+user0191,"0256, 0257, 3179, 3057                        ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain"
+user0192,"0863, 3463","The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style"
+user0193,"0801, 2721, 1214                                ","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story"
+user0194,"0725, 1213, 0863, 0622                        ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Print and Digital Elements of Design: Branding and User Experience"
+user0195,"0256, 0257, 3179, 3057                        ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain"
+user0196,"0622, 1740, 3125, 2722, 1451                  ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy"
+user0197,"0622, 1740, 3125, 2722, 1451                  ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy"
+user0198,"0725, 1213, 0863, 0622, 1740, 3125            ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body"
+user0199,"3179, 3180, 3057, 3125, 0725                    ","The Modern World, Part Two: Global History since 1910, The Modern and the Postmodern (Part 1), Toledo: Deciphering Secrets of Medieval Spain, Curanderismo: Traditional Healing of the Body, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences"
+user0200,"0801, 2721, 1214, 0863, 3463                   ","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style"
+user0201,"0622, 1740, 3125, 2722, 1451, 0863            ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, The Modern World, Part One: Global History from 1760 to 1910"
+user0202,"0256, 0257, 3179, 3057, 0725, 1213            ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney"
+user0203,"0622, 1740, 3125, 2722, 1451, 0863, 3463       ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style"
+user0204,"0801, 2721, 1214, 0863, 3463, 0622, 1740        ","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design"
+user0205,"0725, 1213, 0863, 0622, 1740, 3125, 2722        ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics"
+user0206,"0256, 0257, 3179, 3057, 0725, 1213, 0863        ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910"
+user0207,"0622, 1740, 3125, 2722, 1451, 0863, 3463, 0725  ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences"
+user0208,"0256, 0257, 3179, 3057, 0725, 1213, 0863, 3463  ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Inequality and Democracy"
+user0209,"0256, 0257, 3057                              ","The Art of Music Production, The Art of Music Production, Toledo: Deciphering Secrets of Medieval Spain"
+user0210,"0622, 1740, 3125, 2722                       ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics"
+user0211,"0725, 1213, 0863                             ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910"
+user0212,"0256, 0257, 3179, 3057, 0725                  ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences"
+user0213,"0622, 1740, 3125, 2722, 1451, 0863            ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy"
+user0214,"0256, 0257, 3179, 3057, 0725, 1213, 0863      ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910"
+user0215,"0801, 2721, 1214                              ","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story"
+user0216,"0725, 1213, 0863, 0622, 1740, 3125, 2722       ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics"
+user0217,"0256, 0257, 3179, 3057, 0725, 1213, 0863      ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910"
+user0218,"0622, 1740, 3125, 2722, 1451, 0863, 3463     ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences"
+user0219,"0256, 0257, 3179, 3057, 0725, 1213, 0863, 3463","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Inequality and Democracy"
+user0220,"0801, 2721, 1214, 0863, 3463                  ","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences"
+user0221,"0725, 1213, 0863, 0622, 1740, 3125, 2722, 1451  ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy"
+user0222,"0622, 1740, 3125, 2722, 1451, 0863, 3463, 0725, 1213      ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney"
+user0223,"0256, 0257, 3179, 3057, 0725, 1213, 0863, 3463          ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Inequality and Democracy"
+user0224,"0801, 2721, 1214, 0863, 3463                              ","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences"
+user0225,"0725, 1213, 0863, 0622, 1740, 3125, 2722, 1451, 3463      ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, Creative Writing: The Craft of Style"
+user0226,"0256, 0257, 3179, 3057, 0725, 1213, 0863, 3463, 0622     ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Inequality and Democracy, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design"
+user0227,"0622, 1740, 3125, 2722, 1451, 0863, 3463, 0725           ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910"
+user0228,"0256, 0257, 3179, 3057, 0725, 1213, 0863, 3463, 0622, 1740","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Inequality and Democracy, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics"
+user0229,"0801, 2721, 1214, 0863, 3463, 0622, 1740               ","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Inequality and Democracy, Cultural Competence - Aboriginal Sydney"
+user0230,"0725, 1213, 0863, 0622, 1740, 3125, 2722, 1451, 3463   ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences"
+user0231,"0256, 0257, 3179, 3057, 0725, 1213, 0863, 3463, 0622  ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Inequality and Democracy, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics"
+user0232,"0622, 1740, 3125, 2722, 1451, 0863, 3463, 0725, 1213 ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Print and Digital Elements of Design: Branding and User Experience"
+user0233,"0256, 0257, 3179, 3057, 0725, 1213, 0863, 3463, 0622, 1740, 3125","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 191"
+user0234,"0622, 1740, 3125, 2722                       ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics"
+user0235,"0725, 1213, 0863                             ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910"
+user0236,"0256, 0257, 3179, 3057, 0725                  ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences"
+user0237,"0622, 1740, 3125, 2722, 1451, 0863            ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy"
+user0238,"0256, 0257, 3179, 3057, 0725, 1213, 0863      ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910"
+user0239,"0801, 2721, 1214                              ","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story"
+user0240,"0725, 1213, 0863, 0622, 1740, 3125, 2722       ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics"
+user0241,"0256, 0257, 3179, 3057, 0725, 1213, 0863      ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910"
+user0242,"0622, 1740, 3125, 2722, 1451, 0863, 3463     ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences"
+user0243,"0256, 0257, 3179, 3057, 0725, 1213, 0863, 3463","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Inequality and Democracy"
+user0244,"0801, 2721, 1214, 0863, 3463                  ","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences"
+user0245,"0725, 1213, 0863, 0622, 1740, 3125, 2722, 1451  ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy"
+user0246,"0622, 1740, 3125, 2722, 1451, 0863, 3463, 0725, 1213      ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney"
+user0247,"0256, 0257, 3179, 3057, 0725, 1213, 0863, 3463          ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Inequality and Democracy"
+user0248,"0801, 2721, 1214, 0863, 3463                              ","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences"
+user0249,"0725, 1213, 0863, 0622, 1740, 3125, 2722, 1451, 3463      ","Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, Creative Writing: The Craft of Style"
+user0250,"0256, 0257, 3179, 3057, 0725, 1213, 0863, 3463, 0622     ","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Inequality and Democracy, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design"
+user0251,"0622, 1740, 3125, 2722, 1451, 0863, 3463, 0725           ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics, Inequality and Democracy, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910"
+user0252,"0256, 0257, 3179, 3057, 0725, 1213, 0863, 3463, 0622, 1740","The Art of Music Production, The Art of Music Production, The Modern World, Part Two: Global History since 1910, Toledo: Deciphering Secrets of Medieval Spain, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Inequality and Democracy, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics"
+user0253,"0801, 2721, 1214, 0863, 3463, 0622, 1740               ","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Inequality and Democracy, Cultural Competence - Aboriginal Sydney"
+user0254,"0256, 0257, 0725, 1213, 3463, 0622","The Art of Music Production, The Art of Music Production, Inequality and Democracy, Creative Writing: The Craft of Style, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design"
+user0255,"0622, 1740, 3463, 0725","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Inequality and Democracy, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Cultural Competence - Aboriginal Sydney, The Modern World, Part One: Global History from 1760 to 1910"
+user0256,"0256, 0257, 0725, 1213, 3463, 0622, 1740","The Art of Music Production, The Art of Music Production, Inequality and Democracy, Creative Writing: The Craft of Style, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics"
+user0257,"0801, 2721, 1214, 3463, 0622, 1740","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story, The Modern World, Part One: Global History from 1760 to 1910, Creative Writing: The Craft of Style, Philosophy and the Sciences: Introduction to the Philosophy of Cognitive Sciences, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Inequality and Democracy, Cultural Competence - Aboriginal Sydney"
+user0258,"1740, 0622, 3463, 0725, 0256, 0257     ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Inequality and Democracy, Creative Writing: The Craft of Style, The Art of Music Production, The Art of Music Production"
+user0259,"0256, 0257, 0725, 1213, 3463, 0622, 1740","The Art of Music Production, The Art of Music Production, Inequality and Democracy, Creative Writing: The Craft of Style, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Curanderismo: Traditional Healing of the Body, Pro Tools Basics"
+user0260,"0801, 2721, 1214, 3463, 0622, 1740","Introduction to Philosophy, Pro Tools Basics, Capstone: Your Story, Creative Writing: The Craft of Style, Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Inequality and Democracy, Cultural Competence - Aboriginal Sydney"
+user0261,"1740, 0622, 3463, 0725                        ","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Inequality and Democracy, The Art of Music Production"
+user0262,"1740, 0622, 3463, 0725, 0256, 0257","Print and Digital Elements of Design: Branding and User Experience, Visual Elements of User Interface Design, Inequality and Democracy, Creative Writing: The Craft of Style, The Art of Music Production, The Art of Music Production"
+user0263,"0004, 0356, 0633, 1989","Finance for Managers, Renewable Energy and Green Building Entrepreneurship, Foundations of marketing analytics, Digital Transformation"
+user0264,"0033, 0510, 1568, 3151","Fundamentals of Management, Organisational behaviour: Know your people, Finance for Everyone: Debt, Global Impact: Business Ethics"
+user0265,"0426, 0831, 1940, 3091","Corporate Sustainability. Understanding and Seizing the Strategic Opportunity, Auditing I: Conceptual Foundations of Auditing, Survey analysis to Gain Marketing Insights, Giving Sense to Your Leadership Experience"
+user0266,"0513, 0853, 2047, 3507","Supply Chain Management: A Learning Perspective, Developing An Entrepreneurial Mindset: First Step Towards Success, Design Thinking for Innovation, Visionary leadership, identity & motivation: Become a meaning maker"
+user0267,"0767, 0884, 1972, 3344","Innovating in a Digital World, Financial Engineering and Risk Management Part I, Raising Capital: Credit Tech, Coin Offerings, and Crowdfunding, Financial Regulation in Emerging Markets and the Rise of Fintech Companies"
+user0268,"0725, 1078, 2387, 3542","Marketing Strategy and Planning, Data-Driven Decision Making, Advanced Corporate Finance, Sustainable Operations"
+user0269,"0142, 0625, 1557, 2902","International Marketing, Strategic Management, Financial Risk Management, Advanced Business Strategy"
+user0270,"0320, 0727, 1346, 2763","Entrepreneurship and Business Planning, Corporate Finance, Business Process Improvement, Managing Global Operations"
+user0271,"0021, 0435, 0936, 1865","Human Resource Management, Business Law, Marketing Strategy, Advanced Corporate Finance"
+user0272,"0115, 0542, 1278, 2590","Operations Management, Managerial Accounting, Business Ethics and Corporate Social Responsibility, Strategic Leadership"
+user0273,"0230, 0654, 1423, 3078","Strategic Marketing Management, Investments and Portfolio Management, Advanced Supply Chain Management, Managing Innovation and Technology"
+user0274,"0725, 1078, 2387, 3542","Marketing Strategy and Planning, Data-Driven Decision Making, Advanced Corporate Finance, Sustainable Operations"
+user0275,"0078, 0352, 0749, 1235, 1956, 2910","Strategic HR Management, Business Analytics, Marketing Research and Analysis, Financial Modeling and Valuation, Advanced Leadership Development, Global Business Strategy"
+user0276,,
+user0277,,
+user0278,,
+user0279,,
+user0280,,
+user0281,,
+user0282,,
+user0283,,
+user0284,,
+user0285,,
+user0286,,
+user0287,,
+user0288,,
+user0289,,
+user0290,,
+user0291,,
+user0292,,
+user0293,,
+user0294,,
+user0295,,
+user0296,,
+user0297,,
+user0298,,
+user0299,,
+user0300,,
+user0301,,
+user0302,,
+user0303,,
+user0304,,
+user0305,,
+user0306,,
+user0307,,
+user0308,,
+user0309,,
+user0310,,
+user0311,,
+user0312,,
+user0313,,
+user0314,,
+user0315,,
+user0316,,
+user0317,,
+user0318,,
+user0319,,
+user0320,,
+user0321,,
+user0322,,
+user0323,,
+user0324,,
+user0325,,
+user0326,,
+user0327,,
+user0328,,
+user0329,,
+user0330,,
+user0331,,
+user0332,,
+user0333,,
+user0334,,
+user0335,,
+user0336,,
+user0337,,
+user0338,,
+user0339,,
+user0340,,
+user0341,,
+user0342,,
+user0343,,
+user0344,,
+user0345,,
+user0346,,
+user0347,,
+user0348,,
+user0349,,
+user0350,,
+user0351,,
+user0352,,
+user0353,,
+user0354,,
+user0355,,
+user0356,,
+user0357,,
+user0358,,
+user0359,,
+user0360,,
+user0361,,
+user0362,,
+user0363,,
+user0364,,
+user0365,,
+user0366,,
+user0367,,
+user0368,,
+user0369,,
+user0370,,
+user0371,,
+user0372,,
+user0373,,
+user0374,,
+user0375,,
+user0376,,
+user0377,,
+user0378,,
+user0379,,
+user0380,,
+user0381,,
+user0382,,
+user0383,,
+user0384,,
+user0385,,
+user0386,,
+user0387,,
+user0388,,
+user0389,,
+user0390,,
+user0391,,
+user0392,,
+user0393,,
+user0394,,
+user0395,,
+user0396,,
+user0397,,
+user0398,,
+user0399,,
+user0400,,
+user0401,,
+user0402,,
+user0403,,
+user0404,,
+user0405,,
+user0406,,
+user0407,,
+user0408,,
+user0409,,
+user0410,,
+user0411,,
+user0412,"0566, 0932, 1544, 2298, 3011","Marketing Research and Analytics, Financial Markets and Investments, Strategic Supply Chain Management, Business Development and Growth Strategies, Leadership in the Digital World"
+user0413,"0288, 0667, 1329, 1998, 2672","Leadership and Change, International Finance and Investment, Advanced Marketing Strategy, Business Analytics and Big Data, Global Business Ethics"
+user0414,"0428, 0897, 1567, 2237, 2987","Strategic Cost Analysis, Marketing in the Digital Age, Corporate Finance and Risk Management, Global Entrepreneurship and Innovation, Leadership and Sustainability"
+user0415,"0346, 0735, 1310, 2169, 3099","Entrepreneurship and New Venture Creation, Strategic Marketing and Brand Management, Financial Analysis and Decision Making, Global Supply Chain Strategy, Business Ethics and Social Impact"
+user0416,"0087, 0366, 0712, 1598","Marketing Strategy, Corporate Finance, Leading Change and Organizational Renewal, Digital Marketing Fundamentals"
+user0417,"0087, 0366, 0712, 1598","Marketing Strategy, Corporate Finance, Leading Change and Organizational Renewal, Digital Marketing Fundamentals"
+user0418,"0432, 0855, 1763, 3124, 3956","Operations Management, Strategic Innovation and Design, Data-Driven Decision Making, International Business Law, Global Marketing Management"
+user0419,"0187, 0543, 1298","Entrepreneurship and Innovation, Business Analytics for Managers, Managerial Accounting"
+user0420,"0046, 0431, 0879, 1680, 2875","Economics for Business, Negotiation and Conflict Resolution, Business Law, Risk Management, Strategic Management"
+user0421,"0025, 0654, 1432, 2769","Leadership and Teamwork, Business Process Improvement, Financial Risk Management, Strategic Sourcing and Procurement"
+user0422,"0143, 0388, 0726, 1497, 2587","Managerial Economics, International Finance, Marketing Management, Entrepreneurship in Action, Supply Chain Analytics"
+user0423,"0222, 0597, 1276","Financial Markets and Instruments, Project Management for Professionals, Customer Relationship Management"
+user0424,"0058, 0487, 0962, 1890, 3017","Strategic Human Resource Management, Business Ethics and Corporate Responsibility, Marketing Strategy and Planning, Financial Management, Global Business Leadership"
+user0425,"0310, 0788, 1587, 2990","Strategic Decision Making, Digital Business Transformation, Advanced Financial Reporting, Entrepreneurship and Small Business Finance"
+user0426,"0111, 0319, 0667, 1348, 2456","Corporate Finance and Valuation, Supply Chain Optimization, Marketing Analytics, Strategic Management of Technology and Innovation, Business Data Mining"
+user0427,"0232, 0599, 1244, 2675","Financial Management in Healthcare, Business Law and Ethics, Operations and Supply Chain Management, Marketing Strategy for the Digital Age"
+user0428,"0041, 0499, 1056","Strategic Planning and Execution, International Marketing, Accounting for Decision Makers"
+user0429,"0342, 0715, 1423, 2816","Advanced Corporate Finance, Entrepreneurial Marketing, Leadership and Change Management, Business Analytics and Data Mining"
+user0430,"0134, 0378, 0782, 1532, 2667","Strategic Management and Leadership, Consumer Behavior, Financial Modeling and Analysis, Innovation and Design Thinking, Global Business Negotiation"
+user0431,"0012, 0548, 1267, 2435","Principles of Marketing, Strategic Management of Information Systems, Managerial Economics and Decision Making, Marketing Research and Strategy"
+user0432,"0097, 0466, 0935, 1754, 2923","Corporate Social Responsibility, Global Strategy, Financial Accounting, Supply Chain Management, Leadership in the 21st Century"
+user0433,"0027, 0564, 1329","Marketing Management, Advanced Managerial Accounting, Strategic Management of Technology"
+user0434,"0075, 0628, 1295, 2477, 3592","Customer-Centric Marketing, International Business Ethics, Financial Markets and Institutions, Strategic Innovation and Entrepreneurship, Business Analytics for Decision Making"
+user0435,"0123, 0456, 0944, 1825","Strategic Leadership and Management, Business Negotiation and Conflict Resolution, Advanced Financial Analysis, Marketing Analytics"
+user0436,"0290, 0666, 1335, 2787","Entrepreneurial Finance, Supply Chain Management, Global Marketing, Digital Marketing Strategy"
+user0437,"0234, 0548, 1123, 2475","Strategic Human Resource Management, Marketing Strategy and Planning, Financial Markets and Investment Strategy, Advanced Business Analytics"
+user0438,"0234, 0548, 1123, 2475","Strategic Human Resource Management, Marketing Strategy and Planning, Financial Markets and Investment Strategy, Advanced Business Analytics"
+user0439,"0111, 0498, 0976, 1893, 3087","Operations Management, International Business Law, Entrepreneurship: From Idea to Launch, Managing High-Performance Teams, Advanced Topics in Leadership"
+user0440,"0352, 0729, 1367, 2810","Consumer Behavior Analysis, Business Data Mining, Advanced Corporate Finance, Strategic Management of Technology and Innovation"
+user0441,"0038, 0650, 1247, 2522","Human Resource Management, Managerial Accounting and Control, Marketing Channels and Distribution Strategy, Global Business Strategy"
+user0442,"0456, 0932, 1739, 3327","Strategic Supply Chain Management, Business Process Reengineering, Corporate Financial Strategy, Leading Change and Organizational Renewal"
+user0443,"0612, 1057, 2145, 3546","Entrepreneurship and Business Development, Investment Banking and Capital Markets, Strategic Management of Information Technology, Negotiation and Conflict Resolution"
+user0444,,
+user0445,,
+user0446,,
+user0447,,
+user0448,,
+user0449,,
+user0450,,
+user0451,,
+user0452,,
+user0453,,
+user0454,,
+user0455,,
+user0456,,
+user0457,,
+user0458,"0687, 0355, 1677","Sequence Models, Natural Language Processing with Probabilistic Models, NLP: Twitter Sentiment Analysis"
+user0459,"3352, 3369, 3399","Graph Analytics for Big Data, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning"
+user0460,"3361, 3369, 3399","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Fake News Detection with Machine Learning"
+user0461,"2144, 2202, 2215, 2306, 2353, 2401, 2402","AI Workflow: Enterprise Model Deployment, Hyperparameter Tuning with Keras Tuner, Data Science for Business Innovation, AI Workflow: Business Priorities and Data Ingestion, Intro to Time Series Analysis in R, Supervised Learning: Regression, Supervised Learning: Regression"
+user0462,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0463,"0385, 0992, 0670, 3469","Introduction to Machine Learning, Neural Networks and Deep Learning, Mining Quality Prediction Using Machine & Deep Learning, Getting started with TensorFlow 2"
+user0464,"0687, 0355, 1677","Sequence Models, Natural Language Processing with Probabilistic Models, NLP: Twitter Sentiment Analysis"
+user0465,"1677, 2924, 1755, 2754, 2570, 2497, 1838","NLP: Twitter Sentiment Analysis, Machine Learning: Regression, Natural Language Processing with Sequence Models, Natural Language Processing with Classification and Vector Spaces, Text Mining and Analytics, Transfer Learning for NLP with TensorFlow Hub, Convolutions for Text Classification with Keras"
+user0466,"3361, 3369, 3370, 3465, 3472, 3475, 3483, 3491, 3503","Data Exploration and Visualization with Python, Image Compression with K-Means Clustering, Neural Network from Scratch in TensorFlow, Big Data Integration and Processing, Optimizing Machine Learning Performance, Support Vector Machines with scikit-learn, SQL for Data Science Capstone Project, Applied Data Science Capstone, Data Modeling and Regression Analysis in Business"
+user0467,"1677, 2924, 1755, 2754, 2570, 2497, 1838","NLP: Twitter Sentiment Analysis, Machine Learning: Regression, Natural Language Processing with Sequence Models, Natural Language Processing with Classification and Vector Spaces, Text Mining and Analytics, Transfer Learning for NLP with TensorFlow Hub, Convolutions for Text Classification with Keras"
+user0468,"0112, 0556, 1043, 2045","Leadership and Organizational Culture, Data-Driven Decision Making, Strategic Management in the Digital Age, Financial Risk Management"
+user0469,"0027, 0478, 0923, 1776, 2989","Marketing Strategy, Entrepreneurial Leadership, Managerial Accounting, Business Law and Ethics, International Business Management"
+user0470,"0336, 0669, 1224","Advanced Business Strategy, Digital Marketing, Managerial Decision Making"
+user0471,"0098, 0345, 0689, 1512, 2655","Operations Management, Business Process Reengineering, International Finance, Advanced Business Analytics, Leadership and Team Building"
+user0472,"0263, 0587, 1134","Strategic Marketing, Managerial Economics, Negotiation and Conflict Resolution"
+user0473,"0015, 0445, 0849, 1627","Introduction to Accounting, Supply Chain Optimization, Strategic Human Resource Management, Advanced Corporate Finance"
+user0474,"0202, 0755, 1347, 2764","Innovation and Entrepreneurship, Organizational Behavior and Design, Managerial Economics and Business Strategy, Financial Engineering"
+user0475,"0046, 0498, 0975, 1987, 3167","Business Communication, Global Marketing Strategies, Financial Markets and Instruments, Digital Business Strategy, Strategic Leadership"
+user0476,"0301, 0674, 1211, 2298","Strategic Operations Management, Business Negotiation Skills, Project Management Professional (PMP) Certification, Leading Digital Transformation"
+user0477,"0029, 0638, 1123","Principles of Finance, Marketing Analytics, Organizational Change and Development"
+user0478,"0056, 0537, 0921, 1698, 2987","Managerial Accounting, Entrepreneurial Finance, Business Analytics, Supply Chain Management, Advanced Corporate Strategy"
+user0479,,
+user0480,,
+user0481,,
+user0482,,
+user0483,,
+user0484,,
+user0485,,
+user0486,,
+user0487,,
+user0488,,
+user0489,,
+user0490,,
+user0491,,
+user0492,,
+user0493,,
+user0494,,
+user0495,,
+user0496,,
+user0497,,
+user0498,,
+user0499,,
+user0500,,
+user0501,,
+user0502,,
+user0503,,
+user0504,,
+user0505,,
+user0506,,
+user0507,,
+user0508,,
+user0509,,
+user0510,,
+user0511,,
+user0512,,
+user0513,,
+user0514,,
+user0515,,
+user0516,,
+user0517,,
+user0518,,
+user0519,,
+user0520,,
+user0521,,
+user0036,,
+user0036,,
+user0037,,
+user0038,,
+user0039,,
+user0040,,
+user0041,,
+user0042,,
+user0043,,
+user0044,,
+user0045,,
+user0046,,
+user0047,,
+user0048,,
+user0049,,
+user0050,,
+user0051,,
+user0052,,
+user0053,,
+user0054,,
+user0055,,
+user0056,,
+user0057,,
+user0058,,
+user0059,,
+user0060,,
+user0061,,
+user0062,,
+user0063,,
+user0064,,
+user0065,,
+user0066,,
+user0067,,
+user0068,,
