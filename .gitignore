@@ -4,11 +4,11 @@
 /cache/
 
 # ignore file
-data\course.csv
+data/course.csv
 generate_boolean_questions_using_T5_transformer-master
-Libs\question_generator
-Libs\model\bert_classification_model.pth
-Libs\t5_gec_model_02
+Libs/question_generator
+Libs/model/bert_classification_model.pth
+Libs/t5_gec_model_02
 
 config.ini
 
