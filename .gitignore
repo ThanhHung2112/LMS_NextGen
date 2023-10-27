@@ -10,7 +10,9 @@ Libs/question_generator
 Libs/model/bert_classification_model.pth
 Libs/t5_gec_model_02
 Libs/model
-data
+data/cefr_400.csv
+data/cefr_combine.csv
+data/cefr_db.csv
 
 config.ini
 
