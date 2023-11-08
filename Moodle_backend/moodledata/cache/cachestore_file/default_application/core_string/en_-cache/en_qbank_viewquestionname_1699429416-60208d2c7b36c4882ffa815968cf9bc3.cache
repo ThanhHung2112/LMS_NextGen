@@ -1,0 +1,1 @@
+a:4:{s:10:"pluginname";s:18:"View question name";s:16:"privacy:metadata";s:77:"The View question name question bank plugin does not store any personal data.";s:23:"edit_question_name_hint";s:18:"Edit question name";s:24:"edit_question_name_label";s:24:"New value for {$a->name}";}

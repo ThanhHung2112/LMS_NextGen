@@ -1,0 +1,32 @@
+<style>
+    .ml-model-block-content {
+
+    }
+
+    .ml-model-content {
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .ml-model-content-question {
+        background-color: #7D7C7C;
+    }
+
+    .ml-model-content-answer {
+        background-color: #6499E9;
+    }
+
+
+</style>
+{{#questions}}
+<div class="ml-model-block-content">
+    <div class="ml-model-label">Question</div>
+    <p class="ml-model-content ml-model-content-question">{{ question }}</p>
+</div>
+{{/questions}}
+<div class="ml-model-block-content">
+    <div class="ml-model-label">Answer</div>
+    <p class="ml-model-content ml-model-content-answer">{{ answers }}</p>
+</div>
+

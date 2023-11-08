@@ -1,0 +1,26 @@
+a:63:{s:5:"adhoc";s:6:"Ad hoc";s:11:"adhoctaskid";s:20:"Ad hoc task ID: {$a}";s:10:"adhoctasks";s:12:"Ad hoc tasks";s:4:"asap";s:4:"ASAP";s:10:"adhocempty";s:26:"Ad hoc task queue is empty";s:14:"adhocqueuesize";s:32:"Ad hoc task queue has {$a} tasks";s:13:"adhocqueueold";s:53:"Oldest task is {$a->age} which is more than {$a->max}";s:20:"backtoscheduledtasks";s:23:"Back to scheduled tasks";s:8:"blocking";s:8:"Blocking";s:25:"cannotfindthepathtothecli";s:155:"Cannot find the path to the PHP CLI executable so task execution aborted. Set the 'Path to PHP CLI' setting in Site administration / Server / System paths.";s:15:"checkadhocqueue";s:17:"Ad hoc task queue";s:16:"checkcronrunning";s:12:"Cron running";s:17:"checkmaxfaildelay";s:20:"Tasks max fail delay";s:9:"classname";s:10:"Class name";s:22:"clearfaildelay_confirm";s:140:"Are you sure you want to clear the fail delay for task '{$a}'? After clearing the delay, the task will run according to its normal schedule.";s:9:"component";s:9:"Component";s:13:"corecomponent";s:4:"Core";s:12:"crondisabled";s:111:"Cron is disabled. No new tasks will be started. The system will not operate properly until it is enabled again.";s:6:"cronok";s:26:"Cron is running frequently";s:7:"default";s:7:"Default";s:8:"defaultx";s:13:"Default: {$a}";s:8:"disabled";s:8:"Disabled";s:13:"disabled_help";s:114:"Disabled scheduled tasks are not executed from cron, however they can still be executed manually via the CLI tool.";s:16:"edittaskschedule";s:24:"Edit task schedule: {$a}";s:12:"enablerunnow";s:35:"Allow 'Run now' for scheduled tasks";s:17:"enablerunnow_desc";s:303:"Allows administrators to run a single scheduled task immediately, rather than waiting for it to run as scheduled. The feature requires 'Path to PHP CLI' (pathtophp) to be set in System paths. The task runs on the web server, so you may wish to disable this feature to avoid potential performance issues.";s:9:"faildelay";s:10:"Fail delay";s:13:"fromcomponent";s:20:"From component: {$a}";s:8:"hostname";s:9:"Host name";s:13:"lastcronstart";s:30:"Time since last cron run: {$a}";s:11:"lastruntime";s:8:"Last run";s:11:"lastupdated";s:18:"Last updated {$a}.";s:11:"nextruntime";s:8:"Next run";s:3:"pid";s:3:"PID";s:14:"plugindisabled";s:15:"Plugin disabled";s:10:"pluginname";s:28:"Scheduled task configuration";s:19:"resettasktodefaults";s:31:"Reset task schedule to defaults";s:24:"resettasktodefaults_help";s:104:"This will discard any local changes and revert the schedule for this task back to its original settings.";s:12:"runningtasks";s:17:"Tasks running now";s:6:"runnow";s:7:"Run now";s:8:"runagain";s:9:"Run again";s:14:"runnow_confirm";s:122:"Are you sure you want to run this task '{$a}' now? The task will run on the web server and may take some time to complete.";s:10:"runpattern";s:11:"Run pattern";s:9:"scheduled";s:9:"Scheduled";s:14:"scheduledtasks";s:15:"Scheduled tasks";s:28:"scheduledtaskchangesdisabled";s:88:"Modifications to the list of scheduled tasks have been prevented in Moodle configuration";s:7:"started";s:7:"Started";s:12:"taskdisabled";s:13:"Task disabled";s:12:"taskfailures";s:20:"{$a} task(s) failing";s:8:"tasklogs";s:9:"Task logs";s:14:"tasknofailures";s:26:"There are no tasks failing";s:15:"taskscheduleday";s:3:"Day";s:20:"taskscheduleday_help";s:279:"Day of month field for task schedule. The field uses the same format as unix cron. Some examples are:
+
+* <strong>*</strong> Every day
+* <strong>*/2</strong> Every 2nd day
+* <strong>1</strong> The first of every month
+* <strong>1,15</strong> The first and fifteenth of every month";s:21:"taskscheduledayofweek";s:11:"Day of week";s:26:"taskscheduledayofweek_help";s:249:"Day of week field for task schedule. The field uses the same format as unix cron. Some examples are:
+
+* <strong>*</strong> Every day
+* <strong>0</strong> Every Sunday
+* <strong>6</strong> Every Saturday
+* <strong>1,5</strong> Every Monday and Friday";s:16:"taskschedulehour";s:4:"Hour";s:21:"taskschedulehour_help";s:272:"Hour field for task schedule. The field uses the same format as unix cron. Some examples are:
+
+* <strong>*</strong> Every hour
+* <strong>*/2</strong> Every 2 hours
+* <strong>2-10</strong> Every hour from 2am until 10am (inclusive)
+* <strong>2,6,9</strong> 2am, 6am and 9am";s:18:"taskscheduleminute";s:6:"Minute";s:23:"taskscheduleminute_help";s:307:"Minute field for task schedule. The field uses the same format as unix cron. Some examples are:
+
+* <strong>*</strong> Every minute
+* <strong>*/5</strong> Every 5 minutes
+* <strong>2-10</strong> Every minute between 2 and 10 past the hour (inclusive)
+* <strong>2,6,9</strong> 2, 6 and 9 minutes past the hour";s:17:"taskschedulemonth";s:5:"Month";s:22:"taskschedulemonth_help";s:250:"Month field for task schedule. The field uses the same format as unix cron. Some examples are:
+
+* <strong>*</strong> Every month
+* <strong>*/2</strong> Every second month
+* <strong>1</strong> Every January
+* <strong>1,5</strong> Every January and May";s:16:"privacy:metadata";s:73:"The Scheduled task configuration plugin does not store any personal data.";s:8:"viewlogs";s:18:"View logs for {$a}";}

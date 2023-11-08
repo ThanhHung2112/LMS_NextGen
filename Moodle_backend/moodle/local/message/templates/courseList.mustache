@@ -1,0 +1,399 @@
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+    .ml-content {
+        width: 100%;
+        background-color: #F5F7F8;
+        padding: 30px 100px;
+    }
+
+    .ml-content.ml-content-search-button {
+        background-color: #fff;
+        padding: 30px 100px;
+    }
+
+    .ml-content.ml-content-search {
+        background-color: #ddf7e8;
+    }
+
+    .ml-content.ml-content-enroll {
+        background-color: #fff;
+    }
+
+    .ml-courses-block {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 30px;
+    }
+
+    .ml-courses-title {
+        margin-bottom: 20px;
+    }
+
+    .ml-course {
+        height: 400px;
+        border-radius: 20px;
+        padding: 10px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #E5E7E8;
+        transition: transform linear 0.2s;
+        box-shadow: 0 1px 8px -3px rgb(0 0 0 / 16%),0 0 24px -16px rgb(0 0 0 / 16%);
+    }
+
+    .ml-course:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        box-shadow: 0 0 40px -8px rgb(0 0 0 / 16%),0 0 24px -16px rgb(0 0 0 / 16%);
+    }
+
+    .ml-course-img {
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
+
+    .ml-course-title {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .ml-course-description {
+        font-size: 14px;
+        color: #555;
+        font-weight: 400;
+    }
+
+    .ml-course-level {
+        margin-top: auto;
+        font-weight: 400;
+    }
+
+    .ml-message {
+        font-size: 16px;
+        font-weight: 500;
+        color: #888;
+    }
+
+    .ml-search {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        display: flex;
+    }
+
+    .ml-search-keyword {
+        font-size: 16px;
+        font-weight: 500;
+        color: #888;
+        margin-bottom: 20px;
+    }
+
+    .ml-search-input {
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+
+    }
+
+    .ml-search-input-icon {
+        background-color: #0F0F0F;
+        color: #fff;
+        position: absolute;
+        font-size: 25px;
+        top: 50%;
+        right: 4px;
+        transform: translateY(-50%);
+        padding: 6px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color linear 0.2s;
+    }
+
+    .ml-search-input-icon:hover {
+        background-color: #525252;
+    }
+
+    .ml-search-input-text {
+        width: 100%;
+        border: 2px solid #e5e7e8;
+        outline: none;
+        padding: 10px 30px;
+        border-radius: 20px;
+        transition: border linear 0.2s;
+        box-shadow: 0 1px 8px -3px rgb(0 0 0 / 16%),0 0 24px -16px rgb(0 0 0 / 16%);
+    }
+
+    .ml-search-input-text:focus {
+        border: 2px solid #333;
+    }
+
+    .ml-search-input-submit {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: border linear 0.3s;
+        background-color: #6499E9;
+        color: #fff;
+        display: none;
+    }
+
+    /* Custom*/
+    div.d-flex.align-items-center h2.mb-3.mt-3 {
+        margin-left: 100px !important;
+    }
+
+    div.page-header-headings h1.h2 {
+        margin-left: 100px !important;
+    }
+
+    @media (max-width: 1200px) {
+        .ml-content {
+            padding: 30px 30px;
+        }
+
+        .ml-courses-block {
+            grid-gap: 20px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .ml-content {
+            padding: 30px 30px;
+        }
+
+        div.d-flex.align-items-center h2.mb-3.mt-3 {
+            margin-left: 30px !important;
+        }
+
+        div.page-header-headings h1.h2 {
+            margin-left: 30px !important;
+        }
+
+        .ml-courses-block {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+    }
+
+    @media (max-width: 850px) {
+        .ml-content {
+            padding: 30px 10px;
+        }
+
+        .ml-search-input {
+            width: 100%;
+        }
+
+        div.d-flex.align-items-center h2.mb-3.mt-3 {
+            margin-left: 10px !important;
+        }
+
+        div.page-header-headings h1.h2 {
+            margin-left: 10px !important;
+        }
+
+        .ml-courses-block {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .ml-courses-block {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+    }
+
+    @media (max-width: 550px) {
+    .ml-courses-block {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+    }
+
+    div#page.drawers.drag-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    div#topofscroll.main-inner {
+        max-width: unset !important;
+        padding: 0 !important;
+    }
+
+    div#topofscroll.main-inner div[role="main"] {
+        padding: 0 !important;
+    }
+
+    .ml-check-rs {
+        text-decoration: none;
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: border linear 0.3s;
+        background-color: #6499E9;
+        color: #fff;
+    }
+
+    .ml-check-rs:hover {
+        text-decoration: none;
+        color: #fff;
+        opacity: 0.8;
+    }
+
+</style>
+
+{{# is_admin }}
+<div class="ml-content ml-content-manage">
+    <p>Click the following button to check Recommendation System</p>
+    <a href="http://localhost/local/message/viewRS.php" class="ml-check-rs">Check </a>
+</div>
+{{/ is_admin }}
+
+<div class="ml-content ml-content-search-button">
+    <form class="ml-search" method="POST">
+        <div class="ml-search-input">
+            <i class='ml-search-input-icon bx bx-search'></i>
+            <input name="course-name" class="ml-search-input-text" type="text" placeholder="What do you want to learn?">
+        </div>
+    </form>
+</div>
+
+<!-- Render search courses -->
+{{# is_searched }}
+<div class="ml-content ml-content-search">
+    <h1 class="ml-courses-title">Searched Courses</h1>
+    {{#num_founded_courses }}
+        <h3 class="ml-search-keyword"> {{num_founded_courses}} results for "{{ search_keyword }}"</h3>
+    {{/num_founded_courses}}
+    {{^num_founded_courses }}
+        <h3 class="ml-search-keyword">Search for "{{ search_keyword }}"</h3>
+    {{/num_founded_courses}}
+    {{# search_message }}
+    <h2 class="ml-message">{{ search_message }}</h2>
+    {{/ search_message }}
+
+    {{^ search_message }}
+    <div class="ml-courses-block">
+        {{#search_courses}}
+            <div class="ml-course" data-course-id="{{ id }}">
+                <div style="background-image: url(https://picsum.photos/id/{{ id_for_image }}/250);"
+                     class="ml-course-img">
+                </div>
+                <h3 class="ml-course-title">{{fullname}}</h3>
+                <p class="ml-course-description"><b>Fields:</b> {{ category_template }}</p>
+                <p class="ml-course-level"> {{ level }}</p>
+            </div>
+        {{/search_courses}}
+</div>
+
+{{/ search_message }}
+</div>
+{{/ is_searched }}
+
+
+<!--Render enrolled courses-->
+{{# isloggedin }}
+<div style="margin-bottom: 50px" class="ml-content ml-content-enroll">
+    <h1 class="ml-courses-title">Enrolled Courses</h1>
+
+    <div class="ml-courses-block">
+        {{#enrolled_courses}}
+            <div class="ml-course ml-enrolled-course" data-course-id="{{ id }}">
+                <div style="background-image: url(https://picsum.photos/id/{{ id_for_image }}/250);"
+                     class="ml-course-img">
+                </div>
+                <h3 class="ml-course-title">{{fullname}}</h3>
+                <p class="ml-course-description"><b>Fields:</b> {{ category_template }}</p>
+                <p class="ml-course-level"> {{ level }}</p>
+            </div>
+        {{/enrolled_courses}}
+    </div>
+    {{^enrolled_courses}}
+        <h2 class="ml-message">You haven't enrolled in any courses.</h2>
+    {{/enrolled_courses}}
+</div>
+
+
+<!--Render Recommended Courses when logged in-->
+<div class="ml-content">
+    <h1 class="ml-courses-title">Recommended Courses</h1>
+
+    <div class="ml-courses-block">
+    {{#recommended_courses}}
+        <div class="ml-course" data-course-id="{{ id }}">
+            <div style="background-image: url(https://picsum.photos/id/{{ id_for_image }}/250);"
+                 class="ml-course-img">
+            </div>
+            <h3 class="ml-course-title">{{fullname}}</h3>
+            <p class="ml-course-description"><b>Fields:</b> {{ category_template }}</p>
+            <p class="ml-course-level"> {{ level }}</p>
+        </div>
+    {{/recommended_courses}}
+    </div>
+
+    {{#recommended_message}}
+        <h2 class="ml-message">{{ recommended_message }}</h2>
+    {{/recommended_message}}
+</div>
+{{/ isloggedin }}
+
+<!-- Render some course when not login -->
+<div class="ml-content {{# isloggedin }}ml-content-enroll{{/ isloggedin }}">
+    <h1 class="ml-courses-title">
+        {{# isloggedin }}
+            Other Courses
+        {{/ isloggedin }}
+        {{^ isloggedin }}
+            Some Courses
+        {{/ isloggedin }}
+    </h1>
+    <div class="ml-courses-block">
+        {{#courses}}
+            <div class="ml-course" data-course-id="{{ id }}">
+                <div style="background-image: url(https://picsum.photos/id/{{ id_for_image }}/250);"
+                     class="ml-course-img">
+                </div>
+                <h3 class="ml-course-title">{{fullname}}</h3>
+                <p class="ml-course-description"><b>Fields:</b> {{ category_template }}</p>
+                <p class="ml-course-level"> {{ level }}</p>
+            </div>
+        {{/courses}}
+    </div>
+</div>
+
+
+<script>
+    // Handle event redirect to detail course
+    let courses = document.querySelectorAll('.ml-course')
+    console.log(courses)
+    courses.forEach(course => {
+        course.addEventListener("click", function() {
+            let courseId = course.getAttribute("data-course-id")
+            let courseDetailLink = `http://localhost/local/message/coursedetails.php?id=${courseId}`
+            if (course.classList.contains('ml-enrolled-course')) {
+                courseDetailLink = `http://localhost/course/view.php?id=${courseId}`
+            }
+            window.location.href = courseDetailLink
+        })
+    })
+
+    // Handle click search button
+    let searchForm = document.querySelector('.ml-search')
+    let searchButton = document.querySelector('.ml-search-input-icon')
+    searchButton.onclick = function() {
+        searchForm.submit()
+    }
+</script>

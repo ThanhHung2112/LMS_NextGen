@@ -1,0 +1,3 @@
+a:5:{s:13:"fallbackaudio";s:10:"Audio link";s:13:"fallbackvideo";s:10:"Video link";s:10:"filtername";s:18:"Multimedia plugins";s:11:"linktomedia";s:315:"The multimedia plugins filter finds a link in text that points to a multimedia resource and replaces the link with an appropriate multimedia player code which can play the resource. It also replaces &lt;video&gt; and &lt;audio&gt; tags with selected video and audio players.
+
+<a href="{$a}">Manage media players</a>";s:16:"privacy:metadata";s:63:"The Multimedia plugins plugin does not store any personal data.";}

@@ -1,0 +1,1 @@
+a:3:{s:23:"auth_nologindescription";s:148:"Auxiliary plugin that prevents user to login into system and also discards any mail sent to the user. Can be used to <em>suspend</em> user accounts.";s:10:"pluginname";s:8:"No login";s:16:"privacy:metadata";s:68:"The No login authentication plugin does not store any personal data.";}

@@ -1,0 +1,3 @@
+Refs: https://www.elearningworld.org/behat-part-one/ and https://www.elearningworld.org/behat-part-two/
+
+sudo -u www-data php admin/tool/behat/cli/run.php --tags="@format_grid"

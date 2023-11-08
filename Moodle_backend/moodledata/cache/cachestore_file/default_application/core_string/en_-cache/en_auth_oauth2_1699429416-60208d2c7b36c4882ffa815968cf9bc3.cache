@@ -1,0 +1,49 @@
+a:51:{s:13:"accountexists";s:181:"A user already exists on this site with this username. If this is your account, log in by entering your username and password and add it as a linked login via your preferences page.";s:22:"auth_oauth2description";s:38:"OAuth 2 standards based authentication";s:19:"auth_oauth2settings";s:32:"OAuth 2 authentication settings.";s:19:"confirmaccountemail";s:576:"Hi {$a->fullname},
+
+A new account has been requested at '{$a->sitename}'
+using your email address.
+
+To confirm your new account, please go to this web address:
+
+{$a->link}
+
+In most mail programs, this should appear as a blue link
+which you can just click on.  If that doesn't work,
+then cut and paste the address into the address
+line at the top of your web browser window.
+
+If you need help, please contact the site administrator,
+{$a->admin}
+
+If you did not do this, someone else could be trying to compromise your account.
+Please contact the site administrator immediately.";s:26:"confirmaccountemailsubject";s:26:"{$a}: account confirmation";s:19:"confirmationinvalid";s:131:"The confirmation link is either invalid, or has expired. Please start the login process again to generate a new confirmation email.";s:19:"confirmationpending";s:43:"This account is pending email confirmation.";s:23:"confirmlinkedloginemail";s:654:"Hi {$a->fullname},
+
+A request has been made to link the {$a->issuername} login
+{$a->linkedemail} to your account at '{$a->sitename}'
+using your email address.
+
+To confirm this request and link these logins, please go to this web address:
+
+{$a->link}
+
+In most mail programs, this should appear as a blue link
+which you can just click on.  If that doesn't work,
+then cut and paste the address into the address
+line at the top of your web browser window.
+
+If you need help, please contact the site administrator,
+{$a->admin}
+
+If you did not do this, someone else could be trying to compromise your account.
+Please contact the site administrator immediately.";s:30:"confirmlinkedloginemailsubject";s:31:"{$a}: linked login confirmation";s:21:"createaccountswarning";s:160:"This authentication plugin allows users to create accounts on your site. You may want to enable the setting "authpreventaccountcreation" if you use this plugin.";s:20:"createnewlinkedlogin";s:25:"Link a new account ({$a})";s:16:"emailconfirmlink";s:18:"Link your accounts";s:20:"emailconfirmlinksent";s:353:"<p>An existing account was found with this email address but it is not linked yet.</p>
+   <p>The accounts must be linked before you can log in.</p>
+   <p>An email should have been sent to your address at <b>{$a}</b>.</p>
+   <p>It contains easy instructions to link your accounts.</p>
+   <p>If you have any difficulty, contact the site administrator.</p>";s:23:"emailpasswordchangeinfo";s:283:"Hi {$a->firstname},
+
+Someone (probably you) has requested a new password for your account on '{$a->sitename}'.
+
+However your password cannot be reset because you are using your account on another site to log in.
+
+Please log in as before, using the link on the login page.
+{$a->admin}";s:30:"emailpasswordchangeinfosubject";s:33:"{$a}: Change password information";s:4:"info";s:16:"External account";s:6:"issuer";s:15:"OAuth 2 service";s:13:"issuernologin";s:36:"This issuer can not be used to login";s:3:"key";s:3:"Key";s:12:"linkedlogins";s:13:"Linked logins";s:16:"linkedloginshelp";s:23:"Help with linked logins";s:8:"loggedin";s:46:"User successfully authenticated with provider.";s:25:"loginerror_userincomplete";s:126:"The user information returned did not contain a username and email address. The OAuth 2 service may be configured incorrectly.";s:21:"loginerror_nouserinfo";s:84:"No user information was returned. The OAuth 2 service may be configured incorrectly.";s:24:"loginerror_invaliddomain";s:46:"The email address is not allowed at this site.";s:31:"loginerror_authenticationfailed";s:34:"The authentication process failed.";s:31:"loginerror_cannotcreateaccounts";s:54:"An account with your email address could not be found.";s:16:"noconfiguredidps";s:41:"There are no configured OAuth2 providers.";s:18:"noissuersavailable";s:73:"None of the configured OAuth 2 services allow you to link login accounts.";s:16:"notloggedindebug";s:38:"The login attempt failed. Reason: {$a}";s:18:"notwhileloggedinas";s:64:"Linked logins cannot be managed while logged in as another user.";s:25:"oauth2:managelinkedlogins";s:32:"Manage own linked login accounts";s:10:"notenabled";s:51:"Sorry, OAuth 2 authentication plugin is not enabled";s:17:"plugindescription";s:200:"This authentication plugin displays a list of the configured identity providers on the login page. Selecting an identity provider allows users to login with their credentials from an OAuth 2 provider.";s:10:"pluginname";s:7:"OAuth 2";s:13:"alreadylinked";s:66:"This external account is already linked to an account on this site";s:28:"privacy:metadata:auth_oauth2";s:22:"OAuth 2 authentication";s:42:"privacy:metadata:auth_oauth2:authsubsystem";s:57:"This plugin is connected to the authentication subsystem.";s:41:"privacy:metadata:auth_oauth2:confirmtoken";s:23:"The confirmation token.";s:48:"privacy:metadata:auth_oauth2:confirmtokenexpires";s:50:"The timestamp when the confirmation token expires.";s:34:"privacy:metadata:auth_oauth2:email";s:45:"The external email that maps to this account.";s:37:"privacy:metadata:auth_oauth2:issuerid";s:51:"The ID of the OAuth 2 issuer for this OAuth 2 login";s:45:"privacy:metadata:auth_oauth2:tableexplanation";s:51:"OAuth 2 accounts linked to a user's Moodle account.";s:40:"privacy:metadata:auth_oauth2:timecreated";s:68:"The timestamp when the user account was linked to the OAuth 2 login.";s:41:"privacy:metadata:auth_oauth2:timemodified";s:44:"The timestamp when this record was modified.";s:35:"privacy:metadata:auth_oauth2:userid";s:64:"The ID of the user account which the OAuth 2 login is linked to.";s:41:"privacy:metadata:auth_oauth2:usermodified";s:45:"The ID of the user who modified this account.";s:37:"privacy:metadata:auth_oauth2:username";s:48:"The external username that maps to this account.";s:12:"testidplogin";s:16:"Test login with:";s:8:"userinfo";s:24:"User data from provider:";s:5:"value";s:5:"Value";}

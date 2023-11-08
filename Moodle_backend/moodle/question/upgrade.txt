@@ -1,0 +1,345 @@
+This files describes API changes for code that uses the question API.
+
+=== 4.1.4 ===
+
+1) The core_question_generator::update_question has been changed so that it no longer modifies the $question
+   object that was passed in. Instead, the update question is returned (which was already the case).
+   If you were relying on the old behavioru in your tests, you will need a change like
+       $questiongenerator->update_question($question, ...);
+   to
+       $question = $questiongenerator->update_question($question, ...);
+   Also, the $question object returned now has fields questionbankentryid, versionid, version and status.
+
+2) question_stats_cleanup_task has been removed. It is no longer required. Instead,
+   older statistics are deleted whenever a new set are calculated for a particular quiz.
+
+3) In the past, the methods get_last_calculated_time() and get_cached() of \core_question\statistics\responses\analyser
+   and \core_question\statistics\questions\all_calculated_for_qubaid_condition
+   only returned the pre-computed statistics if they were computed less than 15 minutes ago. Now, they will
+   always return any computed statistics that exist. The constants TIME_TO_CACHE in those classes
+   will be deprecated in Moodle 4.3.
+
+4) The cache() methods of classes analysis_for_question, analysis_for_subpart, analysis_for_class
+   and analysis_for_actual_response now take an optional $calculationtime, which is used the time
+   stored in the database. If not given, time() is used.
+
+
+=== 4.1 ===
+
+1) get_bulk_action_key() in core_question\local\bank\bulk_action_base class is deprecated and renamed to get_key().
+
+
+=== 4.0.5 ===
+
+1) Question bank plugins can now define more than one bulk action. Therefore, plugin_features_base::get_bulk_actions has been
+   changed to return an array, rather than a single bulk action class. Please update the plugin_features class in your plugin if necessary.
+
+=== 4.0 ===
+
+Moodle 4.0 included the results of a major project to re-work the question bank.
+
+1) Database changes (as usual, all existing data is updated automatically).
+   * Previously there was a single {question} table. This has now been split into three to handle versionning questions:
+     - question              - This now has a row for each version of each question. Therefore, some of the metadata
+                               (e.g. category) is moved to the next table. However, data that defines how a question works
+                               is unchanged, so question type plugins will mostly keep working.
+     - question_bank_entries - Each question bank entry is a question that appears in the question bank, which can
+                               have many versions.
+     - question_versions     - This joins all the versions of a question in the {question} table to the
+                               {question_bank_entries} row they belong to.
+   * Also, how other parts of the code refer to questions they want to to has changed, to be managed by the core
+     API in two new tables.
+      - question_references -> Records where a specific question is used.
+      - question_set_references -> Records where groups of questions are used (for example random questions in quizzes).
+     As a result of this, data from the two quiz tables {quiz_slot} and {quiz_slot_tags} was moved to these new tables.
+
+2) There is a new plugin type 'qbank' for adding features to the question bank. See question/bank/upgrade.txt.
+
+3) Many previously core features have been moved into new plugins, meaning that many old functionsand classes in
+   lib/questionlib.php and other locations have been deprecated and moved:
+    * Moved to qbank_previewquestion:
+       - question_preview_url() is moved to qbank_previewquestion\helper::question_preview_url()
+       - question_preview_popup_params() is moved to qbank_previewquestion\helper::question_preview_popup_params()
+      the following were really part of the internal implementation of preview, so should not have been used elsewhere,
+      but they were also moved (from previewlib.php).
+       - restart_preview() => qbank_previewquestion\helper::restart_preview(),
+       - question_preview_form_url() => qbank_previewquestion\helper::question_preview_form_url(),
+       - question_preview_action_url() => qbank_previewquestion\helper::question_preview_action_url(),
+       - question_preview_question_pluginfile() => qbank_previewquestion\helper::question_preview_question_pluginfile(),
+       - class preview_options_form => 'qbank_previewquestion\form\preview_options_form',
+       - class question_preview_options => 'qbank_previewquestion\output\question_preview_options',
+    * Moved to qbank_managecategories:
+       - qbank_managecategories\helper::question_remove_stale_questions_from_category()
+       - flatten_category_tree() => qbank_managecategories\helper::flatten_category_tree()
+       - add_indented_names() => qbank_managecategories\helper::add_indented_names()
+       - question_category_select_menu() => qbank_managecategories\helper::question_category_select_menu()
+       - get_categories_for_contexts() => qbank_managecategories\helper::get_categories_for_contexts()
+       - question_category_options() => qbank_managecategories\helper::question_category_options()
+       - question_add_context_in_key() => qbank_managecategories\helper::question_add_context_in_key()
+       - question_fix_top_names() => qbank_managecategories\helper::question_fix_top_names()
+       - class category_form => qbank_managecategories\form\category_form
+       - class question_category_list => qbank_managecategories\question_category_list
+       - class question_category_list_item => 'bank_managecategories\question_category_list_item
+       - class question_category_object => qbank_managecategories\question_category_object
+       - class question_category_edit_form => qbank_managecategories\form\category_form
+       - class question_move_form => qbank_managecategories\form\question_move_form
+    * Moved to qbank_exporttoxml:
+       - question_get_export_single_question_url() -> qbank_exporttoxml\helper::question_get_export_single_question_url().
+    * Moved to qbank_exportquestions:
+       - class question_export_form => qbank_exportquestions\form\export_form
+       - class export_form => qbank_exportquestions\form\export_form
+    * Moved to qbank_importquestions:
+       - class question_import_form => qbank_importquestions\form\question_import_form
+    * Moved to qbank_tagquestion:
+       - submit_tags_form and associated external services for question tag,
+       - tags_form in question/type,
+       - core_question_output_fragment_tags_form() => /question/bank/qbank_tagquestion/lib.php.
+
+4) The following functions in questionlib.php now using type hinting. So, if you call them with the wrong types,
+   you will now get fatal errors.
+    - is_latest()
+    - get_next_version()
+    - get_question_version()
+    - get_question_bank_entry()
+    - core_question_find_next_unused_idnumber()
+    - question_module_uses_questions()
+    - question_page_type_list()
+    - core_question_question_preview_pluginfile()
+    - question_rewrite_question_preview_urls()
+    - question_rewrite_question_urls()
+    - question_get_all_capabilities()
+    - question_get_question_capabilities()
+    - question_require_capability_on()
+    - question_has_capability_on()
+    - question_default_export_filename()
+    - get_import_export_formats()
+    - question_categorylist_parents()
+    - question_categorylist()
+    - question_make_default_categories()
+    - question_get_top_categories_for_contexts()
+    - sort_categories_by_tree()
+    - print_question_icon()
+    - question_sort_tags()
+    - _tidy_question()
+    - question_preload_questions()
+    - question_move_category_to_context()
+    - move_question_set_references()
+    - question_move_questions_to_category()
+    - idnumber_exist_in_question_category()
+    - question_move_question_tags_to_new_context()
+    - question_delete_activity()
+    - question_delete_course_category()
+    - question_delete_course()
+    - question_delete_context()
+    - question_delete_question()
+    - delete_question_bank_entry()
+    - question_category_in_use()
+    - question_category_delete_safe()
+    - question_context_has_any_questions()
+    - questions_in_use()
+    - question_save_qtype_order()
+    - question_reorder_qtypes()
+
+5) Function question_hash() from questionlib.php is deprecated without replacement.
+
+6) The following classes have been moved, to better follow Moodle's name-space usage rules:
+   'core_question\bank\action_column_base' => 'core_question\local\bank\action_column_base',
+   'core_question\bank\checkbox_column' => 'core_question\local\bank\checkbox_column',
+   'core_question\bank\column_base' => 'core_question\local\bank\column_base',
+   'core_question\bank\edit_menu_column' => 'core_question\local\bank\edit_menu_column',
+   'core_question\bank\menu_action_column_base' => 'core_question\local\bank\menu_action_column_base',
+   'core_question\bank\menuable_action' => 'core_question\local\bank\menuable_action',
+   'core_question\bank\random_question_loader' => 'core_question\local\bank\random_question_loader',
+   'core_question\bank\row_base' => 'core_question\local\bank\row_base',
+   'core_question\bank\view' => 'core_question\local\bank\view',
+   'core_question\bank\copy_action_column' => 'qbank_editquestion\copy_action_column',
+   'core_question\bank\edit_action_column' => 'qbank_editquestion\edit_action_column',
+   'core_question\bank\creator_name_column' => 'qbank_viewcreator\creator_name_column',
+   'core_question\bank\question_name_column' => 'qbank_viewquestionname\viewquestionname_column_helper',
+   'core_question\bank\question_name_idnumber_tags_column' => 'qbank_viewquestionname\question_name_idnumber_tags_column',
+   'core_question\bank\delete_action_column' => 'qbank_deletequestion\delete_action_column',
+   'core_question\bank\export_xml_action_column' => 'qbank_exporttoxml\export_xml_action_column',
+   'core_question\bank\preview_action_column' => 'qbank_previewquestion\preview_action_column',
+   'core_question\bank\question_text_row' => 'qbank_viewquestiontext\question_text_row',
+   'core_question\bank\question_type_column' => 'qbank_viewquestiontype\question_type_column',
+   'core_question\bank\tags_action_column' => 'qbank_tagquestion\tags_action_column',
+   'core_question\form\tags' => '\qbank_tagquestion\form\tags_form',
+   'core_question\output\qbank_chooser' => 'qbank_editquestion\qbank_chooser',
+   'core_question\output\qbank_chooser_item' => 'qbank_editquestion\qbank_chooser_item',
+
+7) The Behat class for question-related steps has been renamed to behat_core_question
+    to match the expected naming convention. In the unlikely event that you are directly
+    referring to the behat_question class name (nothing in the standard Moodle code was)
+    then you will have to update your reference.
+
+
+=== 3.9 ===
+
+1) For years, the ..._questions_in_use callback has been the right way for plugins to
+   tell the core question system if questions are required. Previously this callback
+   only worked in mods. Now it works in all plugins.
+
+   At the same time, if you are still relying on the legacy ..._question_list_instances
+   callback for this, you will now get a debugging warning telling you to upgrade.
+
+2) Previously, the functions question_delete_activity, question_delete_course and
+   question_delete_course_category would echo output. This was not correct behaviour for
+   a low-level API function. Now, they no longer output. Related to this, the helper
+   function they use, question_delete_context, now always returns an empty array.
+
+   This probably won't acutally cause you any problems. However, you may previously
+   have had to add expectOutputRegex calls to your unit tests to avoid warnings about
+   risky tests. If you have done that, those tests will now fail until you delete that expectation.
+
+
+=== 3.8 ===
+
+If you have customised the display of the question bank (using $CFG->questionbankcolumns)
+then be aware that the default configuration has changed, and you may wish to make
+equivalent changes in your customised version. The old column question_name_column
+has been replaced by question_name_idnumber_tags_column. The old question_name_column
+still exists, so it is safe to continue using it.
+
+There is a new question bank column edit_menu_column which displays all actions
+in a drop-down menu, instead of as separate icons. This is now used by default.
+Specifically, it gathers all other columns which implement the new interface
+menuable_action. If you have made a custom subclasses of action_column_base,
+you probably want to implement the new interface. If your column is a simple action,
+the easiest way to do this will be to subclass menu_action_column_base. If your action
+is more complex, and does not follow the simple pattern that menu_action_column_base
+uses, then you will need to implement menuable_action yourself. The commit for
+MDL-66816 updates all the core action columns. Looking at that change should make
+it clearly the changes you need to make to your columns.
+
+
+=== 3.7 ===
+
+The code for the is_valid_number function that was duplicated in the
+qtype_numerical and qtype_multianswer plugins in the qtype_numerical_edit_form
+and qtype_multianswer_edit_form classes has been moved to a static function
+in the qtype_numerical class of the qtype_numerical plugin.
+
+The exportprocess function of the qformat_default class doesn't output a blank line
+if the result of the writequestion function is null. This permit to qformat plugins
+to ignore some questions without the need to overwrite this function.
+
+* The question_preview_cron() has been deleted. Please use \core\task\question_cron_task::execute().
+* The question_usage_statistics_cron() has been deleted. Please use \core\task\question_cron_task::execute().
+* The method question_bank::cron() has been deleted, please use question related scheduled tasks.
+
+=== 3.5 ===
+
+1) The question format exportprocess function now adds a
+   $checkcapabilities boolean to allow questions to be exported in
+   certain circumstances.
+
+=== 3.2 ===
+
+1) The following renderers have been deprecated in favour of the renderable
+   core_question\output\qbank_chooser and associated render_* method.
+    * qbank_chooser
+    * qbank_chooser_types
+    * qbank_chooser_qtype
+    * qbank_chooser_title
+
+=== 3.1 ===
+
+1) The argument $requirecourseid was removed from question_edit_setup() and
+   is no longer respected. The behaviour was found to be buggy and now throws
+   debugging notices if passed.
+
+=== 2.9 ===
+
+1) Some functions in questionlib.php which were deprecated in the past have now
+   been deleted:
+
+   Deprecated since 2.1
+    * question_list_instances
+    * get_grade_options
+    * question_category_isused
+    * save_question_options
+    * question_get_real_state
+
+   Deprecated since 2.6
+    * question_rewrite_questiontext_preview_urls
+    * question_send_questiontext_file
+    * question_pluginfile no longer falls back to using the old
+      {$previewcomponent}_questiontext_preview_pluginfile callback if the new
+      {$previewcomponent}_question_preview_pluginfile callback is missing.
+
+
+=== 2.8 ===
+
+1) This is just a warning that some methods of the question_engine_data_mapper
+   class have changed. All these methods are ones that you should not have been
+   calling directly from your code, so this should not cause any problems.
+   The changed methods are:
+    * insert_question_attempt
+    * insert_step_data
+    * update_question_attempt_step
+
+
+=== 2.7 ===
+
+1)  Changes to class question_bank_view:
+
+    Filters, including $recurse and $showhidden, are now implemented as
+    pluggable \core_question\bank\search\condition classes.
+
+    Therefore $recurse and $showhidden are no longer passed to the following functions:
+        protected function display_options [deprecated, use display_options_form()]
+        protected function build_query_sql [deprecated, use build_query()]
+
+    protected function display_category_form() is deprecated. Use \core_question\bank\search\category_condition
+
+    protected function display_category_form_checkbox deprecated use html_writer::checkbox and separate JavaScript
+
+To add filters, local plugins can now implement the function local_[pluginname]_get_question_bank_search_conditions,
+
+2) To make columns available to question_bank_view, plugins can extend core_question\bank\column_base.
+   Users may choose to display additional columns by setting $CFG->questionbankcolumns to a comma-delimited list of columns.
+
+3) The subsort separator has changed from _ to - in order to distinuguish subsorts vs frankenstyle component separators.
+
+4) Because of the move to autoloading, $knowncolumntypes and known_field_types() are no longer used.
+
+5) question_bank_column_base and it's derived classes have been namespaced to core_question\bank\column_base.
+
+
+=== 2.6 ===
+
+1) Modules using the question bank MUST now declare their use of it with the xxx_supports()
+   flag FEATURE_USES_QUESTIONS. question_module_uses_questions() should be used to determine
+   if a module uses questions.
+
+2) It is sometimes necessary to display bits of question content without having
+   and attempt (question_usage) in progress. Two examples of this are the option
+   in the question bank to display the questiontext, and in the quiz statistics
+   report, where it displays the question text above the report.
+
+   Previously, this display was done using a special method that only worked for
+   the question text, but which would not work for other parts of the question.
+   That old mechanism has been deprecated, and there is a new method that you
+   should use.
+
+   To display the question, replace calls to question_rewrite_questiontext_preview_urls
+   with calls to question_rewrite_question_preview_urls. Because the new function
+   is more flexibile, you have to pass more arguments.
+
+   To perform the necessary permission checks when the file is downloaded, you need
+   to implement the callback [component name]_question_preview_pluginfile.
+   (Previously you implemented [component name]_questiontext_preview_pluginfile.)
+   quiz_statistics_question_preview_pluginfile is an example of what to do.
+
+   question_send_questiontext_file has been deprecated. It is no longer necessary.
+
+   To ensure you are no longer using or defining any deprecated functions,
+   search for the regular expression:
+   question_rewrite_questiontext_preview_urls|_questiontext_preview_pluginfile|question_send_questiontext_file
+
+3) The argument list for core_question_renderer::mark_summary has changed.
+   Please update your calls. (The most likely scenario for this is if you have
+   overridden core_question_renderer::info in your own renderer.) You need to
+   make a change like:
+   - $this->mark_summary($qa, $options);
+   + $this->mark_summary($qa, $behaviouroutput, $options);

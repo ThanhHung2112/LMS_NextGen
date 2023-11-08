@@ -1,0 +1,1 @@
+a:4:{s:16:"glossarycategory";s:39:"{$a->glossary}: Category {$a->category}";s:15:"glossaryconcept";s:29:"{$a->glossary}: {$a->concept}";s:10:"filtername";s:21:"Glossary auto-linking";s:16:"privacy:metadata";s:66:"The Glossary auto-linking plugin does not store any personal data.";}

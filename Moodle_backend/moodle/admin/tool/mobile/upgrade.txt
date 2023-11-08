@@ -1,0 +1,35 @@
+This files describes changes in tool_mobile code.
+Information provided here is intended especially for developers.
+
+=== 4.1 ===
+
+* External function tool_mobile::get_config now returns the customusermenuitems setting.
+
+=== 4.0 ===
+
+* The function tool_mobile\api::get_qrlogin_key() now requires as parameter an object with all the mobile plugin settings.
+* The tool_mobile_external::get_config external function now returns the tool_mobile_autologinmintimebetweenreq setting.
+* External function tool_mobile::get_config now returns the enabledashboard setting.
+
+=== 3.7 ===
+
+ * New external function tool_mobile::tool_mobile_call_external_function allows calling multiple external functions and returns all responses.
+ * External function tool_mobile::get_autologin_key now only works if the request comes from the Moodle mobile or desktop app.
+   This increases confidence that requests did originate from the mobile app, decreasing the likelihood of an XSS attack.
+   If you want to use this functionality, please override the Web Service via the override_webservice_execution callback although
+   this is not recommended or encouraged.
+
+=== 3.5 ===
+
+ * External function tool_mobile::tool_mobile_get_plugins_supporting_mobile now returns additional plugins information required by
+   Moodle Mobile 3.5.0.
+
+=== 3.4 ===
+
+ * External function tool_mobile::tool_mobile_get_plugins_supporting_mobile is now available via AJAX for not logged users.
+   When called via AJAX without a user session the function will return only auth plugins.
+
+=== 3.3 ===
+
+ * External function tool_mobile::get_public_config now returns the mobilecssurl field (Mobile custom CSS theme).
+ * External function tool_mobile::get_public_config now returns the identityproviders field (list of external identity providers).

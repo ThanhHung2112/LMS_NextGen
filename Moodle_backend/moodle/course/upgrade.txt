@@ -1,0 +1,206 @@
+This files describes API changes in /course/*,
+information provided here is intended especially for developers.
+
+=== 4.1 ===
+* The function course_modchooser() has been finally deprecated and can not be used anymore. Please use
+  course_activitychooser() instead.
+* A critical accessibility issue is been found (MDL-74800) at the output class
+  core_courseformat\output\local\content\cm\cmname. To solve the problem this output element is not
+  rendered anymore using inplace_editable but using a regular named_templatable interface.
+  Some format plugins that override the deprecated renderer method course_section_cm_name can be affected.
+  Check the current course_section_cm_name code to see how to render it properly.
+
+=== 4.0 ===
+* All activity icons have been replaced with black monochrome icons. The background
+colour for these icons is defined using a new 'FEATURE_MOD_PURPOSE' support variable in the module lib.php file
+Available purpose types are:
+  - MOD_PURPOSE_COMMUNICATION
+  - MOD_PURPOSE_ASSESSMENT
+  - MOD_PURPOSE_COLLABORATION
+  - MOD_PURPOSE_CONTENT
+  - MOD_PURPOSE_ADMINISTRATION
+  - MOD_PURPOSE_INTERFACE
+  - MOD_PURPOSE_OTHER
+The colours for these types are defined in theme/boost/scss/moodle/variables.scss
+* The format_base is now deprecated. Use core_courseformat\base instead.
+* The new course output components deprecate many renderer methods from course
+renderer and course format renderer:
+  - core_courseformat\output\local\content: to render the general course structure
+  - core_courseformat\output\local\content\section: to render a section
+  - core_courseformat\output\local\content\cm: to render an activity card inside a section
+  - core_courseformat\output\local\content\cm\*: to render parts of the course structure
+  - core_courseformat\output\local\content\section\*: to render parts of the course section
+* The previous format renderer page_title method has been moved to course_format::page_title
+* New format renderer methods to interact with the new output components:
+  - render: override the default templatable mustache location for the new course components.
+  - course_section_updated_cm_item: used when the course editor needs to update a cm item HTML.
+  - render_content: contrib formats should override this method to change the default template.
+* The following methods are adapted to use outputs but with a deprecation warning and should not be used anymore:
+  - print_single_section_page (replaced by core_courseformat\output\local\content)
+  - print_multiple_section_page (replaced by core_courseformat\output\local\content)
+  - course_activity_clipboard (integrated in replaced by core_courseformat\output\local\content)
+  - format_summary_text (replaced by core_courseformat\output\local\content\section\summay)
+  - change_number_sections (replaced by core_courseformat\output\local\content\addsection)
+  - course_section_cm_list_item (replaced by core_courseformat\output\local\content\section\cmitem)
+  - course_section_cm (replaced by core_courseformat\output\local\content\cm)
+  - course_section_cm_list (replaced by core_courseformat\output\local\content\section\cmlist)
+  - section_edit_control_menu (replaced by core_courseformat\output\local\content\section\controlmenu)
+  - section_right_content (integrated in core_courseformat\output\local\content\section)
+  - section_left_content (integrated in core_courseformat\output\local\content\section)
+  - section_header (replaced by core_courseformat\output\local\content\section\header)
+  - section_footer (integrated in core_courseformat\output\local\content\section)
+  - section_edit_control_items (replaced by core_courseformat\output\local\content\section\controlmenu)
+  - section_summary (replaced by core_courseformat\output\local\content\section\summary)
+  - section_activity_summary (replaced by core_courseformat\output\local\content\section\cmsummary)
+  - section_availability_message (integrated in core_courseformat\output\local\content\section\availability)
+  - section_availability (replaced by core_courseformat\output\local\content\section\availability)
+  - get_nav_links (replaced by core_courseformat\output\local\content\sectionnavigation)
+  - stealth_section_header (replaced by core_courseformat\output\local\content\section\header)
+  - stealth_section_footer (integrated in by core_courseformat\output\local\content\section)
+  - section_nav_selection (replaced by core_courseformat\output\local\content\sectionselector)
+  - course_section_cm_edit_actions (replaced by core_courseformat\output\local\content\cm\controlmenu)
+  - is_cm_conditionally_hidden (incorporated in core_availability\info_module::is_available_for_all)
+  - course_section_cm_name (replaced by core_courseformat\output\local\content\cm\cmname)
+  - course_section_cm_classes (integrated in core_courseformat\output\local\content\cm)
+  - course_section_cm_name_title (replaced by core_courseformat\output\local\cm\title)
+  - course_section_cm_text (integrated in core_courseformat\output\local\content\cm)
+  - course_section_cm_availability (replaced by core_courseformat\output\local\content\cm\availability))
+  - start_section_list (integrated in core_courseformat\output\local\content)
+  - end_section_list (integrated in core_courseformat\output\local\content)
+* The following abstract methods are deleted:
+  - page_title (moved to core_courseformat\output\local\content)
+* Course formats should have a renderer (until now it was only highly recommended but not mandatory). For backwards
+compatibility (to not break third-party plugins without it), legacy_format_renderer has been created and will be used when
+course formats don't have their own renderer.
+* New external core_courseformat\external\get_state returns current state information for a given course.
+* New external core_courseformat\external\update_course runs given action to edit course and gets the affectated state objects.
+* New external core_course\external\get_state returns current state information for a given course.
+* New external function core_course_update_course runs given action to edit course status.
+* The `\core\event\course_category_deleted` event is now created with a snapshot of the category record being deleted,
+  available inside event observers via `$event->get_record_snapshot`
+* New include_course_editor() function to include and configure course editor modules.
+* New core_course_drawer() function to render the message drawer in the top of the body of each page.
+* New course_get_enrolled_courses_for_logged_in_user_from_search which hooks in with external\get_enrolled_courses_by_timeline_classification
+  given COURSE_TIMELINE_SEARCH is set then get_enrolled_courses_by_timeline_classification will deviate to use a string search of enrolled courses.
+* Class core_course\output\course_module_name is deprecated. Now core_courseformat\output\local\content\cm\cmname controls inline edit.
+* Calendar menu entry is now moved to User menu items, so the following methods will not return the calendar item anymore:
+  - course_get_user_navigation_options
+  - core_course_externalcore_course_external::get_user_navigation_options
+* New external \core_course\external\get_enrolled_courses_with_action_events_by_timeline_classification:
+  - Returns courses the user is enrolled in which contain at least one action event in the supplied time/text filtering parameters.
+  - Provides a similar response to get_enrolled_courses_by_timeline_classification, but omits courses which have no matching
+    action events.
+* The following functions have been deprecated in favour the tertiary navigation constructs:
+  - management_heading
+  - course_search_form
+  - print_course_request_buttons
+* New page_setup() method in the core_course_category class. This method can be used for a general page setup in the course
+  category pages.
+* New core_course_category::get_nearest_editable_subcategory():
+  - Return the core_course_category object for the first subcategory that the current user has the permission on it.
+* The method navigation() in the core_course_bulk_activity_completion_renderer class has been deprecated as the tabs navigation
+  structure in the course competency pages has been replaced with tertiary navigation. To render the navigation, please
+  render_course_completion_action_bar() instead.
+* The following functions have been deprecated in favour partial course cache rebuild:
+  - course_purge_section_cache (replaced by course_modinfo::purge_course_section_cache_by_id() and course_modinfo::purge_course_section_cache_by_number())
+  - course_purge_module_cache (replaced by course_modinfo::purge_course_module_cache())
+  - get_array_of_activities (replaced by course_modinfo::get_array_of_activities() for better performance)
+* New course_modinfo::purge_course_cache function was created to purge the cache of a given course.
+
+=== 3.11 ===
+* A new callback xxx_coursemodule_definition_after_data that allows plugins to extend activity forms after the data is set.
+* \core_course_renderer::course_section_cm_completion() has been deprecated. It is not being used anymore and is being replaced by
+  \core_renderer::activity_information().
+* New Behat steps for checking activity date information in the \behat_course class:
+  - activity_date_in_activity_should_contain_text()
+    - Given the activity date in "<ActivityName>" should contain "<Text>"
+  - activity_dates_information_in_activity_should_exist()
+    - Given the activity date information in "<ActivityName>" should exist
+  - activity_dates_information_in_activity_should_not_exist()
+    - Given the activity date information in "<ActivityName>" should not exist
+* A user preference usemodchooser has been removed and the activities/resources (non-ajax) activity chooser has been deprecated and will be removed in the future.
+
+=== 3.10 ===
+
+* The function make_categories_options() has now been deprecated. Please use \core_course_category::make_categories_list() instead.
+* External function core_course_external::get_course_contents now returns a new field contextid with the module context id.
+* The core_course_external class methods get_courses(), get_courses_by_field() and search_courses() now return a "valueraw" property
+  for each custom course field, which contains the original/unformatted version of the custom field value.
+
+=== 3.9 ===
+
+* The function get_module_metadata is now deprecated. Please use \core_course\local\service\content_item_service instead.
+* Activity module names are now PARAM_ALPHANUM instead of PARAM_ALPHA so integers can be used in activity module names
+* The following functions have been added to core_course_renderer class to have more granularity. They can be overriden in
+  extending classes:
+  - course_name
+  - course_enrolment_icons
+  - course_summary
+  - course_contacts
+  - course_overview_files
+  - course_category_name
+  - course_custom_fields
+
+=== 3.8 ===
+
+* The following functions have been finally deprecated and can not be used any more:
+  - core_course_external::get_activities_overview
+* External function core_course_external::get_enrolled_courses_by_timeline_classification now also supports the classification
+  'allincludinghidden' which delivers all courses including hidden courses. The classification 'all' still returns all courses
+  without hidden courses.
+
+=== 3.7 ===
+
+ * The course pattern function in course_summary_exporter::get_course_pattern has been moved to $OUTPUT->get_generated_image_for_id.
+ * The course color function in course_summary_exporter::coursecolor has been moved to $OUTPUT->get_generated_color_for_id.
+ * External function core_course_external::get_course_contents new returns the following additional completiondata field:
+   - valueused (indicates whether the completion state affects the availability of other content)
+ * External function core_course_external::get_course_contents now returns a new contentsinfo field with summary files information.
+ * External function core_course_external::get_course_contents now returns an additional field "tags" returning the content tags.
+
+=== 3.6 ===
+
+ * External function core_course_external::get_course_public_information now returns the roles and the primary role of course
+   contacts.
+ * External function core_course_external::get_course_contents now return the following additional file fields:
+   - onclick (onclick javascript action code)
+   - afterlink (after link info to be displayed)
+   - customdata (module custom data (JSON encoded))
+   - completion (to indicate if completion is enabled or not)
+   - completiondata (completion status for the current user in the module)
+ * External function core_group_external::get_course_user_groups now can return all user courses group information.
+
+=== 3.5 ===
+
+ * There is a new capability 'moodle/course:setforcedlanguage' to control which users can force the course
+   language; create_course and update_course functions delegate access control to the caller code; if you
+   are calling those functions you may be interested in checking if the logged in user has 'moodle/course:setforcedlanguage' capability.
+
+=== 3.3 ===
+
+ * External function core_course_external::get_courses_by_field now returns the course filters list and status.
+ * External function core_course_external::get_courses_by_field now returns the end date of the course.
+ * External function core_course_external::get_course_contents now return the following additional file fields:
+   - mimetype (the file mime type)
+   - isexternalfile (if is a file reference to a external repository)
+   - repositorytype (the repository name in case is a external file)
+   Those fields are VALUE_OPTIONAL for backwards compatibility.
+ * External function core_course_external::get_course_contents now return the following fields for section and modules:
+   - uservisible (whether the section or module is visible by the user)
+   - availabilityinfo (availability information if the course or module has any access restriction set
+
+=== 3.2 ===
+
+ * External function core_course_external::get_course_contents now returns the section's number in the course (new section field).
+ * External function core_course_external::get_course_contents now returns if a section is hidden in the course format.
+ * External functions that were returning file information now return the following file fields:
+   filename, filepath, mimetype, filesize, timemodified and fileurl.
+   Those fields are now marked as VALUE_OPTIONAL for backwards compatibility.
+ * The modchooser now uses a renderable and a template, thus its associated renderer
+   methods have been deprecated. Note that the call to core_course_render::course_modchooser,
+   is still required. Deprecated methods:
+   - core_course_renderer::course_modchooser_module_types
+   - core_course_renderer::course_modchooser_module
+   - core_course_renderer::course_modchooser_title
+ * You can now specify a course end date when calling core_course_external::create_courses and core_course_external::update_courses
+   external functions. core_course_external::get_courses external function is now returning courses end date values.

@@ -1,0 +1,1 @@
+s:329:"<strong>Stack trace: </strong> <ul style="text-align:left;"><li>line 1654 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown</li><li>line 1630 of \lib\dml\moodle_database.php: call to moodle_database-&gt;get_record_select()</li><li>line 35 of \course\view.php: call to moodle_database-&gt;get_record()</li></ul>";

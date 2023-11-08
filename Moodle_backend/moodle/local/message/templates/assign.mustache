@@ -1,0 +1,341 @@
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+    .icon.activityicon.nofilter {
+        width: 50px !important;
+        height: 50px;
+    }
+
+    .activity-header {
+        display: none;
+    }
+
+    .ml-wrapper {
+        max-width: 830px;
+        margin: 0 auto;
+    }
+
+    .ml-content {
+        margin-top: 30px;
+        padding: 20px 15px;
+    }
+
+    .ml-content.ml-content-assign {
+        background-color: #F8F9FA;
+        border-radius: 20px;
+    }
+
+    .ml-content.ml-content-control {
+        padding: 0px;
+    }
+
+    .ml-content.ml-content-summary {
+        margin-top: 40px;
+        padding: 0px;
+    }
+
+    .ml-assign-status {
+        margin-bottom: 30px;
+    }
+
+    .ml-assign-status-content {
+        border: 1px solid #888;
+        font-size: 14px;
+        background-color: #F8F9FA;
+        color: #B6BBBF;
+        padding: 6px 15px;
+        border-radius: 5px;
+    }
+    /*For done status*/
+    .ml-assign-status-content.ml-assign-status-content--done {
+        color: #fff;
+        background-color: #509b39;
+        border: 1px solid #509b39;
+    }
+
+    .ml-assign-time-value {
+        font-size: 16px;
+    }
+
+    .ml-assign-description-title {
+        font-size: 20px;
+    }
+
+    .ml-assign-description-content {
+        font-size: 16px;
+    }
+
+    .ml-button {
+        text-decoration: none;
+        color: #333;
+        background-color: #CED4DA;
+        padding: 8px 10px;
+        border-radius: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: opacity linear 0.2s;
+    }
+
+    .ml-button:hover {
+        text-decoration: none;
+        color: #333;
+        opacity: 0.8;
+    }
+
+    .ml-button.ml-button--edit {
+        color: #fff;
+        background-color: #0F6CBF;
+    }
+
+    .ml-summary-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .ml-summary-table {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .ml-summary-table td {
+        padding: 5px 10px;
+    }
+
+    .ml-summary-table td {
+        border: 1px solid #DFE3E6;
+        color: #555;
+        background-color: #F7F7F7;
+    }
+
+    .ml-summary-table tr:nth-child(2) td{
+        background-color: #fff;
+    }
+
+    .ml-summary-table tr td:nth-child(1) {
+        width: 30%;
+        font-weight: 700;
+    }
+
+    /* Question Generator CSS  */
+    .ml-assign-file-title {
+        margin-bottom: 10px;
+    }
+    
+    .ml-assign-question-title {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .ml-assign-question-list {
+        margin-top: 5px;
+    }
+
+    /* Xử lý khi user không có assignment*/
+    .ml-content.ml-content-none {
+        margin: 0;
+    }
+
+    .ml-none {
+        font-weight: 500;
+        color: #888;
+        font-size: 20px;
+    }
+
+
+    /* Xử lý khi admin không có assignment*/
+    .ml-create-assignment {
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        color: #333;
+    }
+
+
+</style>
+
+<div class="ml-wrapper">
+    {{# has_assign}}
+<!--  Describe assignment-->
+    <div class="ml-content ml-content-assign">
+        {{^ is_admin }}
+        <div class="ml-assign-status">
+            <span class="ml-assign-status-content {{# has_submission }}ml-assign-status-content--done{{/has_submission}}">
+                {{# has_submission }}Done{{/has_submission}}
+                {{^ has_submission }}Pending{{/has_submission}}
+            </span>
+        </div>
+        <hr>
+        {{/is_admin}}
+        <div class="ml-assign-time">
+            <p class="ml-assign-time-value">
+                <b>Opened: </b>Thursday, 12 October 2023, 12:00 AM
+            </p>
+            <p class="ml-assign-time-value">
+                <b>Due: </b>Thursday, 19 October 2023, 12:00 AM
+            </p>
+        </div>
+        <hr>
+        <!--  For create question manually  -->
+        {{# type_assign}}
+        <div class="ml-assign-description">
+            <h2 class="ml-assign-description-title">Description</h2>
+            <p class="ml-assign-description-content">
+               {{ assign }}
+            </p>
+        </div>
+        {{/ type_assign}}
+        <!--  For AI question generation   -->
+        {{^ type_assign}}
+        <div class="ml-assign-description">
+            <h2 class="ml-assign-description-title">Description</h2>
+
+            <p class="ml-assign-file-title">Read the following file and answer the questions below:</p>
+            <a class="ml-assign-file" href="{{ file_path }}" target="_blank">
+                <i class='ml-assign-file-icon bx bx-file'></i>
+                {{ file_name }}
+            </a>
+
+            <p class="ml-assign-question-title">Questions</p>
+            <ol class="ml-assign-question-list">
+                {{# generated_questions }}
+                <li class="ml-assign-question">{{ question }}</li>
+                {{/generated_questions }}
+            </ol>
+
+        </div>
+        {{/type_assign}}
+    </div>
+    {{/has_assign}}
+    <!-- Control assignment -->
+    <!--  Display when has assign (admin + user)  -->
+    {{# has_assign}}
+        {{# is_admin }}
+        <div class="ml-content ml-content-control">
+            <div class="ml-button-group">
+                <a href="http://localhost/mod/demo/view.php?id={{ course_id }}&action=viewsub"
+                   class="ml-button">View all submissions</a>
+                <a href="http://localhost/mod/demo/view.php?id={{ course_id }}&action=createassign&edit=true"
+                   class="ml-button ml-button--edit">Edit Assignment</a>
+            </div>
+        </div>
+        {{/ is_admin }}
+        <!--  Control assignment for participants  -->
+        {{^ is_admin }}
+            <div class="ml-content ml-content-control">
+                <!-- Handle if have submission   -->
+                {{# has_submission }}
+                    {{^ grade }}
+                    <div class="ml-button-group">
+                        <a href="http://localhost/mod/demo/view.php?id={{ course_id }}&action=editsubmission"
+                        class="ml-button ml-button--edit">Edit submission</a>
+                    </div>
+                    {{/ grade }}
+                {{/ has_submission }}
+
+                {{^ has_submission }}
+                    <div class="ml-button-group">
+                        <a href="http://localhost/mod/demo/view.php?id={{ course_id }}&action=addsubmission"
+                        class="ml-button ml-button--edit">Add submission</a>
+                    </div>
+                {{/ has_submission }}
+
+            </div>
+        {{/ is_admin }}
+        <!-- Summary assignment-->
+        <!-- Summary assignment for admin-->
+        {{# is_admin }}
+            <div class="ml-content ml-content-summary">
+                <div class="ml-summary">
+                    <h2 class="ml-summary-title">
+                        Grading Summary
+                    </h2>
+
+                    <table class="ml-summary-table">
+                        <tr>
+                            <td>Participants</td>
+                            <td>{{ participants_num }}</td>
+                        </tr>
+                        <tr>
+                            <td>Submitted</td>
+                            <td>{{ submited_num }}</td>
+                        </tr>
+                        <tr>
+                            <td>Needs grading</td>
+                            <td>{{ need_grading_num }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        {{/ is_admin }}
+        <!-- Summary assignment for participants-->
+        {{^ is_admin }}
+            <div class="ml-content ml-content-summary">
+                <div class="ml-summary">
+                    <h2 class="ml-summary-title">
+                        Submission status
+                    </h2>
+                    <table class="ml-summary-table">
+                        <tr>
+                            <td>Submission status</td>
+                            <td>
+                                {{# has_submission }}Submitted{{/has_submission}}
+                                {{^ has_submission }}No submissions have been made yet{{/has_submission}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Grading status</td>
+                            <td>
+                                {{# grade }}Graded ({{grade}}/100){{/ grade }}
+                                {{^ grade }}Not graded{{/ grade }}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Submission comments</td>
+                            <td>
+                                {{# comment }}From Teacher: {{ comment }} {{/ comment }}
+                                {{^ comment }}No comment{{/ comment }}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        {{/ is_admin }}
+    {{/ has_assign}}
+
+    {{^ has_assign}}
+        <!-- Không có assign và là admin       -->
+        {{# is_admin }}
+        <div class="ml-content ml-content-control">
+            <h3 class="ml-create-assignment">Create a assignment for participants</h3>
+            <div class="ml-button-group">
+                <a href="http://localhost/mod/demo/view.php?id={{ course_id }}&action=createassign"
+                   class="ml-button ml-button--edit">Create Assignment</a>
+            </div>
+        </div>
+        {{/ is_admin }}
+
+        <!-- Không có assign và là participant   -->
+        {{^ is_admin }}
+            <div class="ml-content ml-content-none">
+                <h3 class="ml-none">Wait for the teacher to create the assignment!</h3>
+            </div>
+        {{/ is_admin }}
+    {{/ has_assign}}
+
+
+
+
+</div>
+
+
+<script>
+
+    // Change icon AI Assignment
+    let img = document.querySelector('.icon.activityicon.nofilter')
+    img.src = "https://thumbs.dreamstime.com/b/artificial-intelligence-ai-processor-chip-vector-icon-symbol-graphic-design-logo-web-site-social-media-mobile-app-ui-158205566.jpg"
+
+    // Change module Name
+    let moduleName = document.querySelector('.active.active_tree_node.nav-link')
+    moduleName.innerText = 'AI Assignment'
+</script>

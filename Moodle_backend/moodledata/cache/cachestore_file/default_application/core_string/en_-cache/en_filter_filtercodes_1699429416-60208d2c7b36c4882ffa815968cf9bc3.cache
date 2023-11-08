@@ -1,0 +1,145 @@
+a:69:{s:10:"pluginname";s:12:"Filter Codes";s:10:"filtername";s:12:"Filter Codes";s:16:"privacy:metadata";s:72:"The Filter Codes plugin does not store any personal data about any user.";s:14:"contentmissing";s:63:"<h1>Content is missing.</h1><p>Please notify the webmaster.</p>";s:16:"defaultfirstname";s:0:"";s:14:"defaultsurname";s:0:"";s:15:"defaultusername";s:0:"";s:12:"defaultemail";s:0:"";s:16:"enable_customnav";s:25:"Custom navigation support";s:28:"enable_customnav_description";s:248:"<strong>Experimental</strong>: Enable support for FilterCode tags in Moodle custom navigation menu.
+Note: Is known to be compatible with Clean and Boost based themes in Moodle 3.2 to 3.4 only. Does not filter tags on the Moodle Theme Settings page.";s:30:"disabled_customnav_description";s:346:"<strong>Note regarding support for custom menu</strong> - To enable support for FilterCodes in your Moodle site's custom menu, you may need to customize your theme or Moodle core. <a href="https://github.com/michael-milette/moodle-filter_filtercodes#filtercodes-in-a-custom-menu">Information on how to add FilterCodes support in custom menus</a>.";s:13:"enable_scrape";s:18:"Scrape tag support";s:25:"enable_scrape_description";s:22:"Enable the scrape tag.";s:14:"enable_sesskey";s:19:"Sesskey tag support";s:26:"enable_sesskey_description";s:95:"Enable the sesskey tag globally. This feature is disabled in forums even when enabled globally.";s:12:"escapebraces";s:11:"Escape tags";s:17:"escapebraces_desc";s:406:"When this option is checked, you will be able to display FilterCode tags without them being interpreted by this filter by wrapping your tag in [ brackets ]. This can be very useful when creating FilterCodes documentation for the teachers and course creators on your Moodle site.<br><br>Example: [{fullname}] will not display the user's full name but display the {fullname} tag instead without the brackets.";s:20:"hidecompletedcourses";s:22:"Hide completed courses";s:25:"hidecompletedcourses_desc";s:71:"Enable to filter out completed courses in {mycoursesmenu} tag listings.";s:20:"coursecontactshowpic";s:20:"Show contact picture";s:25:"coursecontactshowpic_desc";s:80:"If enabled, will display the contact's profile picture in {coursecontacts} tags.";s:21:"coursecontactshowdesc";s:35:"Show contact's profile description.";s:26:"coursecontactshowdesc_desc";s:84:"If enabled, will display the contact's profile description in {coursecontacts} tags.";s:21:"coursecontactlinktype";s:17:"Contact link type";s:26:"coursecontactlinktype_desc";s:76:"Choose the type of link for the contact\s link in the {coursecontacts} tags.";s:23:"showhiddenprofilefields";s:26:"Show hidden profile fields";s:28:"showhiddenprofilefields_desc";s:101:"Enable the {profile_field_...} tag to process all profile fields including ones hidden from the user.";s:24:"ifprofilefiedonlyvisible";s:32:"{ifprofile_field_} only visible.";s:29:"ifprofilefiedonlyvisible_desc";s:210:"When checked, restrict the {ifprofile_field_...} tag to only access visible user profile fields. Hidden fields will behave as if they were empty. If unchecked, this tag will be also able to check hidden fields.";s:19:"categorycardshowpic";s:31:"Show {categorycards} background";s:24:"categorycardshowpic_desc";s:134:"If enabled, will display a background colour/pattern for {categorycards} tag similar to the course images when no image was specified.";s:18:"coursecardsbyenrol";s:35:"Maximum {coursecardsbyenrol} cards.";s:23:"coursecardsbyenrol_desc";s:116:"Maximum number of course cards to display for {coursecardsbyenrol} tag. Set to zero for unlimited (not recommended).";s:21:"chartprogressbarlabel";s:24:"{$a->label}: {$a->value}";s:15:"teamcardsformat";s:17:"Team cards format";s:20:"teamcardsformat_desc";s:462:"Choose how the team members will appear in the {teamcards} tag.<br>
+<ul>
+<li>None: Displays just the picture and name as a card without the user description.</li>
+<li>Icon: Same as none except that the user description appears in an information popup bubble.</li>
+<li>Brief: Same as none but displays the description below the user picture and name.</li>
+<li>Verbose: List format. Recommended if your team members tends to have long user descriptions.</li>
+</ul>";s:5:"brief";s:5:"Brief";s:7:"verbose";s:7:"Verbose";s:17:"teamcardslinktype";s:14:"Team link type";s:22:"teamcardslinktype_desc";s:185:"Choose the type of link for the team member's link in the {teamcards} tag. Note: Photo will automatically be linked to profile when the user is logged-in regardless of your choice here.";s:10:"narrowpage";s:11:"Narrow page";s:15:"narrowpage_desc";s:134:"Enable this option to optimize display of information if Moodle is using a theme with limited page width (e.g., Boost in Moodle 4.0+).";s:5:"sizeb";s:1:"B";s:6:"sizekb";s:2:"KB";s:6:"sizemb";s:2:"MB";s:6:"sizegb";s:2:"GB";s:6:"sizetb";s:2:"TB";s:6:"sizeeb";s:2:"EB";s:6:"sizezb";s:2:"ZB";s:6:"sizeyb";s:2:"YB";s:21:"globaltagheadingtitle";s:18:"Global custom tags";s:20:"globaltagheadingdesc";s:65:"Define your own global tags, sometimes also called global blocks.";s:14:"globaltagcount";s:22:"Number of global tags.";s:18:"globaltagcountdesc";s:112:"Select the number of tags you want to define. For optimal performance, only select the the number you will need.";s:18:"globaltagnametitle";s:12:"Tag: global_";s:17:"globaltagnamedesc";s:240:"This will be part of your tag name, prefixed with "global_". Example: If you enter "address" here, your tag will be called {global_address}". Must be a single string of letters only. Spaces, numbers and special characters are not permitted.";s:21:"globaltagcontenttitle";s:7:"Content";s:20:"globaltagcontentdesc";s:171:"This is the content that your global tag will replace. Example: If your tag is called "{global_address}", that tag will be replaced by the content entered into this field.";s:11:"pagebuilder";s:12:"Page builder";s:15:"pagebuilderlink";s:30:"https://www.layoutit.com/build";s:11:"photoeditor";s:12:"Photo editor";s:15:"photoeditorlink";s:25:"https://pixlr.com/editor/";s:9:"screenrec";s:15:"Screen recorder";s:13:"screenreclink";s:32:"https://screenapp.io/#/recording";s:17:"formquickquestion";s:1086:"
+<form action="{wwwroot}/local/contact/index.php" method="post" class="cf contact-us">
+    <fieldset>
+        <div class="form-group">
+            <label for="subject" id="subjectlabel" class="d-block">Subject <strong class="required">(required)</strong></label>
+            <input class="block" id="subject" name="subject" type="text" size="57" maxlength="80" minlength="5"
+                    title="Minimum 5 characters." required="required">
+        </div>
+        <div class="form-group">
+            <label for="message" id="messagelabel" class="d-block">Message <strong class="required">(required)</strong></label>
+            <textarea id="message" name="message" rows="5" cols="58" minlength="5"
+                    title="Minimum 5 characters." required="required"></textarea>
+        </div>
+        <input type="hidden" id="sesskey" name="sesskey" value="">
+        <script>document.getElementById("sesskey").value = M.cfg.sesskey;</script>
+        {recaptcha}
+    </fieldset>
+    <div>
+        <input type="submit" name="submit" id="submit" value="Send">
+    </div>
+</form>
+";s:13:"formcontactus";s:1860:"
+<form action="{wwwroot}/local/contact/index.php" method="post" class="cf contact-us">
+    <fieldset>
+        <div class="form-group">
+            <label for="name" id="namelabel" class="d-block">Your name <strong class="required">(required)</strong></label>
+            <input id="name" name="name" type="text" size="57" maxlength="45" pattern="[A-zÀ-ž]([A-zÀ-ž\s]){2,}"
+                    title="Minimum 3 letters/spaces." required="required" {readonly}{ifloggedin} disabled{/ifloggedin} value="{fullname}">
+        </div>
+        <div class="form-group">
+            <label for="email" id="emaillabel" class="d-block">Email address <strong class="required">(required)</strong></label>
+            <input id="email" name="email" type="email" size="57" maxlength="60"
+                    required="required" {readonly}{ifloggedin} disabled{/ifloggedin} value="{email}">
+        </div>
+        <div class="form-group">
+            <label for="subject" id="subjectlabel" class="d-block">Subject <strong class="required">(required)</strong></label>
+            <input id="subject" name="subject" type="text" size="57" maxlength="80" minlength="5"
+                    title="Minimum 5 characters." required="required">
+        </div>
+        <div class="form-group">
+            <label for="message" id="messagelabel" class="d-block">Message <strong class="required">(required)</strong></label>
+            <textarea id="message" name="message" rows="5" cols="58" minlength="5"
+                    title="Minimum 5 characters." required="required"></textarea>
+        </div>
+        <input type="hidden" id="sesskey" name="sesskey" value="">
+        <script>document.getElementById("sesskey").value = M.cfg.sesskey;</script>
+        {recaptcha}
+    </fieldset>
+    <div>
+        <input type="submit" name="submit" id="submit" value="Send">
+    </div>
+</form>";s:17:"formcourserequest";s:1958:"
+<form action="{wwwroot}/local/contact/index.php" method="post" class="cf new-course-request">
+    <fieldset>
+        <div class="form-group">
+            <label for="name" id="namelabel" class="d-block">Your name <strong class="required">(required)</strong></label>
+            <input id="name" name="name" type="text" size="57" maxlength="45" pattern="[A-zÀ-ž]([A-zÀ-ž\s]){2,}"
+                    title="Minimum 3 letters/spaces." required="required" {readonly}{ifloggedin} disabled{/ifloggedin} value="{fullname}">
+        </div>
+        <div class="form-group">
+            <label for="email" id="emaillabel" class="d-block">Email address <strong class="required">(required)</strong></label>
+            <input id="email" name="email" type="email" size="57" maxlength="60" required="required" {readonly}{ifloggedin} disabled{/ifloggedin} value="{email}">
+        </div>
+        <div class="form-group">
+            <label for="new_course_name" id="new_course_namelabel" class="d-block">Proposed name of the new course <strong class="required">(required)</strong></label>
+            <input id="new_course_name" name="new_course_name" type="text" size="57" maxlength="80" minlength="5"
+                    title="Minimum 5 characters." required="required">
+        </div>
+        <div class="form-group">
+            <label for="description" id="descriptionlabel" class="d-block">Course description <strong class="required">(required)</strong></label>
+            <textarea id="description" name="description" rows="5" cols="58" minlength="5"
+                    title="Minimum 5 characters." required="required"></textarea>
+        </div>
+        <input type="hidden" id="sesskey" name="sesskey" value="">
+        <script>document.getElementById("sesskey").value = M.cfg.sesskey;</script>
+        {recaptcha}
+    </fieldset>
+    <div>
+        <input type="submit" name="submit" id="submit" value="Submit request for this course">
+    </div>
+</form>
+";s:11:"formsupport";s:3065:"
+<form action="{wwwroot}/local/contact/index.php" method="post" class="cf support-request">
+    <fieldset>
+        <div class="form-group">
+            <label for="name" id="namelabel" class="d-block">Your name <strong class="required">(required)</strong></label>
+            <input id="name" name="name" type="text" size="57" maxlength="45" pattern="[A-zÀ-ž]([A-zÀ-ž\s]){2,}"
+                    title="Minimum 3 letters/spaces." required="required" {readonly}{ifloggedin} disabled{/ifloggedin} value="{fullname}">
+        </div>
+        <div class="form-group">
+            <label for="email" id="emaillabel" class="d-block">Email address <strong class="required">(required)</strong></label>
+            <input id="email" name="email" type="email" size="57" maxlength="60" required="required" {readonly}{ifloggedin} disabled{/ifloggedin} value="{email}">
+        </div>
+        <div class="form-group">
+            <label for="subject" id="subjectlabel" class="d-block">Subject <strong class="required">(required)</strong></label>
+            <select id="subject" name="subject" required="required">
+                <option label="Choose a subject"></option>
+                <option>I can't change my password</option>
+                <option>I can't login</option>
+                <option value="Suggestion">I have a suggestion</option>
+                <option value="Error message">I am getting an error message</option>
+                <option value="System error">Something is not working the way it is supposed to</option>
+                <option value="Course">I am having difficulty accessing a course or some course content</option>
+                <option value="Other reason">Other (please specify)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="specific_subject" id="specifylabel" class="d-block">Specific subject or the name of the course&nbsp;<strong class="required">(required)</strong></label>
+            <input type="text" id="specific_subject" name="specific_subject" size="57" maxlength="80" required="required">
+        </div>
+        <div class="form-group">
+            <label for="url" id="urllabel" class="d-block">Specify the URL address</label>
+            <input type="url" id="url" name="url" size="57" maxlength="80" value="{referer}">
+        </div>
+        <div class="form-group">
+            <label for="description" id="descriptionlabel" class="d-block">Description and step-by-step details on how to reproduce the issue&nbsp;<strong class="required">(required)</strong></label>
+            <textarea id="description" name="description" rows="5" cols="58" minlength="5"
+                    title="Minimum 5 characters." required="required"></textarea>
+        </div>
+        <input type="hidden" id="sesskey" name="sesskey" value="">
+        <script>document.getElementById("sesskey").value = M.cfg.sesskey;</script>
+        {recaptcha}
+    </fieldset>
+    <div>
+        <input type="submit" name="submit" id="submit" value="Submit request for help">
+    </div>
+</form>";s:11:"formcheckin";s:463:"
+<form action="{wwwroot}/local/contact/index.php" method="post" class="cf check-in">
+    <fieldset>
+        <input type="hidden" id="subject" name="subject" value="Present!">
+        <input type="hidden" id="sesskey" name="sesskey" value="">
+        <script>document.getElementById("sesskey").value = M.cfg.sesskey;</script>
+        {recaptcha}
+    </fieldset>
+    <div>
+        <input type="submit" name="submit" id="submit" value="I'm here!">
+    </div>
+</form>";}

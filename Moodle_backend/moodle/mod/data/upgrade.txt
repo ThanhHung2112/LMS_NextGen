@@ -1,0 +1,70 @@
+This files describes API changes in /mod/data - plugins,
+information provided here is intended especially for developers.
+
+== 4.1.2 ==
+* The field base class now has a method validate(). Overwrite it in the field type to provide validation of field type's
+  parameters in the field add/modify form.
+
+=== 4.1 ===
+* The method data_view is now deprecated. Use $maganer->set_module_viewed instead.
+* The data_print_template function is now deprecated and replaced by mod_data\template class.
+* The data_print_ratings function now has an extra $print to get the ratings output instead of printing it directly.
+* The following functions have been deprecated because they have been moved to the manager class:
+  - data_get_available_presets
+  - data_get_available_site_presets
+  - data_preset_name
+  - data_presets_export
+  - data_presets_generate_xml
+  - data_presets_save
+  - is_directory_a_preset
+* mod_data_external::add_entry() function throws an error when trying to add an entry to a database with no field created.
+* data_user_can_add_entry() function returns false for any user if there is no field created on the database.
+* From now on, the data_generate_default_template method will always return a string with the template content or an empty
+  string when there is no content available.
+* The following classes have been deprecated from lib.php because they have been moved to use manager class:
+  - data_preset_importer
+  - data_preset_existing_importer
+  - data_preset_upload_importer
+* import_setting_mappings() function has been deprecated. Use importing_preset() instead.
+* $fieldselect single_select type parameter has been deprecated for fields_action_bar class constructor, and a new action_menu
+  type parameter has been added.
+* The $urlselect, $saveaspresetbutton and $exportpresetbutton parameters in the constructor of the fields_action_bar class
+have been deprecated too and are not used anymore.
+* The $saveaspresetbutton and $exportpresetbutton parameters in the constructor of the templates_action_bar class
+have been deprecated and are not used anymore. Besides, a new parameter, $actionsselect, has been added to the
+constructor of this class.
+* A new parameter, $actionsselect, has been added to the presets_action_bar constructor.
+* A new parameter, $mode, has been added to the view_action_bar constructor.
+* The $hassaveaspreset and $haveexportpreset parameters in the get_fields_action_bar() action_bar class have been deprecated and
+are not used anymore.
+
+=== 3.7 ===
+* External functions get_entries, get_entry and search_entries now return an additional field "tags" containing the entry tags.
+
+=== 3.4 ===
+* External function mod_data_external::search_entries() now returns the maxcount field: Total count of records that the user could
+    see in the database (if all the search criterias were removed).
+* External function get_entry now returns an additional field "ratinginfo" containing the entry rating information.
+
+=== 3.3.2 ===
+* data_refresh_events() Now takes two additional parameters to refine the update to a specific instance. This function
+  now optionally takes the module instance object or ID, and the course module object or ID. Please try to send the full
+  objects instead of the ids to save DB calls.
+
+=== 3.3 ===
+
+* External function get_databases_by_courses now return more fields for users with mod/data:viewentry capability enabled:
+    maxentries, rssarticles, singletemplate, listtemplate, listtemplateheader, listtemplatefooter, addtemplate,
+    rsstemplate, rsstitletemplate, csstemplate, jstemplate, asearchtemplate, approval, defaultsort, defaultsortdir, manageapproved.
+* Data field classes extending data_field_base should implement the get_config_for_external method.
+    This method is used for returning the field settings for external functions.
+    You should check the user capabilities of the current user before returning any field setting value.
+    This is intended to protect field settings like private keys for external systems.
+* Required entries has been added to the Activity completion setting of mod_form. Entries required for completion
+    (in the entries section) is no longer displayed for new instances and will be deprecated in a future release
+    in favour of the new completion setting.
+
+=== 3.2 ===
+
+* New hook - update_content_import - Can be implemented by field subplugins data_field_* class
+    This can be used to pre-process data from a csv file before it is inserted into the database.

@@ -1,0 +1,106 @@
+a:128:{s:13:"admindirerror";s:42:"The admin directory specified is incorrect";s:12:"admindirname";s:15:"Admin directory";s:15:"admindirsetting";s:400:"A very few webhosts use /admin as a special URL for you to access a
+    control panel or something.  Unfortunately this conflicts with the
+    standard location for the Moodle admin pages.  You can fix this by
+    renaming the admin directory in your installation, and putting that
+    new name here.  For example: <br /> <br /><b>moodleadmin</b><br /> <br />
+    This will fix admin links in Moodle.";s:19:"admindirsettinghead";s:31:"Setting the admin directory ...";s:18:"admindirsettingsub";s:400:"A very few webhosts use /admin as a special URL for you to access a
+    control panel or something.  Unfortunately this conflicts with the
+    standard location for the Moodle admin pages.  You can fix this by
+    renaming the admin directory in your installation, and putting that
+    new name here.  For example: <br /> <br /><b>moodleadmin</b><br /> <br />
+    This will fix admin links in Moodle.";s:14:"availablelangs";s:24:"Available language packs";s:7:"caution";s:7:"Caution";s:13:"cliadminemail";s:28:"New admin user email address";s:16:"cliadminpassword";s:23:"New admin user password";s:16:"cliadminusername";s:22:"Admin account username";s:20:"clialreadyconfigured";s:124:"The configuration file config.php already exists. Please use admin/cli/install_database.php to install Moodle for this site.";s:19:"clialreadyinstalled";s:124:"The configuration file config.php already exists. Please use admin/cli/install_database.php to upgrade Moodle for this site.";s:18:"cliinstallfinished";s:36:"Installation completed successfully.";s:16:"cliinstallheader";s:45:"Moodle {$a} command line installation program";s:19:"climustagreelicense";s:90:"In non-interactive mode you must agree to the licence by specifying --agree-license option";s:15:"cliskipdatabase";s:31:"Skipping database installation.";s:15:"clisupportemail";s:21:"Support email address";s:14:"clitablesexist";s:66:"Database tables already present; CLI installation cannot continue.";s:21:"compatibilitysettings";s:30:"Checking your PHP settings ...";s:25:"compatibilitysettingshead";s:30:"Checking your PHP settings ...";s:24:"compatibilitysettingssub";s:67:"Your server should pass all these tests to make Moodle run properly";s:20:"configfilenotwritten";s:271:"The installer script was not able to automatically create a config.php file containing your chosen settings, probably because the Moodle directory is not writeable. You can manually copy the following code into a file named config.php within the root directory of Moodle.";s:17:"configfilewritten";s:40:"config.php has been successfully created";s:21:"configurationcomplete";s:23:"Configuration completed";s:25:"configurationcompletehead";s:23:"Configuration completed";s:24:"configurationcompletesub";s:100:"Moodle made an attempt to save your configuration in a file in the root of your Moodle installation.";s:8:"database";s:8:"Database";s:12:"databasehead";s:17:"Database settings";s:12:"databasehost";s:13:"Database host";s:12:"databasename";s:13:"Database name";s:12:"databasepass";s:17:"Database password";s:12:"databaseport";s:13:"Database port";s:14:"databasesocket";s:11:"Unix socket";s:16:"databasetypehead";s:22:"Choose database driver";s:15:"databasetypesub";s:124:"Moodle supports several types of database servers. Please contact server administrator if you do not know which type to use.";s:12:"databaseuser";s:13:"Database user";s:8:"dataroot";s:14:"Data directory";s:13:"datarooterror";s:125:"The 'data directory' you specified could not be found or created.  Either correct the path or create that directory manually.";s:18:"datarootpermission";s:27:"Data directories permission";s:19:"datarootpublicerror";s:100:"The 'data directory' you specified is directly accessible via web, you must use different directory.";s:17:"dbconnectionerror";s:88:"We could not connect to the database you specified. Please check your database settings.";s:15:"dbcreationerror";s:92:"Database creation error. Could not create the given database name with the settings provided";s:6:"dbhost";s:11:"Host server";s:6:"dbpass";s:8:"Password";s:6:"dbport";s:4:"Port";s:8:"dbprefix";s:13:"Tables prefix";s:6:"dbtype";s:4:"Type";s:17:"directorysettings";s:723:"<p>Please confirm the locations of this Moodle installation.</p>
+
+<p><b>Web address:</b>
+Specify the full web address where Moodle will be accessed.
+If your web site is accessible via multiple URLs then choose the
+most natural one that your students would use.  Do not include
+a trailing slash.</p>
+
+<p><b>Moodle directory:</b>
+Specify the full directory path to this installation
+Make sure the upper/lower case is correct.</p>
+
+<p><b>Data directory:</b>
+You need a place where Moodle can save uploaded files.  This
+directory should be readable AND WRITEABLE by the web server user
+(usually 'nobody' or 'apache'), but it must not be accessible
+directly via the web. The installer will try to create it if doesn't exist.</p>";s:21:"directorysettingshead";s:56:"Please confirm the locations of this Moodle installation";s:20:"directorysettingssub";s:660:"<b>Web address:</b>
+Specify the full web address where Moodle will be accessed.
+If your web site is accessible via multiple URLs then choose the
+most natural one that your students would use.  Do not include
+a trailing slash.
+<br />
+<br />
+<b>Moodle directory:</b>
+Specify the full directory path to this installation
+Make sure the upper/lower case is correct.
+<br />
+<br />
+<b>Data directory:</b>
+You need a place where Moodle can save uploaded files.  This
+directory must be readable AND WRITEABLE by the web server user
+(usually 'nobody' or 'apache'), but it must not be accessible
+directly via the web. The installer will try to create it if doesn't exist.";s:7:"dirroot";s:16:"Moodle directory";s:12:"dirrooterror";s:129:"The 'Moodle directory' setting seems to be incorrect - we can't find a Moodle installation there. The value below has been reset.";s:8:"download";s:8:"Download";s:22:"downloadlanguagebutton";s:43:"Download the &quot;{$a}&quot; language pack";s:20:"downloadlanguagehead";s:22:"Download language pack";s:25:"downloadlanguagenotneeded";s:82:"You may continue the installation process using the default language pack, "{$a}".";s:19:"downloadlanguagesub";s:349:"You now have the option of downloading a language pack and continuing the installation process in this language.<br /><br />If you are unable to download the language pack, the installation process will continue in English. (Once the installation process is complete, you will have the opportunity to download and install additional language packs.)";s:10:"doyouagree";s:24:"Do you agree ? (yes/no):";s:15:"environmenthead";s:29:"Checking your environment ...";s:14:"environmentsub";s:85:"We are checking if the various components of your system meet the system requirements";s:15:"environmentsub2";s:274:"Each Moodle release has some minimum PHP version requirement and a number of mandatory PHP extensions.
+Full environment check is done before each install and upgrade. Please contact server administrator if you do not know how to install new version or enable PHP extensions.";s:19:"errorsinenvironment";s:25:"Environment check failed!";s:4:"fail";s:4:"Fail";s:11:"fileuploads";s:12:"File uploads";s:16:"fileuploadserror";s:17:"This should be on";s:15:"fileuploadshelp";s:382:"<p>File uploading seems to be disabled on your server.</p>
+
+<p>Moodle can still be installed, but without this ability, you will not be able
+   to upload course files or new user profile images.</p>
+
+<p>To enable file uploading you (or your system administrator) will need to
+   edit the main php.ini file on your system and change the setting for
+   <b>file_uploads</b> to '1'.</p>";s:14:"chooselanguage";s:17:"Choose a language";s:18:"chooselanguagehead";s:17:"Choose a language";s:17:"chooselanguagesub";s:148:"Please choose a language for the installation. This language will also be used as the default language for the site, though it may be changed later.";s:18:"inputdatadirectory";s:15:"Data directory:";s:14:"inputwebadress";s:13:"Web address :";s:17:"inputwebdirectory";s:17:"Moodle directory:";s:12:"installation";s:12:"Installation";s:15:"invaliddbprefix";s:81:"Invalid prefix. The prefix can only consist of lower case letters and underscore.";s:17:"langdownloaderror";s:109:"Unfortunately the language "{$a}" could not be downloaded. The installation process will continue in English.";s:14:"langdownloadok";s:104:"The language "{$a}" was installed successfully. The installation process will continue in this language.";s:11:"memorylimit";s:12:"Memory limit";s:16:"memorylimiterror";s:74:"The PHP memory limit is set quite low ... you may run into problems later.";s:15:"memorylimithelp";s:1087:"<p>The PHP memory limit for your server is currently set to {$a}.</p>
+
+<p>This may cause Moodle to have memory problems later on, especially
+   if you have a lot of modules enabled and/or a lot of users.</p>
+
+<p>We recommend that you configure PHP with a higher limit if possible, like 40M.
+   There are several ways of doing this that you can try:</p>
+<ol>
+<li>If you are able to, recompile PHP with <i>--enable-memory-limit</i>.
+    This will allow Moodle to set the memory limit itself.</li>
+<li>If you have access to your php.ini file, you can change the <b>memory_limit</b>
+    setting in there to something like 40M.  If you don't have access you might
+    be able to ask your administrator to do this for you.</li>
+<li>On some PHP servers you can create a .htaccess file in the Moodle directory
+    containing this line:
+    <blockquote><div>php_value memory_limit 40M</div></blockquote>
+    <p>However, on some servers this will prevent <b>all</b> PHP pages from working
+    (you will see errors when you look at pages) so you'll have to remove the .htaccess file.</p></li>
+</ol>";s:32:"mysqliextensionisnotpresentinphp";s:145:"PHP has not been properly configured with the MySQLi extension for it to communicate with MySQL. Please check your php.ini file or recompile PHP.";s:17:"nativeauroramysql";s:33:"Aurora MySQL (native/auroramysql)";s:21:"nativeauroramysqlhelp";s:541:"<p>The database is where most of the Moodle settings and data are stored and must be configured here.</p>
+<p>The database name, username, and password are required fields; table prefix is optional.</p>
+<p>The database name may contain only alphanumeric characters, dollar ($) and underscore (_).</p>
+<p>If the database currently does not exist, and the user you specify has permission, Moodle will attempt to create a new database with the correct permissions and settings.</p>
+<p>This driver is not compatible with legacy MyISAM engine.</p>";s:13:"nativemariadb";s:24:"MariaDB (native/mariadb)";s:17:"nativemariadbhelp";s:541:"<p>The database is where most of the Moodle settings and data are stored and must be configured here.</p>
+<p>The database name, username, and password are required fields; table prefix is optional.</p>
+<p>The database name may contain only alphanumeric characters, dollar ($) and underscore (_).</p>
+<p>If the database currently does not exist, and the user you specify has permission, Moodle will attempt to create a new database with the correct permissions and settings.</p>
+<p>This driver is not compatible with legacy MyISAM engine.</p>";s:12:"nativemysqli";s:30:"Improved MySQL (native/mysqli)";s:16:"nativemysqlihelp";s:477:"<p>The database is where most of the Moodle settings and data are stored and must be configured here.</p>
+<p>The database name, username, and password are required fields; table prefix is optional.</p>
+<p>The database name may contain only alphanumeric characters, dollar ($) and underscore (_).</p>
+<p>If the database currently does not exist, and the user you specify has permission, Moodle will attempt to create a new database with the correct permissions and settings.</p>";s:9:"nativeoci";s:19:"Oracle (native/oci)";s:13:"nativeocihelp";s:199:"Now you need to configure the database where most Moodle data will be stored.
+This database must already have been created and a username and password created to access it. Table prefix is mandatory.";s:11:"nativepgsql";s:25:"PostgreSQL (native/pgsql)";s:15:"nativepgsqlhelp";s:288:"<p>The database is where most of the Moodle settings and data are stored and must be configured here.</p>
+<p>The database name, username, password and table prefix are required fields.</p>
+<p>The database must already exist and the user must have access to both read, and write to it.</p>";s:12:"nativesqlsrv";s:36:"SQL*Server Microsoft (native/sqlsrv)";s:16:"nativesqlsrvhelp";s:199:"Now you need to configure the database where most Moodle data will be stored.
+This database must already have been created and a username and password created to access it. Table prefix is mandatory.";s:20:"nativesqlsrvnodriver";s:86:"Microsoft Drivers for SQL Server for PHP are not installed or not configured properly.";s:29:"ociextensionisnotpresentinphp";s:150:"PHP has not been properly configured with the OCI8 extension so that it can communicate with Oracle.  Please check your php.ini file or recompile PHP.";s:4:"pass";s:4:"Pass";s:5:"paths";s:5:"Paths";s:22:"pathserrcreatedataroot";s:67:"Data directory ({$a->dataroot}) cannot be created by the installer.";s:9:"pathshead";s:13:"Confirm paths";s:15:"pathsrodataroot";s:35:"Dataroot directory is not writable.";s:21:"pathsroparentdataroot";s:117:"Parent directory ({$a->parent}) is not writeable. Data directory ({$a->dataroot}) cannot be created by the installer.";s:16:"pathssubadmindir";s:358:"A very few webhosts use /admin as a special URL for you to access a
+control panel or something.  Unfortunately this conflicts with the standard location for the Moodle admin pages.  You can fix this by
+renaming the admin directory in your installation, and putting that  new name here.  For example: <em>moodleadmin</em>. This will fix admin links in Moodle.";s:16:"pathssubdataroot";s:364:"<p>A directory where Moodle will store all file content uploaded by users.</p>
+<p>This directory should be both readable and writeable by the web server user (usually 'www-data', 'nobody', or 'apache').</p>
+<p>It must not be directly accessible over the web.</p>
+<p>If the directory does not currently exist, the installation process will attempt to create it.</p>";s:15:"pathssubdirroot";s:65:"<p>The full path to the directory containing the Moodle code.</p>";s:15:"pathssubwwwroot";s:641:"<p>The full address where Moodle will be accessed i.e. the address that users will enter into the address bar of their browser to access Moodle.</p>
+<p>It is not possible to access Moodle using multiple addresses. If your site is accessible via multiple addresses then choose the easiest one and set up a permanent redirect for each of the other addresses.</p>
+<p>If your site is accessible both from the Internet, and from an internal network (sometimes called an Intranet), then use the public address here.</p>
+<p>If the current address is not correct, please change the URL in your browser's address bar and restart the installation.</p>";s:21:"pathsunsecuredataroot";s:31:"Dataroot location is not secure";s:18:"pathswrongadmindir";s:30:"Admin directory does not exist";s:31:"pgsqlextensionisnotpresentinphp";s:155:"PHP has not been properly configured with the PGSQL extension so that it can communicate with PostgreSQL.  Please check your php.ini file or recompile PHP.";s:12:"phpextension";s:18:"{$a} PHP extension";s:10:"phpversion";s:11:"PHP version";s:14:"phpversionhelp";s:220:"<p>Moodle requires a PHP version of at least 5.6.5 or 7.1 (7.0.x has some engine limitations).</p>
+<p>You are currently running version {$a}.</p>
+<p>You must upgrade PHP or move to a host with a newer version of PHP.</p>";s:16:"releasenoteslink";s:82:"For information about this version of Moodle, please see the release notes at {$a}";s:8:"safemode";s:9:"Safe mode";s:13:"safemodeerror";s:41:"Moodle may have trouble with safe mode on";s:12:"safemodehelp";s:378:"<p>Moodle may have a variety of problems with safe mode on, not least is that
+   it probably won't be allowed to create new files.</p>
+
+<p>Safe mode is usually only enabled by paranoid public web hosts, so you may have
+   to just find a new web hosting company for your Moodle site.</p>
+
+<p>You can try continuing the install if you like, but expect a few problems later on.</p>";s:16:"sessionautostart";s:18:"Session auto start";s:21:"sessionautostarterror";s:18:"This should be off";s:20:"sessionautostarthelp";s:171:"<p>Moodle requires session support and will not function without it.</p>
+
+<p>Sessions can be enabled in the php.ini file ... look for the session.auto_start parameter.</p>";s:32:"sqliteextensionisnotpresentinphp";s:113:"PHP has not been properly configured with the SQLite extension.  Please check your php.ini file or recompile PHP.";s:20:"upgradingqtypeplugin";s:30:"Upgrading question/type plugin";s:10:"welcomep10";s:44:"{$a->installername} ({$a->installerversion})";s:10:"welcomep20";s:178:"You are seeing this page because you have successfully installed and
+    launched the <strong>{$a->packname} {$a->packversion}</strong> package in your computer. Congratulations!";s:10:"welcomep30";s:166:"This release of the <strong>{$a->installername}</strong> includes the applications
+    to create an environment in which <strong>Moodle</strong> will operate, namely:";s:10:"welcomep40";s:92:"The package also includes <strong>Moodle {$a->moodlerelease} ({$a->moodleversion})</strong>.";s:10:"welcomep50";s:324:"The use of all the applications in this package is governed by their respective licences. The complete <strong>{$a->installername}</strong> package is <a href="https://www.opensource.org/docs/definition_plain.html">open source</a> and is distributed under the <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a> license.";s:10:"welcomep60";s:228:"The following pages will lead you through some easy to follow steps to
+    configure and set up <strong>Moodle</strong> on your computer. You may accept the default
+    settings or, optionally, amend them to suit your own needs.";s:10:"welcomep70";s:85:"Click the "Next" button below to continue with the set up of <strong>Moodle</strong>.";s:7:"wwwroot";s:11:"Web address";s:12:"wwwrooterror";s:132:"The 'Web Address' does not appear to be valid - this Moodle installation doesn't appear to be there. The value below has been reset.";}

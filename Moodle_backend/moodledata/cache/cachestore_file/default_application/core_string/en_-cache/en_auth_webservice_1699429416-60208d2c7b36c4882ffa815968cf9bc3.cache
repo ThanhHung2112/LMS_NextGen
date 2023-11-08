@@ -1,0 +1,1 @@
+a:3:{s:26:"auth_webservicedescription";s:107:"This authentication method should be used for accounts that are exclusively for use by web service clients.";s:10:"pluginname";s:27:"Web services authentication";s:16:"privacy:metadata";s:72:"The Web services authentication plugin does not store any personal data.";}

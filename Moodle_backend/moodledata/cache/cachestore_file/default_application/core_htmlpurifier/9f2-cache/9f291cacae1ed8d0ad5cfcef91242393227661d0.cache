@@ -1,0 +1,1 @@
+s:319:"<strong>Debug info: </strong> Table 'moodle.mdl_message' doesn't exist<br />SELECT id<br />                  FROM mdl_message m<br />                 WHERE useridfrom = ?<br />                    OR useridto = ? LIMIT 0, 1<br />[array (<br />  0 =&gt; '7',<br />  1 =&gt; '7',<br />)]<br />Error code: dmlreadexception";

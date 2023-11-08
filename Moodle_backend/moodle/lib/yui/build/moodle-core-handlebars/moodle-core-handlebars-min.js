@@ -1,0 +1,1 @@
+YUI.add("moodle-core-handlebars",function(e,r){e.Handlebars.registerHelper("get_string",function(){var r=new e.Array(arguments);return r.pop(),r.push(arguments[arguments.length-1].hash),M.util.get_string.apply(this,r)}),e.Handlebars.registerHelper("image_url",function(){var r=new e.Array(arguments);return r.pop(),M.util.image_url.apply(this,r)})},"@VERSION@");

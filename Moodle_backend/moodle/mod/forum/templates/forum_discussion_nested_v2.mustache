@@ -1,0 +1,73 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template mod_forum/forum_discussion_nested_v2
+
+    Template for displaying a single forum discussion.
+
+    Classes required for JS:
+    * none
+
+    Data attributes required for JS:
+    * none
+
+    Example context (json):
+    {
+        "html": {
+            "hasanyactions": true,
+            "posts": "<article id='p33' class='forum-post-container mb-2' data-post-id='33'></article>",
+            "modeselectorform": "<div class='singleselect d-inline-block'> <form method='get' action='http://localhost/m/pg_stable_master/mod/forum/discuss.php' class='form-inline' id='mode'></div>",
+            "subscribe": null,
+            "movediscussion": null,
+            "pindiscussion": null,
+            "neighbourlinks": "<div class='discussion-nav clearfix'></div>",
+            "exportdiscussion": null
+        },
+        "throttlingwarningmsg": "You are approaching the posting threshold. You have posted 3 times in the last 1 week and the limit is 4 posts."
+    }
+}}
+
+<div id="discussion-container-{{uniqid}}" data-content="forum-discussion">
+    {{#html}}
+        {{> mod_forum/discussion_settings_drawer}}
+    {{/html}}
+
+    {{#notifications}}
+        {{> core/notification}}
+    {{/notifications}}
+
+    <div class="mb-5">{{{html.modeselectorform}}}</div>
+
+    {{{html.posts}}}
+</div>
+{{#js}}
+require(['jquery', 'mod_forum/discussion_nested_v2'], function($, Discussion) {
+    var root = $('#discussion-container-{{uniqid}}');
+    Discussion.init(root, {
+        {{#throttlingwarningmsg}}
+            throttlingwarningmsg: {{#quote}}{{throttlingwarningmsg}}{{/quote}},
+        {{/throttlingwarningmsg}}
+        {{#loggedinuser}}
+        loggedinuser: {
+            profileimageurl: '{{{profileimageurl}}}',
+            fullname: '{{fullname}}',
+            firstname: '{{firstname}}'
+        }
+        {{/loggedinuser}}
+    });
+});
+{{/js}}

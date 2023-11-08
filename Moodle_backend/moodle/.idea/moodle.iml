@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/admin/classes" isTestSource="false" packagePrefix="core_admin" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/presets/classes" isTestSource="false" packagePrefix="core_adminpresets" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/presets/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/roles/classes" isTestSource="false" packagePrefix="core_role" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/roles/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/admin_presets/classes" isTestSource="false" packagePrefix="tool_admin_presets" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/admin_presets/tests" isTestSource="true" packagePrefix="tool_admin_presets" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/analytics/classes" isTestSource="false" packagePrefix="tool_analytics" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/analytics/tests" isTestSource="true" packagePrefix="tool_analytics" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/availabilityconditions/classes" isTestSource="false" packagePrefix="tool_availabilityconditions" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/behat/classes" isTestSource="false" packagePrefix="tool_behat" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/behat/tests" isTestSource="true" packagePrefix="tool_behat" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/brickfield/classes" isTestSource="false" packagePrefix="tool_brickfield" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/brickfield/tests" isTestSource="true" packagePrefix="tool_brickfield" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/brickfield/tests/generator" isTestSource="false" packagePrefix="tool_brickfield" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/capability/classes" isTestSource="false" packagePrefix="tool_capability" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/capability/tests" isTestSource="true" packagePrefix="tool_capability" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/cohortroles/classes" isTestSource="false" packagePrefix="tool_cohortroles" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/cohortroles/tests" isTestSource="true" packagePrefix="tool_cohortroles" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/componentlibrary/classes" isTestSource="false" packagePrefix="tool_componentlibrary" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/customlang/classes" isTestSource="false" packagePrefix="tool_customlang" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/customlang/tests" isTestSource="true" packagePrefix="tool_customlang" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/dataprivacy/classes" isTestSource="false" packagePrefix="tool_dataprivacy" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/dataprivacy/tests" isTestSource="true" packagePrefix="tool_dataprivacy" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/dbtransfer/classes" isTestSource="false" packagePrefix="tool_dbtransfer" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/filetypes/classes" isTestSource="false" packagePrefix="tool_filetypes" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/generator/classes" isTestSource="false" packagePrefix="tool_generator" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/generator/tests" isTestSource="true" packagePrefix="tool_generator" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/httpsreplace/classes" isTestSource="false" packagePrefix="tool_httpsreplace" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/innodb/classes" isTestSource="false" packagePrefix="tool_innodb" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/installaddon/classes" isTestSource="false" packagePrefix="tool_installaddon" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/installaddon/tests" isTestSource="true" packagePrefix="tool_installaddon" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/langimport/classes" isTestSource="false" packagePrefix="tool_langimport" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/langimport/tests" isTestSource="true" packagePrefix="tool_langimport" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/licensemanager/classes" isTestSource="false" packagePrefix="tool_licensemanager" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/log/classes" isTestSource="false" packagePrefix="tool_log" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/log/store/database/classes" isTestSource="false" packagePrefix="logstore_database" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/log/store/database/tests" isTestSource="true" packagePrefix="logstore_database" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/log/store/legacy/classes" isTestSource="false" packagePrefix="logstore_legacy" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/log/store/legacy/tests" isTestSource="true" packagePrefix="logstore_legacy" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/log/store/standard/classes" isTestSource="false" packagePrefix="logstore_standard" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/log/store/standard/tests" isTestSource="true" packagePrefix="logstore_standard" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/log/tests" isTestSource="true" packagePrefix="tool_log" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/lp/classes" isTestSource="false" packagePrefix="tool_lp" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/lp/tests" isTestSource="true" packagePrefix="tool_lp" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/lpimportcsv/classes" isTestSource="false" packagePrefix="tool_lpimportcsv" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/lpimportcsv/tests" isTestSource="true" packagePrefix="tool_lpimportcsv" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/lpmigrate/classes" isTestSource="false" packagePrefix="tool_lpmigrate" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/lpmigrate/tests" isTestSource="true" packagePrefix="tool_lpmigrate" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/messageinbound/classes" isTestSource="false" packagePrefix="tool_messageinbound" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/messageinbound/tests" isTestSource="true" packagePrefix="tool_messageinbound" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/mobile/classes" isTestSource="false" packagePrefix="tool_mobile" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/mobile/tests" isTestSource="true" packagePrefix="tool_mobile" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/mobile/tests/fixtures" isTestSource="false" packagePrefix="tool_mobile" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/monitor/classes" isTestSource="false" packagePrefix="tool_monitor" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/monitor/tests" isTestSource="true" packagePrefix="tool_monitor" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/moodlenet/classes" isTestSource="false" packagePrefix="tool_moodlenet" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/moodlenet/tests" isTestSource="true" packagePrefix="tool_moodlenet" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/multilangupgrade/classes" isTestSource="false" packagePrefix="tool_multilangupgrade" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/oauth2/classes" isTestSource="false" packagePrefix="tool_oauth2" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/phpunit/classes" isTestSource="false" packagePrefix="tool_phpunit" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/pluginskel/classes" isTestSource="false" packagePrefix="tool_pluginskel" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/pluginskel/tests" isTestSource="true" packagePrefix="tool_pluginskel" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/policy/classes" isTestSource="false" packagePrefix="tool_policy" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/policy/tests" isTestSource="true" packagePrefix="tool_policy" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/profiling/classes" isTestSource="false" packagePrefix="tool_profiling" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/recyclebin/classes" isTestSource="false" packagePrefix="tool_recyclebin" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/recyclebin/tests" isTestSource="true" packagePrefix="tool_recyclebin" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/replace/classes" isTestSource="false" packagePrefix="tool_replace" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/spamcleaner/classes" isTestSource="false" packagePrefix="tool_spamcleaner" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/task/classes" isTestSource="false" packagePrefix="tool_task" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/task/tests" isTestSource="true" packagePrefix="tool_task" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/templatelibrary/classes" isTestSource="false" packagePrefix="tool_templatelibrary" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/templatelibrary/tests" isTestSource="true" packagePrefix="tool_templatelibrary" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/unsuproles/classes" isTestSource="false" packagePrefix="tool_unsuproles" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/uploadcourse/classes" isTestSource="false" packagePrefix="tool_uploadcourse" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/uploadcourse/tests" isTestSource="true" packagePrefix="tool_uploadcourse" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/uploaduser/classes" isTestSource="false" packagePrefix="tool_uploaduser" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/uploaduser/tests" isTestSource="true" packagePrefix="tool_uploaduser" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/usertours/classes" isTestSource="false" packagePrefix="tool_usertours" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/usertours/tests" isTestSource="true" packagePrefix="tool_usertours" />
+      <sourceFolder url="file://$MODULE_DIR$/admin/tool/xmldb/classes" isTestSource="false" packagePrefix="tool_xmldb" />
+      <sourceFolder url="file://$MODULE_DIR$/analytics/classes" isTestSource="false" packagePrefix="core_analytics" />
+      <sourceFolder url="file://$MODULE_DIR$/analytics/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/cas/classes" isTestSource="false" packagePrefix="auth_cas" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/classes" isTestSource="false" packagePrefix="core_auth" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/db/classes" isTestSource="false" packagePrefix="auth_db" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/db/tests" isTestSource="true" packagePrefix="auth_db" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/email/classes" isTestSource="false" packagePrefix="auth_email" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/email/tests" isTestSource="true" packagePrefix="auth_email" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/ldap/classes" isTestSource="false" packagePrefix="auth_ldap" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/ldap/tests" isTestSource="true" packagePrefix="auth_ldap" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/lti/classes" isTestSource="false" packagePrefix="auth_lti" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/lti/tests" isTestSource="true" packagePrefix="auth_lti" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/manual/classes" isTestSource="false" packagePrefix="auth_manual" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/manual/tests" isTestSource="true" packagePrefix="auth_manual" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/mnet/classes" isTestSource="false" packagePrefix="auth_mnet" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/mnet/tests" isTestSource="true" packagePrefix="auth_mnet" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/nologin/classes" isTestSource="false" packagePrefix="auth_nologin" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/none/classes" isTestSource="false" packagePrefix="auth_none" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/oauth2/classes" isTestSource="false" packagePrefix="auth_oauth2" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/oauth2/tests" isTestSource="true" packagePrefix="auth_oauth2" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/shibboleth/classes" isTestSource="false" packagePrefix="auth_shibboleth" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/webservice/classes" isTestSource="false" packagePrefix="auth_webservice" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/classes" isTestSource="false" packagePrefix="core_availability" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/condition/completion/classes" isTestSource="false" packagePrefix="availability_completion" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/condition/completion/tests" isTestSource="true" packagePrefix="availability_completion" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/condition/date/classes" isTestSource="false" packagePrefix="availability_date" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/condition/date/tests" isTestSource="true" packagePrefix="availability_date" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/condition/grade/classes" isTestSource="false" packagePrefix="availability_grade" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/condition/grade/tests" isTestSource="true" packagePrefix="availability_grade" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/condition/group/classes" isTestSource="false" packagePrefix="availability_group" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/condition/group/tests" isTestSource="true" packagePrefix="availability_group" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/condition/grouping/classes" isTestSource="false" packagePrefix="availability_grouping" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/condition/grouping/tests" isTestSource="true" packagePrefix="availability_grouping" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/condition/profile/classes" isTestSource="false" packagePrefix="availability_profile" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/condition/profile/tests" isTestSource="true" packagePrefix="availability_profile" />
+      <sourceFolder url="file://$MODULE_DIR$/availability/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/backup/controller/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/backup/converter/moodle1/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/backup/moodle2/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/backup/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/backup/util" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/badges/classes" isTestSource="false" packagePrefix="core_badges" />
+      <sourceFolder url="file://$MODULE_DIR$/badges/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/accessreview/classes" isTestSource="false" packagePrefix="block_accessreview" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/accessreview/tests" isTestSource="true" packagePrefix="block_accessreview" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/activity_modules/classes" isTestSource="false" packagePrefix="block_activity_modules" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/activity_results/classes" isTestSource="false" packagePrefix="block_activity_results" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/admin_bookmarks/classes" isTestSource="false" packagePrefix="block_admin_bookmarks" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/badges/classes" isTestSource="false" packagePrefix="block_badges" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/badges/tests" isTestSource="true" packagePrefix="block_badges" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/blog_menu/classes" isTestSource="false" packagePrefix="block_blog_menu" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/blog_menu/tests" isTestSource="true" packagePrefix="block_blog_menu" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/blog_recent/classes" isTestSource="false" packagePrefix="block_blog_recent" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/blog_recent/tests" isTestSource="true" packagePrefix="block_blog_recent" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/blog_tags/classes" isTestSource="false" packagePrefix="block_blog_tags" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/blog_tags/tests" isTestSource="true" packagePrefix="block_blog_tags" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/calendar_month/classes" isTestSource="false" packagePrefix="block_calendar_month" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/calendar_upcoming/classes" isTestSource="false" packagePrefix="block_calendar_upcoming" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/classes" isTestSource="false" packagePrefix="core_block" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/comments/classes" isTestSource="false" packagePrefix="block_comments" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/comments/tests" isTestSource="true" packagePrefix="block_comments" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/completionstatus/classes" isTestSource="false" packagePrefix="block_completionstatus" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/completionstatus/tests" isTestSource="true" packagePrefix="block_completionstatus" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/course_list/classes" isTestSource="false" packagePrefix="block_course_list" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/course_summary/classes" isTestSource="false" packagePrefix="block_course_summary" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/feedback/classes" isTestSource="false" packagePrefix="block_feedback" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/globalsearch/classes" isTestSource="false" packagePrefix="block_globalsearch" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/globalsearch/tests" isTestSource="true" packagePrefix="block_globalsearch" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/glossary_random/classes" isTestSource="false" packagePrefix="block_glossary_random" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/glossary_random/tests" isTestSource="true" packagePrefix="block_glossary_random" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/html/classes" isTestSource="false" packagePrefix="block_html" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/html/tests" isTestSource="true" packagePrefix="block_html" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/login/classes" isTestSource="false" packagePrefix="block_login" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/lp/classes" isTestSource="false" packagePrefix="block_lp" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/lp/tests" isTestSource="true" packagePrefix="block_lp" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/mentees/classes" isTestSource="false" packagePrefix="block_mentees" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/mnet_hosts/classes" isTestSource="false" packagePrefix="block_mnet_hosts" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/mnet_hosts/tests" isTestSource="true" packagePrefix="block_mnet_hosts" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/myoverview/classes" isTestSource="false" packagePrefix="block_myoverview" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/myoverview/tests" isTestSource="true" packagePrefix="block_myoverview" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/myprofile/classes" isTestSource="false" packagePrefix="block_myprofile" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/navigation/classes" isTestSource="false" packagePrefix="block_navigation" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/news_items/classes" isTestSource="false" packagePrefix="block_news_items" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/online_users/classes" isTestSource="false" packagePrefix="block_online_users" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/online_users/tests" isTestSource="true" packagePrefix="block_online_users" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/private_files/classes" isTestSource="false" packagePrefix="block_private_files" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/recent_activity/classes" isTestSource="false" packagePrefix="block_recent_activity" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/recentlyaccessedcourses/classes" isTestSource="false" packagePrefix="block_recentlyaccessedcourses" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/recentlyaccesseditems/classes" isTestSource="false" packagePrefix="block_recentlyaccesseditems" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/recentlyaccesseditems/tests" isTestSource="true" packagePrefix="block_recentlyaccesseditems" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/rss_client/classes" isTestSource="false" packagePrefix="block_rss_client" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/rss_client/tests" isTestSource="true" packagePrefix="block_rss_client" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/search_forums/classes" isTestSource="false" packagePrefix="block_search_forums" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/section_links/classes" isTestSource="false" packagePrefix="block_section_links" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/selfcompletion/classes" isTestSource="false" packagePrefix="block_selfcompletion" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/settings/classes" isTestSource="false" packagePrefix="block_settings" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/site_main_menu/classes" isTestSource="false" packagePrefix="block_site_main_menu" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/social_activities/classes" isTestSource="false" packagePrefix="block_social_activities" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/starredcourses/classes" isTestSource="false" packagePrefix="block_starredcourses" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/tag_flickr/classes" isTestSource="false" packagePrefix="block_tag_flickr" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/tag_youtube/classes" isTestSource="false" packagePrefix="block_tag_youtube" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/tag_youtube/tests" isTestSource="true" packagePrefix="block_tag_youtube" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/tags/classes" isTestSource="false" packagePrefix="block_tags" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/tags/tests" isTestSource="true" packagePrefix="block_tags" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/timeline/classes" isTestSource="false" packagePrefix="block_timeline" />
+      <sourceFolder url="file://$MODULE_DIR$/blocks/timeline/tests" isTestSource="true" packagePrefix="block_timeline" />
+      <sourceFolder url="file://$MODULE_DIR$/blog/classes" isTestSource="false" packagePrefix="core_blog" />
+      <sourceFolder url="file://$MODULE_DIR$/blog/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/classes" isTestSource="false" packagePrefix="core_cache" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/locks/file/classes" isTestSource="false" packagePrefix="cachelock_file" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/apcu/classes" isTestSource="false" packagePrefix="cachestore_apcu" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/apcu/tests" isTestSource="true" packagePrefix="cachestore_apcu" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/file/classes" isTestSource="false" packagePrefix="cachestore_file" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/file/tests" isTestSource="true" packagePrefix="cachestore_file" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/memcached/classes" isTestSource="false" packagePrefix="cachestore_memcached" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/memcached/tests" isTestSource="true" packagePrefix="cachestore_memcached" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/mongodb" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/mongodb/classes" isTestSource="false" packagePrefix="cachestore_mongodb" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/mongodb/tests" isTestSource="true" packagePrefix="cachestore_mongodb" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/redis/classes" isTestSource="false" packagePrefix="cachestore_redis" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/redis/tests" isTestSource="true" packagePrefix="cachestore_redis" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/session/classes" isTestSource="false" packagePrefix="cachestore_session" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/session/tests" isTestSource="true" packagePrefix="cachestore_session" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/static/classes" isTestSource="false" packagePrefix="cachestore_static" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/stores/static/tests" isTestSource="true" packagePrefix="cachestore_static" />
+      <sourceFolder url="file://$MODULE_DIR$/cache/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/calendar/classes" isTestSource="false" packagePrefix="core_calendar" />
+      <sourceFolder url="file://$MODULE_DIR$/calendar/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/calendar/type/gregorian/classes" isTestSource="false" packagePrefix="calendartype_gregorian" />
+      <sourceFolder url="file://$MODULE_DIR$/cohort/classes" isTestSource="false" packagePrefix="core_cohort" />
+      <sourceFolder url="file://$MODULE_DIR$/cohort/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/comment/classes" isTestSource="false" packagePrefix="core_comment" />
+      <sourceFolder url="file://$MODULE_DIR$/comment/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/competency/classes" isTestSource="false" packagePrefix="core_competency" />
+      <sourceFolder url="file://$MODULE_DIR$/competency/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/completion/classes" isTestSource="false" packagePrefix="core_completion" />
+      <sourceFolder url="file://$MODULE_DIR$/completion/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/contentbank/classes" isTestSource="false" packagePrefix="core_contentbank" />
+      <sourceFolder url="file://$MODULE_DIR$/contentbank/contenttype/h5p/classes" isTestSource="false" packagePrefix="contenttype_h5p" />
+      <sourceFolder url="file://$MODULE_DIR$/contentbank/contenttype/h5p/tests" isTestSource="true" packagePrefix="contenttype_h5p" />
+      <sourceFolder url="file://$MODULE_DIR$/contentbank/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/course/classes" isTestSource="false" packagePrefix="core_course" />
+      <sourceFolder url="file://$MODULE_DIR$/course/format/classes" isTestSource="false" packagePrefix="core_courseformat" />
+      <sourceFolder url="file://$MODULE_DIR$/course/format/singleactivity/classes" isTestSource="false" packagePrefix="format_singleactivity" />
+      <sourceFolder url="file://$MODULE_DIR$/course/format/social/classes" isTestSource="false" packagePrefix="format_social" />
+      <sourceFolder url="file://$MODULE_DIR$/course/format/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/course/format/topics/classes" isTestSource="false" packagePrefix="format_topics" />
+      <sourceFolder url="file://$MODULE_DIR$/course/format/topics/tests" isTestSource="true" packagePrefix="format_topics" />
+      <sourceFolder url="file://$MODULE_DIR$/course/format/weeks/classes" isTestSource="false" packagePrefix="format_weeks" />
+      <sourceFolder url="file://$MODULE_DIR$/course/format/weeks/tests" isTestSource="true" packagePrefix="format_weeks" />
+      <sourceFolder url="file://$MODULE_DIR$/course/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/customfield/classes" isTestSource="false" packagePrefix="core_customfield" />
+      <sourceFolder url="file://$MODULE_DIR$/customfield/field/checkbox/classes" isTestSource="false" packagePrefix="customfield_checkbox" />
+      <sourceFolder url="file://$MODULE_DIR$/customfield/field/checkbox/tests" isTestSource="true" packagePrefix="customfield_checkbox" />
+      <sourceFolder url="file://$MODULE_DIR$/customfield/field/date/classes" isTestSource="false" packagePrefix="customfield_date" />
+      <sourceFolder url="file://$MODULE_DIR$/customfield/field/date/tests" isTestSource="true" packagePrefix="customfield_date" />
+      <sourceFolder url="file://$MODULE_DIR$/customfield/field/select/classes" isTestSource="false" packagePrefix="customfield_select" />
+      <sourceFolder url="file://$MODULE_DIR$/customfield/field/select/tests" isTestSource="true" packagePrefix="customfield_select" />
+      <sourceFolder url="file://$MODULE_DIR$/customfield/field/text/classes" isTestSource="false" packagePrefix="customfield_text" />
+      <sourceFolder url="file://$MODULE_DIR$/customfield/field/text/tests" isTestSource="true" packagePrefix="customfield_text" />
+      <sourceFolder url="file://$MODULE_DIR$/customfield/field/textarea/classes" isTestSource="false" packagePrefix="customfield_textarea" />
+      <sourceFolder url="file://$MODULE_DIR$/customfield/field/textarea/tests" isTestSource="true" packagePrefix="customfield_textarea" />
+      <sourceFolder url="file://$MODULE_DIR$/customfield/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/dataformat/csv/classes" isTestSource="false" packagePrefix="dataformat_csv" />
+      <sourceFolder url="file://$MODULE_DIR$/dataformat/excel/classes" isTestSource="false" packagePrefix="dataformat_excel" />
+      <sourceFolder url="file://$MODULE_DIR$/dataformat/excel/tests" isTestSource="true" packagePrefix="dataformat_excel" />
+      <sourceFolder url="file://$MODULE_DIR$/dataformat/html/classes" isTestSource="false" packagePrefix="dataformat_html" />
+      <sourceFolder url="file://$MODULE_DIR$/dataformat/json/classes" isTestSource="false" packagePrefix="dataformat_json" />
+      <sourceFolder url="file://$MODULE_DIR$/dataformat/ods/classes" isTestSource="false" packagePrefix="dataformat_ods" />
+      <sourceFolder url="file://$MODULE_DIR$/dataformat/ods/tests" isTestSource="true" packagePrefix="dataformat_ods" />
+      <sourceFolder url="file://$MODULE_DIR$/dataformat/pdf/classes" isTestSource="false" packagePrefix="dataformat_pdf" />
+      <sourceFolder url="file://$MODULE_DIR$/dataformat/pdf/tests" isTestSource="true" packagePrefix="dataformat_pdf" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/category/classes" isTestSource="false" packagePrefix="enrol_category" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/category/tests" isTestSource="true" packagePrefix="enrol_category" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/classes" isTestSource="false" packagePrefix="core_enrol" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/cohort/classes" isTestSource="false" packagePrefix="enrol_cohort" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/cohort/tests" isTestSource="true" packagePrefix="enrol_cohort" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/database/classes" isTestSource="false" packagePrefix="enrol_database" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/database/tests" isTestSource="true" packagePrefix="enrol_database" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/fee/classes" isTestSource="false" packagePrefix="enrol_fee" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/fee/tests" isTestSource="true" packagePrefix="enrol_fee" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/flatfile/classes" isTestSource="false" packagePrefix="enrol_flatfile" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/flatfile/tests" isTestSource="true" packagePrefix="enrol_flatfile" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/guest/classes" isTestSource="false" packagePrefix="enrol_guest" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/guest/tests" isTestSource="true" packagePrefix="enrol_guest" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/imsenterprise/classes" isTestSource="false" packagePrefix="enrol_imsenterprise" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/imsenterprise/tests" isTestSource="true" packagePrefix="enrol_imsenterprise" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/ldap/classes" isTestSource="false" packagePrefix="enrol_ldap" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/ldap/tests" isTestSource="true" packagePrefix="enrol_ldap" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/lti/classes" isTestSource="false" packagePrefix="enrol_lti" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/lti/tests" isTestSource="true" packagePrefix="enrol_lti" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/manual/classes" isTestSource="false" packagePrefix="enrol_manual" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/manual/tests" isTestSource="true" packagePrefix="enrol_manual" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/meta/classes" isTestSource="false" packagePrefix="enrol_meta" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/meta/tests" isTestSource="true" packagePrefix="enrol_meta" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/mnet/classes" isTestSource="false" packagePrefix="enrol_mnet" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/paypal/classes" isTestSource="false" packagePrefix="enrol_paypal" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/paypal/tests" isTestSource="true" packagePrefix="enrol_paypal" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/self/classes" isTestSource="false" packagePrefix="enrol_self" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/self/tests" isTestSource="true" packagePrefix="enrol_self" />
+      <sourceFolder url="file://$MODULE_DIR$/enrol/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/favourites/classes" isTestSource="false" packagePrefix="core_favourites" />
+      <sourceFolder url="file://$MODULE_DIR$/favourites/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/files/classes" isTestSource="false" packagePrefix="core_files" />
+      <sourceFolder url="file://$MODULE_DIR$/files/converter/classes" isTestSource="false" packagePrefix="core_fileconverter" />
+      <sourceFolder url="file://$MODULE_DIR$/files/converter/googledrive/classes" isTestSource="false" packagePrefix="fileconverter_googledrive" />
+      <sourceFolder url="file://$MODULE_DIR$/files/converter/googledrive/tests" isTestSource="true" packagePrefix="fileconverter_googledrive" />
+      <sourceFolder url="file://$MODULE_DIR$/files/converter/unoconv/classes" isTestSource="false" packagePrefix="fileconverter_unoconv" />
+      <sourceFolder url="file://$MODULE_DIR$/files/converter/unoconv/tests" isTestSource="true" packagePrefix="fileconverter_unoconv" />
+      <sourceFolder url="file://$MODULE_DIR$/files/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/activitynames/classes" isTestSource="false" packagePrefix="filter_activitynames" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/activitynames/tests" isTestSource="true" packagePrefix="filter_activitynames" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/algebra/classes" isTestSource="false" packagePrefix="filter_algebra" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/algebra/tests" isTestSource="true" packagePrefix="filter_algebra" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/classes" isTestSource="false" packagePrefix="core_filters" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/data/classes" isTestSource="false" packagePrefix="filter_data" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/data/tests" isTestSource="true" packagePrefix="filter_data" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/displayh5p/classes" isTestSource="false" packagePrefix="filter_displayh5p" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/displayh5p/tests" isTestSource="true" packagePrefix="filter_displayh5p" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/emailprotect/classes" isTestSource="false" packagePrefix="filter_emailprotect" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/emoticon/classes" isTestSource="false" packagePrefix="filter_emoticon" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/glossary/classes" isTestSource="false" packagePrefix="filter_glossary" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/glossary/tests" isTestSource="true" packagePrefix="filter_glossary" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/mathjaxloader/classes" isTestSource="false" packagePrefix="filter_mathjaxloader" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/mathjaxloader/tests" isTestSource="true" packagePrefix="filter_mathjaxloader" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/mediaplugin/classes" isTestSource="false" packagePrefix="filter_mediaplugin" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/mediaplugin/tests" isTestSource="true" packagePrefix="filter_mediaplugin" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/multilang/classes" isTestSource="false" packagePrefix="filter_multilang" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/multilang/tests" isTestSource="true" packagePrefix="filter_multilang" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/tex/classes" isTestSource="false" packagePrefix="filter_tex" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/tex/tests" isTestSource="true" packagePrefix="filter_tex" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/tidy/classes" isTestSource="false" packagePrefix="filter_tidy" />
+      <sourceFolder url="file://$MODULE_DIR$/filter/urltolink/classes" isTestSource="false" packagePrefix="filter_urltolink" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/classes" isTestSource="false" packagePrefix="core_grades" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/export/ods/classes" isTestSource="false" packagePrefix="gradeexport_ods" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/export/ods/tests" isTestSource="true" packagePrefix="gradeexport_ods" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/export/txt/classes" isTestSource="false" packagePrefix="gradeexport_txt" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/export/txt/tests" isTestSource="true" packagePrefix="gradeexport_txt" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/export/xls/classes" isTestSource="false" packagePrefix="gradeexport_xls" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/export/xls/tests" isTestSource="true" packagePrefix="gradeexport_xls" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/export/xml/classes" isTestSource="false" packagePrefix="gradeexport_xml" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/export/xml/tests" isTestSource="true" packagePrefix="gradeexport_xml" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/grading/classes" isTestSource="false" packagePrefix="core_grading" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/grading/form/guide/classes" isTestSource="false" packagePrefix="gradingform_guide" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/grading/form/guide/tests" isTestSource="true" packagePrefix="gradingform_guide" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/grading/form/rubric/classes" isTestSource="false" packagePrefix="gradingform_rubric" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/grading/form/rubric/tests" isTestSource="true" packagePrefix="gradingform_rubric" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/grading/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/import/csv/classes" isTestSource="false" packagePrefix="gradeimport_csv" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/import/csv/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/import/direct/classes" isTestSource="false" packagePrefix="gradeimport_direct" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/import/xml/classes" isTestSource="false" packagePrefix="gradeimport_xml" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/report/grader/classes" isTestSource="false" packagePrefix="gradereport_grader" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/report/grader/tests" isTestSource="true" packagePrefix="gradereport_grader" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/report/history/classes" isTestSource="false" packagePrefix="gradereport_history" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/report/outcomes/classes" isTestSource="false" packagePrefix="gradereport_outcomes" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/report/overview/classes" isTestSource="false" packagePrefix="gradereport_overview" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/report/overview/tests" isTestSource="true" packagePrefix="gradereport_overview" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/report/singleview/classes" isTestSource="false" packagePrefix="gradereport_singleview" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/report/singleview/tests" isTestSource="true" packagePrefix="gradereport_singleview" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/report/summary/classes" isTestSource="false" packagePrefix="gradereport_summary" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/report/user/classes" isTestSource="false" packagePrefix="gradereport_user" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/report/user/tests" isTestSource="true" packagePrefix="gradereport_user" />
+      <sourceFolder url="file://$MODULE_DIR$/grade/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/group/classes" isTestSource="false" packagePrefix="core_group" />
+      <sourceFolder url="file://$MODULE_DIR$/group/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/h5p/classes" isTestSource="false" packagePrefix="core_h5p" />
+      <sourceFolder url="file://$MODULE_DIR$/h5p/h5plib/v124/classes" isTestSource="false" packagePrefix="h5plib_v124" />
+      <sourceFolder url="file://$MODULE_DIR$/h5p/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/iplookup/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib" isTestSource="false" packagePrefix="ScssPhp" />
+      <sourceFolder url="file://$MODULE_DIR$/lib" isTestSource="false" packagePrefix="MoodleHQ" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/antivirus/clamav/classes" isTestSource="false" packagePrefix="antivirus_clamav" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/antivirus/clamav/tests" isTestSource="true" packagePrefix="antivirus_clamav" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/antivirus/classes" isTestSource="false" packagePrefix="core_antivirus" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/behat/classes" isTestSource="false" packagePrefix="core_behat" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/behat/extension" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/classes" isTestSource="false" packagePrefix="core" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/ddl/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/dml/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/classes" isTestSource="false" packagePrefix="editor_atto" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/accessibilitychecker/classes" isTestSource="false" packagePrefix="atto_accessibilitychecker" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/accessibilityhelper/classes" isTestSource="false" packagePrefix="atto_accessibilityhelper" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/align/classes" isTestSource="false" packagePrefix="atto_align" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/backcolor/classes" isTestSource="false" packagePrefix="atto_backcolor" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/bold/classes" isTestSource="false" packagePrefix="atto_bold" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/charmap/classes" isTestSource="false" packagePrefix="atto_charmap" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/clear/classes" isTestSource="false" packagePrefix="atto_clear" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/collapse/classes" isTestSource="false" packagePrefix="atto_collapse" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/emojipicker/classes" isTestSource="false" packagePrefix="atto_emojipicker" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/emoticon/classes" isTestSource="false" packagePrefix="atto_emoticon" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/equation/classes" isTestSource="false" packagePrefix="atto_equation" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/fontcolor/classes" isTestSource="false" packagePrefix="atto_fontcolor" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/h5p/classes" isTestSource="false" packagePrefix="atto_h5p" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/html/classes" isTestSource="false" packagePrefix="atto_html" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/image/classes" isTestSource="false" packagePrefix="atto_image" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/indent/classes" isTestSource="false" packagePrefix="atto_indent" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/italic/classes" isTestSource="false" packagePrefix="atto_italic" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/link/classes" isTestSource="false" packagePrefix="atto_link" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/managefiles/classes" isTestSource="false" packagePrefix="atto_managefiles" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/media/classes" isTestSource="false" packagePrefix="atto_media" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/noautolink/classes" isTestSource="false" packagePrefix="atto_noautolink" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/orderedlist/classes" isTestSource="false" packagePrefix="atto_orderedlist" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/recordrtc/classes" isTestSource="false" packagePrefix="atto_recordrtc" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/rtl/classes" isTestSource="false" packagePrefix="atto_rtl" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/strike/classes" isTestSource="false" packagePrefix="atto_strike" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/subscript/classes" isTestSource="false" packagePrefix="atto_subscript" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/superscript/classes" isTestSource="false" packagePrefix="atto_superscript" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/table/classes" isTestSource="false" packagePrefix="atto_table" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/title/classes" isTestSource="false" packagePrefix="atto_title" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/underline/classes" isTestSource="false" packagePrefix="atto_underline" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/undo/classes" isTestSource="false" packagePrefix="atto_undo" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/plugins/unorderedlist/classes" isTestSource="false" packagePrefix="atto_unorderedlist" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/atto/tests" isTestSource="true" packagePrefix="editor_atto" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/classes" isTestSource="false" packagePrefix="core_editor" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/textarea/classes" isTestSource="false" packagePrefix="editor_textarea" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tiny" isTestSource="false" packagePrefix="editor_tiny" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tiny/classes" isTestSource="false" packagePrefix="editor_tiny" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tiny/plugins/accessibilitychecker/classes" isTestSource="false" packagePrefix="tiny_accessibilitychecker" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tiny/plugins/autosave/classes" isTestSource="false" packagePrefix="tiny_autosave" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tiny/plugins/equation/classes" isTestSource="false" packagePrefix="tiny_equation" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tiny/plugins/h5p/classes" isTestSource="false" packagePrefix="tiny_h5p" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tiny/plugins/link/classes" isTestSource="false" packagePrefix="tiny_link" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tiny/plugins/media/classes" isTestSource="false" packagePrefix="tiny_media" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tiny/plugins/recordrtc/classes" isTestSource="false" packagePrefix="tiny_recordrtc" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tinymce/classes" isTestSource="false" packagePrefix="editor_tinymce" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tinymce/plugins/ctrlhelp/classes" isTestSource="false" packagePrefix="tinymce_ctrlhelp" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tinymce/plugins/managefiles/classes" isTestSource="false" packagePrefix="tinymce_managefiles" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tinymce/plugins/moodleemoticon/classes" isTestSource="false" packagePrefix="tinymce_moodleemoticon" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tinymce/plugins/moodleimage/classes" isTestSource="false" packagePrefix="tinymce_moodleimage" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tinymce/plugins/moodlemedia/classes" isTestSource="false" packagePrefix="tinymce_moodlemedia" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tinymce/plugins/moodlenolink/classes" isTestSource="false" packagePrefix="tinymce_moodlenolink" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tinymce/plugins/pdw/classes" isTestSource="false" packagePrefix="tinymce_pdw" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tinymce/plugins/spellchecker/classes" isTestSource="false" packagePrefix="tinymce_spellchecker" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/editor/tinymce/plugins/wrap/classes" isTestSource="false" packagePrefix="tinymce_wrap" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/external/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/filebrowser/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/filestorage/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/form/classes" isTestSource="false" packagePrefix="core_form" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/form/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/geopattern-php" isTestSource="false" packagePrefix="RedeyeVentures" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/grade/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/horde/framework" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/markdown" isTestSource="false" packagePrefix="Michelf" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/maxmind" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/maxmind/MaxMind/src/MaxMind/Db" isTestSource="false" packagePrefix="MaxMind\Db\" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/maxmind/MaxMind/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/maxmind/MaxMind/tests/MaxMind/Db/Test/Reader" isTestSource="true" packagePrefix="MaxMind\Db\Test\Reader\" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/mlbackend/php/classes" isTestSource="false" packagePrefix="mlbackend_php" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/mlbackend/php/phpml/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/mlbackend/python/classes" isTestSource="false" packagePrefix="mlbackend_python" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/mlbackend/python/tests" isTestSource="true" packagePrefix="mlbackend_python" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/php-jwt/src" isTestSource="false" packagePrefix="Firebase\JWT\" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/php-jwt/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/phpunit/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/plist/classes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/spout/src" isTestSource="false" packagePrefix="Box" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/table/classes" isTestSource="false" packagePrefix="core_table" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/table/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/testing/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/userkey/classes" isTestSource="false" packagePrefix="core_userkey" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/userkey/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/xapi/classes" isTestSource="false" packagePrefix="core_xapi" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/xapi/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/lib/zipstream/src" isTestSource="false" packagePrefix="ZipStream" />
+      <sourceFolder url="file://$MODULE_DIR$/local/adminer/classes" isTestSource="false" packagePrefix="local_adminer" />
+      <sourceFolder url="file://$MODULE_DIR$/login/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/media/classes" isTestSource="false" packagePrefix="core_media" />
+      <sourceFolder url="file://$MODULE_DIR$/media/player/html5audio/classes" isTestSource="false" packagePrefix="media_html5audio" />
+      <sourceFolder url="file://$MODULE_DIR$/media/player/html5audio/tests" isTestSource="true" packagePrefix="media_html5audio" />
+      <sourceFolder url="file://$MODULE_DIR$/media/player/html5video/classes" isTestSource="false" packagePrefix="media_html5video" />
+      <sourceFolder url="file://$MODULE_DIR$/media/player/html5video/tests" isTestSource="true" packagePrefix="media_html5video" />
+      <sourceFolder url="file://$MODULE_DIR$/media/player/videojs/classes" isTestSource="false" packagePrefix="media_videojs" />
+      <sourceFolder url="file://$MODULE_DIR$/media/player/videojs/tests" isTestSource="true" packagePrefix="media_videojs" />
+      <sourceFolder url="file://$MODULE_DIR$/media/player/vimeo/classes" isTestSource="false" packagePrefix="media_vimeo" />
+      <sourceFolder url="file://$MODULE_DIR$/media/player/vimeo/tests" isTestSource="true" packagePrefix="media_vimeo" />
+      <sourceFolder url="file://$MODULE_DIR$/media/player/youtube/classes" isTestSource="false" packagePrefix="media_youtube" />
+      <sourceFolder url="file://$MODULE_DIR$/media/player/youtube/tests" isTestSource="true" packagePrefix="media_youtube" />
+      <sourceFolder url="file://$MODULE_DIR$/message/classes" isTestSource="false" packagePrefix="core_message" />
+      <sourceFolder url="file://$MODULE_DIR$/message/output/airnotifier/classes" isTestSource="false" packagePrefix="message_airnotifier" />
+      <sourceFolder url="file://$MODULE_DIR$/message/output/airnotifier/tests" isTestSource="true" packagePrefix="message_airnotifier" />
+      <sourceFolder url="file://$MODULE_DIR$/message/output/email/classes" isTestSource="false" packagePrefix="message_email" />
+      <sourceFolder url="file://$MODULE_DIR$/message/output/email/tests" isTestSource="true" packagePrefix="message_email" />
+      <sourceFolder url="file://$MODULE_DIR$/message/output/popup/classes" isTestSource="false" packagePrefix="message_popup" />
+      <sourceFolder url="file://$MODULE_DIR$/message/output/popup/tests" isTestSource="true" packagePrefix="message_popup" />
+      <sourceFolder url="file://$MODULE_DIR$/message/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/mnet/classes" isTestSource="false" packagePrefix="core_mnet" />
+      <sourceFolder url="file://$MODULE_DIR$/mnet/service/enrol/classes" isTestSource="false" packagePrefix="mnetservice_enrol" />
+      <sourceFolder url="file://$MODULE_DIR$/mnet/service/enrol/tests" isTestSource="true" packagePrefix="mnetservice_enrol" />
+      <sourceFolder url="file://$MODULE_DIR$/mnet/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/classes" isTestSource="false" packagePrefix="mod_assign" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/feedback/comments/classes" isTestSource="false" packagePrefix="assignfeedback_comments" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/feedback/comments/tests" isTestSource="true" packagePrefix="assignfeedback_comments" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/feedback/editpdf" isTestSource="false" packagePrefix="setasign" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/feedback/editpdf/classes" isTestSource="false" packagePrefix="assignfeedback_editpdf" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/feedback/editpdf/tests" isTestSource="true" packagePrefix="assignfeedback_editpdf" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/feedback/file/classes" isTestSource="false" packagePrefix="assignfeedback_file" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/feedback/file/tests" isTestSource="true" packagePrefix="assignfeedback_file" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/feedback/offline/classes" isTestSource="false" packagePrefix="assignfeedback_offline" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/submission/comments/classes" isTestSource="false" packagePrefix="assignsubmission_comments" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/submission/comments/tests" isTestSource="true" packagePrefix="assignsubmission_comments" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/submission/file/classes" isTestSource="false" packagePrefix="assignsubmission_file" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/submission/file/tests" isTestSource="true" packagePrefix="assignsubmission_file" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/submission/onlinetext/classes" isTestSource="false" packagePrefix="assignsubmission_onlinetext" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/submission/onlinetext/tests" isTestSource="true" packagePrefix="assignsubmission_onlinetext" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assign/tests" isTestSource="true" packagePrefix="mod_assign" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assignment/classes" isTestSource="false" packagePrefix="mod_assignment" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assignment/tests" isTestSource="true" packagePrefix="mod_assignment" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assignment/type/offline/classes" isTestSource="false" packagePrefix="assignment_offline" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assignment/type/online/classes" isTestSource="false" packagePrefix="assignment_online" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assignment/type/upload/classes" isTestSource="false" packagePrefix="assignment_upload" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/assignment/type/uploadsingle/classes" isTestSource="false" packagePrefix="assignment_uploadsingle" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/bigbluebuttonbn/classes" isTestSource="false" packagePrefix="mod_bigbluebuttonbn" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/bigbluebuttonbn/tests" isTestSource="true" packagePrefix="mod_bigbluebuttonbn" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/book/classes" isTestSource="false" packagePrefix="mod_book" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/book/tests" isTestSource="true" packagePrefix="mod_book" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/book/tool/exportimscp/classes" isTestSource="false" packagePrefix="booktool_exportimscp" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/book/tool/exportimscp/tests" isTestSource="true" packagePrefix="booktool_exportimscp" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/book/tool/importhtml/classes" isTestSource="false" packagePrefix="booktool_importhtml" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/book/tool/importhtml/tests" isTestSource="true" packagePrefix="booktool_importhtml" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/book/tool/print/classes" isTestSource="false" packagePrefix="booktool_print" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/book/tool/print/tests" isTestSource="true" packagePrefix="booktool_print" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/chat/classes" isTestSource="false" packagePrefix="mod_chat" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/chat/tests" isTestSource="true" packagePrefix="mod_chat" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/choice/classes" isTestSource="false" packagePrefix="mod_choice" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/choice/tests" isTestSource="true" packagePrefix="mod_choice" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/classes" isTestSource="false" packagePrefix="mod_data" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/field/checkbox/classes" isTestSource="false" packagePrefix="datafield_checkbox" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/field/date/classes" isTestSource="false" packagePrefix="datafield_date" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/field/file/classes" isTestSource="false" packagePrefix="datafield_file" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/field/latlong/classes" isTestSource="false" packagePrefix="datafield_latlong" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/field/menu/classes" isTestSource="false" packagePrefix="datafield_menu" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/field/multimenu/classes" isTestSource="false" packagePrefix="datafield_multimenu" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/field/number/classes" isTestSource="false" packagePrefix="datafield_number" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/field/picture/classes" isTestSource="false" packagePrefix="datafield_picture" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/field/radiobutton/classes" isTestSource="false" packagePrefix="datafield_radiobutton" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/field/text/classes" isTestSource="false" packagePrefix="datafield_text" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/field/textarea/classes" isTestSource="false" packagePrefix="datafield_textarea" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/field/url/classes" isTestSource="false" packagePrefix="datafield_url" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/preset/imagegallery/classes" isTestSource="false" packagePrefix="datapreset_imagegallery" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/preset/journal/classes" isTestSource="false" packagePrefix="datapreset_journal" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/preset/proposals/classes" isTestSource="false" packagePrefix="datapreset_proposals" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/preset/resources/classes" isTestSource="false" packagePrefix="datapreset_resources" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/data/tests" isTestSource="true" packagePrefix="mod_data" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/feedback/classes" isTestSource="false" packagePrefix="mod_feedback" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/feedback/tests" isTestSource="true" packagePrefix="mod_feedback" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/folder/classes" isTestSource="false" packagePrefix="mod_folder" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/folder/tests" isTestSource="true" packagePrefix="mod_folder" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/forum/classes" isTestSource="false" packagePrefix="mod_forum" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/forum/report/summary/classes" isTestSource="false" packagePrefix="forumreport_summary" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/forum/report/summary/tests" isTestSource="true" packagePrefix="forumreport_summary" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/forum/tests" isTestSource="true" packagePrefix="mod_forum" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/glossary/classes" isTestSource="false" packagePrefix="mod_glossary" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/glossary/tests" isTestSource="true" packagePrefix="mod_glossary" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/h5pactivity/classes" isTestSource="false" packagePrefix="mod_h5pactivity" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/h5pactivity/tests" isTestSource="true" packagePrefix="mod_h5pactivity" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/imscp/classes" isTestSource="false" packagePrefix="mod_imscp" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/imscp/tests" isTestSource="true" packagePrefix="mod_imscp" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/label/classes" isTestSource="false" packagePrefix="mod_label" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/label/tests" isTestSource="true" packagePrefix="mod_label" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/lesson/classes" isTestSource="false" packagePrefix="mod_lesson" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/lesson/tests" isTestSource="true" packagePrefix="mod_lesson" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/lti/classes" isTestSource="false" packagePrefix="mod_lti" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/lti/service/basicoutcomes/classes" isTestSource="false" packagePrefix="ltiservice_basicoutcomes" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/lti/service/gradebookservices/classes" isTestSource="false" packagePrefix="ltiservice_gradebookservices" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/lti/service/gradebookservices/tests" isTestSource="true" packagePrefix="ltiservice_gradebookservices" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/lti/service/memberships/classes" isTestSource="false" packagePrefix="ltiservice_memberships" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/lti/service/memberships/tests" isTestSource="true" packagePrefix="ltiservice_memberships" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/lti/service/profile/classes" isTestSource="false" packagePrefix="ltiservice_profile" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/lti/service/toolproxy/classes" isTestSource="false" packagePrefix="ltiservice_toolproxy" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/lti/service/toolsettings/classes" isTestSource="false" packagePrefix="ltiservice_toolsettings" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/lti/tests" isTestSource="true" packagePrefix="mod_lti" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/page/classes" isTestSource="false" packagePrefix="mod_page" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/page/tests" isTestSource="true" packagePrefix="mod_page" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/delaybetweenattempts/classes" isTestSource="false" packagePrefix="quizaccess_delaybetweenattempts" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/delaybetweenattempts/tests" isTestSource="true" packagePrefix="quizaccess_delaybetweenattempts" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/ipaddress/classes" isTestSource="false" packagePrefix="quizaccess_ipaddress" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/ipaddress/tests" isTestSource="true" packagePrefix="quizaccess_ipaddress" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/numattempts/classes" isTestSource="false" packagePrefix="quizaccess_numattempts" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/numattempts/tests" isTestSource="true" packagePrefix="quizaccess_numattempts" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/offlineattempts/classes" isTestSource="false" packagePrefix="quizaccess_offlineattempts" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/offlineattempts/tests" isTestSource="true" packagePrefix="quizaccess_offlineattempts" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/openclosedate/classes" isTestSource="false" packagePrefix="quizaccess_openclosedate" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/openclosedate/tests" isTestSource="true" packagePrefix="quizaccess_openclosedate" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/password/classes" isTestSource="false" packagePrefix="quizaccess_password" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/password/tests" isTestSource="true" packagePrefix="quizaccess_password" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/seb/classes" isTestSource="false" packagePrefix="quizaccess_seb" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/seb/tests" isTestSource="true" packagePrefix="quizaccess_seb" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/securewindow/classes" isTestSource="false" packagePrefix="quizaccess_securewindow" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/securewindow/tests" isTestSource="true" packagePrefix="quizaccess_securewindow" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/timelimit/classes" isTestSource="false" packagePrefix="quizaccess_timelimit" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/accessrule/timelimit/tests" isTestSource="true" packagePrefix="quizaccess_timelimit" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/classes" isTestSource="false" packagePrefix="mod_quiz" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/report/grading/classes" isTestSource="false" packagePrefix="quiz_grading" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/report/grading/tests" isTestSource="true" packagePrefix="quiz_grading" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/report/overview/classes" isTestSource="false" packagePrefix="quiz_overview" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/report/overview/tests" isTestSource="true" packagePrefix="quiz_overview" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/report/responses/classes" isTestSource="false" packagePrefix="quiz_responses" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/report/responses/tests" isTestSource="true" packagePrefix="quiz_responses" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/report/statistics/classes" isTestSource="false" packagePrefix="quiz_statistics" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/report/statistics/tests" isTestSource="true" packagePrefix="quiz_statistics" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/quiz/tests" isTestSource="true" packagePrefix="mod_quiz" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/resource/classes" isTestSource="false" packagePrefix="mod_resource" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/resource/tests" isTestSource="true" packagePrefix="mod_resource" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/scorm/classes" isTestSource="false" packagePrefix="mod_scorm" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/scorm/report/basic/classes" isTestSource="false" packagePrefix="scormreport_basic" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/scorm/report/basic/tests" isTestSource="true" packagePrefix="scormreport_basic" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/scorm/report/graphs/classes" isTestSource="false" packagePrefix="scormreport_graphs" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/scorm/report/interactions/classes" isTestSource="false" packagePrefix="scormreport_interactions" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/scorm/report/interactions/tests" isTestSource="true" packagePrefix="scormreport_interactions" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/scorm/report/objectives/classes" isTestSource="false" packagePrefix="scormreport_objectives" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/scorm/report/objectives/tests" isTestSource="true" packagePrefix="scormreport_objectives" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/scorm/tests" isTestSource="true" packagePrefix="mod_scorm" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/survey/classes" isTestSource="false" packagePrefix="mod_survey" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/survey/tests" isTestSource="true" packagePrefix="mod_survey" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/url/classes" isTestSource="false" packagePrefix="mod_url" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/url/tests" isTestSource="true" packagePrefix="mod_url" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/wiki/classes" isTestSource="false" packagePrefix="mod_wiki" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/wiki/tests" isTestSource="true" packagePrefix="mod_wiki" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/allocation/manual/classes" isTestSource="false" packagePrefix="workshopallocation_manual" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/allocation/manual/tests" isTestSource="true" packagePrefix="workshopallocation_manual" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/allocation/random/classes" isTestSource="false" packagePrefix="workshopallocation_random" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/allocation/scheduled/classes" isTestSource="false" packagePrefix="workshopallocation_scheduled" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/allocation/scheduled/tests" isTestSource="true" packagePrefix="workshopallocation_scheduled" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/classes" isTestSource="false" packagePrefix="mod_workshop" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/eval/best/classes" isTestSource="false" packagePrefix="workshopeval_best" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/form/accumulative/classes" isTestSource="false" packagePrefix="workshopform_accumulative" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/form/accumulative/tests" isTestSource="true" packagePrefix="workshopform_accumulative" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/form/comments/classes" isTestSource="false" packagePrefix="workshopform_comments" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/form/comments/tests" isTestSource="true" packagePrefix="workshopform_comments" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/form/numerrors/classes" isTestSource="false" packagePrefix="workshopform_numerrors" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/form/numerrors/tests" isTestSource="true" packagePrefix="workshopform_numerrors" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/form/rubric/classes" isTestSource="false" packagePrefix="workshopform_rubric" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/form/rubric/tests" isTestSource="true" packagePrefix="workshopform_rubric" />
+      <sourceFolder url="file://$MODULE_DIR$/mod/workshop/tests" isTestSource="true" packagePrefix="mod_workshop" />
+      <sourceFolder url="file://$MODULE_DIR$/my/classes" isTestSource="false" packagePrefix="core_my" />
+      <sourceFolder url="file://$MODULE_DIR$/my/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/notes/classes" isTestSource="false" packagePrefix="core_notes" />
+      <sourceFolder url="file://$MODULE_DIR$/notes/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/payment/classes" isTestSource="false" packagePrefix="core_payment" />
+      <sourceFolder url="file://$MODULE_DIR$/payment/gateway/paypal/classes" isTestSource="false" packagePrefix="paygw_paypal" />
+      <sourceFolder url="file://$MODULE_DIR$/payment/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/plagiarism/classes" isTestSource="false" packagePrefix="core_plagiarism" />
+      <sourceFolder url="file://$MODULE_DIR$/plagiarism/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/portfolio/classes" isTestSource="false" packagePrefix="core_portfolio" />
+      <sourceFolder url="file://$MODULE_DIR$/portfolio/download/classes" isTestSource="false" packagePrefix="portfolio_download" />
+      <sourceFolder url="file://$MODULE_DIR$/portfolio/flickr/classes" isTestSource="false" packagePrefix="portfolio_flickr" />
+      <sourceFolder url="file://$MODULE_DIR$/portfolio/flickr/tests" isTestSource="true" packagePrefix="portfolio_flickr" />
+      <sourceFolder url="file://$MODULE_DIR$/portfolio/googledocs/classes" isTestSource="false" packagePrefix="portfolio_googledocs" />
+      <sourceFolder url="file://$MODULE_DIR$/portfolio/googledocs/tests" isTestSource="true" packagePrefix="portfolio_googledocs" />
+      <sourceFolder url="file://$MODULE_DIR$/portfolio/mahara/classes" isTestSource="false" packagePrefix="portfolio_mahara" />
+      <sourceFolder url="file://$MODULE_DIR$/portfolio/mahara/tests" isTestSource="true" packagePrefix="portfolio_mahara" />
+      <sourceFolder url="file://$MODULE_DIR$/portfolio/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/privacy/classes" isTestSource="false" packagePrefix="core_privacy" />
+      <sourceFolder url="file://$MODULE_DIR$/privacy/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/bulkmove/classes" isTestSource="false" packagePrefix="qbank_bulkmove" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/bulkmove/tests" isTestSource="true" packagePrefix="qbank_bulkmove" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/columnsortorder/classes" isTestSource="false" packagePrefix="qbank_columnsortorder" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/columnsortorder/tests" isTestSource="true" packagePrefix="qbank_columnsortorder" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/columnsortorder/tests/external" isTestSource="false" packagePrefix="qbank_columnsortorder" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/comment/classes" isTestSource="false" packagePrefix="qbank_comment" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/comment/tests" isTestSource="true" packagePrefix="qbank_comment" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/customfields/classes" isTestSource="false" packagePrefix="qbank_customfields" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/customfields/tests" isTestSource="true" packagePrefix="qbank_customfields" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/deletequestion/classes" isTestSource="false" packagePrefix="qbank_deletequestion" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/deletequestion/tests" isTestSource="true" packagePrefix="qbank_deletequestion" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/editquestion/classes" isTestSource="false" packagePrefix="qbank_editquestion" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/editquestion/tests/external" isTestSource="false" packagePrefix="qbank_editquestion" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/exportquestions/classes" isTestSource="false" packagePrefix="qbank_exportquestions" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/exporttoxml/classes" isTestSource="false" packagePrefix="qbank_exporttoxml" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/exporttoxml/tests" isTestSource="true" packagePrefix="qbank_exporttoxml" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/history/classes" isTestSource="false" packagePrefix="qbank_history" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/history/tests" isTestSource="true" packagePrefix="qbank_history" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/importquestions/classes" isTestSource="false" packagePrefix="qbank_importquestions" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/managecategories/classes" isTestSource="false" packagePrefix="qbank_managecategories" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/managecategories/tests" isTestSource="true" packagePrefix="qbank_managecategories" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/previewquestion/classes" isTestSource="false" packagePrefix="qbank_previewquestion" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/previewquestion/tests" isTestSource="true" packagePrefix="qbank_previewquestion" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/statistics/classes" isTestSource="false" packagePrefix="qbank_statistics" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/statistics/tests" isTestSource="true" packagePrefix="qbank_statistics" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/tagquestion/classes" isTestSource="false" packagePrefix="qbank_tagquestion" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/tagquestion/tests" isTestSource="true" packagePrefix="qbank_tagquestion" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/usage/classes" isTestSource="false" packagePrefix="qbank_usage" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/usage/tests" isTestSource="true" packagePrefix="qbank_usage" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/viewcreator/classes" isTestSource="false" packagePrefix="qbank_viewcreator" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/viewquestionname/classes" isTestSource="false" packagePrefix="qbank_viewquestionname" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/viewquestiontext/classes" isTestSource="false" packagePrefix="qbank_viewquestiontext" />
+      <sourceFolder url="file://$MODULE_DIR$/question/bank/viewquestiontype/classes" isTestSource="false" packagePrefix="qbank_viewquestiontype" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/adaptive/classes" isTestSource="false" packagePrefix="qbehaviour_adaptive" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/adaptive/tests" isTestSource="true" packagePrefix="qbehaviour_adaptive" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/adaptivenopenalty/classes" isTestSource="false" packagePrefix="qbehaviour_adaptivenopenalty" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/adaptivenopenalty/tests" isTestSource="true" packagePrefix="qbehaviour_adaptivenopenalty" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/deferredcbm/classes" isTestSource="false" packagePrefix="qbehaviour_deferredcbm" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/deferredcbm/tests" isTestSource="true" packagePrefix="qbehaviour_deferredcbm" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/deferredfeedback/classes" isTestSource="false" packagePrefix="qbehaviour_deferredfeedback" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/deferredfeedback/tests" isTestSource="true" packagePrefix="qbehaviour_deferredfeedback" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/immediatecbm/classes" isTestSource="false" packagePrefix="qbehaviour_immediatecbm" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/immediatecbm/tests" isTestSource="true" packagePrefix="qbehaviour_immediatecbm" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/immediatefeedback/classes" isTestSource="false" packagePrefix="qbehaviour_immediatefeedback" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/immediatefeedback/tests" isTestSource="true" packagePrefix="qbehaviour_immediatefeedback" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/informationitem/classes" isTestSource="false" packagePrefix="qbehaviour_informationitem" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/informationitem/tests" isTestSource="true" packagePrefix="qbehaviour_informationitem" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/interactive/classes" isTestSource="false" packagePrefix="qbehaviour_interactive" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/interactive/tests" isTestSource="true" packagePrefix="qbehaviour_interactive" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/interactivecountback/classes" isTestSource="false" packagePrefix="qbehaviour_interactivecountback" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/interactivecountback/tests" isTestSource="true" packagePrefix="qbehaviour_interactivecountback" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/manualgraded/classes" isTestSource="false" packagePrefix="qbehaviour_manualgraded" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/manualgraded/tests" isTestSource="true" packagePrefix="qbehaviour_manualgraded" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/missing/classes" isTestSource="false" packagePrefix="qbehaviour_missing" />
+      <sourceFolder url="file://$MODULE_DIR$/question/behaviour/missing/tests" isTestSource="true" packagePrefix="qbehaviour_missing" />
+      <sourceFolder url="file://$MODULE_DIR$/question/classes" isTestSource="false" packagePrefix="core_question" />
+      <sourceFolder url="file://$MODULE_DIR$/question/engine/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/question/engine/upgrade/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/question/format/aiken/classes" isTestSource="false" packagePrefix="qformat_aiken" />
+      <sourceFolder url="file://$MODULE_DIR$/question/format/blackboard_six/classes" isTestSource="false" packagePrefix="qformat_blackboard_six" />
+      <sourceFolder url="file://$MODULE_DIR$/question/format/blackboard_six/tests" isTestSource="true" packagePrefix="qformat_blackboard_six" />
+      <sourceFolder url="file://$MODULE_DIR$/question/format/gift/classes" isTestSource="false" packagePrefix="qformat_gift" />
+      <sourceFolder url="file://$MODULE_DIR$/question/format/gift/tests" isTestSource="true" packagePrefix="qformat_gift" />
+      <sourceFolder url="file://$MODULE_DIR$/question/format/missingword/classes" isTestSource="false" packagePrefix="qformat_missingword" />
+      <sourceFolder url="file://$MODULE_DIR$/question/format/multianswer/classes" isTestSource="false" packagePrefix="qformat_multianswer" />
+      <sourceFolder url="file://$MODULE_DIR$/question/format/multianswer/tests" isTestSource="true" packagePrefix="qformat_multianswer" />
+      <sourceFolder url="file://$MODULE_DIR$/question/format/xhtml/classes" isTestSource="false" packagePrefix="qformat_xhtml" />
+      <sourceFolder url="file://$MODULE_DIR$/question/format/xml/classes" isTestSource="false" packagePrefix="qformat_xml" />
+      <sourceFolder url="file://$MODULE_DIR$/question/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/calculated/classes" isTestSource="false" packagePrefix="qtype_calculated" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/calculated/tests" isTestSource="true" packagePrefix="qtype_calculated" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/calculatedmulti/classes" isTestSource="false" packagePrefix="qtype_calculatedmulti" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/calculatedmulti/tests" isTestSource="true" packagePrefix="qtype_calculatedmulti" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/calculatedsimple/classes" isTestSource="false" packagePrefix="qtype_calculatedsimple" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/calculatedsimple/tests" isTestSource="true" packagePrefix="qtype_calculatedsimple" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/ddimageortext/classes" isTestSource="false" packagePrefix="qtype_ddimageortext" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/ddimageortext/tests" isTestSource="true" packagePrefix="qtype_ddimageortext" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/ddmarker/classes" isTestSource="false" packagePrefix="qtype_ddmarker" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/ddmarker/tests" isTestSource="true" packagePrefix="qtype_ddmarker" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/ddwtos/classes" isTestSource="false" packagePrefix="qtype_ddwtos" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/ddwtos/tests" isTestSource="true" packagePrefix="qtype_ddwtos" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/description/classes" isTestSource="false" packagePrefix="qtype_description" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/description/tests" isTestSource="true" packagePrefix="qtype_description" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/essay/classes" isTestSource="false" packagePrefix="qtype_essay" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/essay/tests" isTestSource="true" packagePrefix="qtype_essay" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/gapselect/classes" isTestSource="false" packagePrefix="qtype_gapselect" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/gapselect/tests" isTestSource="true" packagePrefix="qtype_gapselect" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/match/classes" isTestSource="false" packagePrefix="qtype_match" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/match/tests" isTestSource="true" packagePrefix="qtype_match" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/missingtype/classes" isTestSource="false" packagePrefix="qtype_missingtype" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/missingtype/tests" isTestSource="true" packagePrefix="qtype_missingtype" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/multianswer/classes" isTestSource="false" packagePrefix="qtype_multianswer" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/multianswer/tests" isTestSource="true" packagePrefix="qtype_multianswer" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/multichoice/classes" isTestSource="false" packagePrefix="qtype_multichoice" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/multichoice/tests" isTestSource="true" packagePrefix="qtype_multichoice" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/numerical/classes" isTestSource="false" packagePrefix="qtype_numerical" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/numerical/tests" isTestSource="true" packagePrefix="qtype_numerical" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/random/classes" isTestSource="false" packagePrefix="qtype_random" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/random/tests" isTestSource="true" packagePrefix="qtype_random" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/randomsamatch/classes" isTestSource="false" packagePrefix="qtype_randomsamatch" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/randomsamatch/tests" isTestSource="true" packagePrefix="qtype_randomsamatch" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/shortanswer/classes" isTestSource="false" packagePrefix="qtype_shortanswer" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/shortanswer/tests" isTestSource="true" packagePrefix="qtype_shortanswer" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/truefalse/classes" isTestSource="false" packagePrefix="qtype_truefalse" />
+      <sourceFolder url="file://$MODULE_DIR$/question/type/truefalse/tests" isTestSource="true" packagePrefix="qtype_truefalse" />
+      <sourceFolder url="file://$MODULE_DIR$/rating/classes" isTestSource="false" packagePrefix="core_rating" />
+      <sourceFolder url="file://$MODULE_DIR$/rating/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/report/backups/classes" isTestSource="false" packagePrefix="report_backups" />
+      <sourceFolder url="file://$MODULE_DIR$/report/competency/classes" isTestSource="false" packagePrefix="report_competency" />
+      <sourceFolder url="file://$MODULE_DIR$/report/completion/classes" isTestSource="false" packagePrefix="report_completion" />
+      <sourceFolder url="file://$MODULE_DIR$/report/completion/tests" isTestSource="true" packagePrefix="report_completion" />
+      <sourceFolder url="file://$MODULE_DIR$/report/configlog/classes" isTestSource="false" packagePrefix="report_configlog" />
+      <sourceFolder url="file://$MODULE_DIR$/report/courseoverview/classes" isTestSource="false" packagePrefix="report_courseoverview" />
+      <sourceFolder url="file://$MODULE_DIR$/report/eventlist/classes" isTestSource="false" packagePrefix="report_eventlist" />
+      <sourceFolder url="file://$MODULE_DIR$/report/infectedfiles/classes" isTestSource="false" packagePrefix="report_infectedfiles" />
+      <sourceFolder url="file://$MODULE_DIR$/report/insights/classes" isTestSource="false" packagePrefix="report_insights" />
+      <sourceFolder url="file://$MODULE_DIR$/report/insights/tests" isTestSource="true" packagePrefix="report_insights" />
+      <sourceFolder url="file://$MODULE_DIR$/report/log/classes" isTestSource="false" packagePrefix="report_log" />
+      <sourceFolder url="file://$MODULE_DIR$/report/log/tests" isTestSource="true" packagePrefix="report_log" />
+      <sourceFolder url="file://$MODULE_DIR$/report/loglive/classes" isTestSource="false" packagePrefix="report_loglive" />
+      <sourceFolder url="file://$MODULE_DIR$/report/loglive/tests" isTestSource="true" packagePrefix="report_loglive" />
+      <sourceFolder url="file://$MODULE_DIR$/report/outline/classes" isTestSource="false" packagePrefix="report_outline" />
+      <sourceFolder url="file://$MODULE_DIR$/report/outline/tests" isTestSource="true" packagePrefix="report_outline" />
+      <sourceFolder url="file://$MODULE_DIR$/report/participation/classes" isTestSource="false" packagePrefix="report_participation" />
+      <sourceFolder url="file://$MODULE_DIR$/report/participation/tests" isTestSource="true" packagePrefix="report_participation" />
+      <sourceFolder url="file://$MODULE_DIR$/report/performance/classes" isTestSource="false" packagePrefix="report_performance" />
+      <sourceFolder url="file://$MODULE_DIR$/report/progress/classes" isTestSource="false" packagePrefix="report_progress" />
+      <sourceFolder url="file://$MODULE_DIR$/report/questioninstances/classes" isTestSource="false" packagePrefix="report_questioninstances" />
+      <sourceFolder url="file://$MODULE_DIR$/report/questioninstances/tests" isTestSource="true" packagePrefix="report_questioninstances" />
+      <sourceFolder url="file://$MODULE_DIR$/report/security/classes" isTestSource="false" packagePrefix="report_security" />
+      <sourceFolder url="file://$MODULE_DIR$/report/stats/classes" isTestSource="false" packagePrefix="report_stats" />
+      <sourceFolder url="file://$MODULE_DIR$/report/stats/tests" isTestSource="true" packagePrefix="report_stats" />
+      <sourceFolder url="file://$MODULE_DIR$/report/status/classes" isTestSource="false" packagePrefix="report_status" />
+      <sourceFolder url="file://$MODULE_DIR$/report/usersessions/classes" isTestSource="false" packagePrefix="report_usersessions" />
+      <sourceFolder url="file://$MODULE_DIR$/report/usersessions/tests" isTestSource="true" packagePrefix="report_usersessions" />
+      <sourceFolder url="file://$MODULE_DIR$/reportbuilder/classes" isTestSource="false" packagePrefix="core_reportbuilder" />
+      <sourceFolder url="file://$MODULE_DIR$/reportbuilder/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/areafiles/classes" isTestSource="false" packagePrefix="repository_areafiles" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/classes" isTestSource="false" packagePrefix="core_repository" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/contentbank/classes" isTestSource="false" packagePrefix="repository_contentbank" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/contentbank/tests" isTestSource="true" packagePrefix="repository_contentbank" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/coursefiles/classes" isTestSource="false" packagePrefix="repository_coursefiles" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/dropbox/classes" isTestSource="false" packagePrefix="repository_dropbox" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/dropbox/tests" isTestSource="true" packagePrefix="repository_dropbox" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/equella/classes" isTestSource="false" packagePrefix="repository_equella" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/filesystem/classes" isTestSource="false" packagePrefix="repository_filesystem" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/flickr/classes" isTestSource="false" packagePrefix="repository_flickr" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/flickr/tests" isTestSource="true" packagePrefix="repository_flickr" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/flickr_public/classes" isTestSource="false" packagePrefix="repository_flickr_public" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/googledocs/classes" isTestSource="false" packagePrefix="repository_googledocs" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/googledocs/tests" isTestSource="true" packagePrefix="repository_googledocs" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/local/classes" isTestSource="false" packagePrefix="repository_local" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/merlot/classes" isTestSource="false" packagePrefix="repository_merlot" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/nextcloud/classes" isTestSource="false" packagePrefix="repository_nextcloud" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/nextcloud/tests" isTestSource="true" packagePrefix="repository_nextcloud" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/onedrive/classes" isTestSource="false" packagePrefix="repository_onedrive" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/onedrive/tests" isTestSource="true" packagePrefix="repository_onedrive" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/recent/classes" isTestSource="false" packagePrefix="repository_recent" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/recent/tests" isTestSource="true" packagePrefix="repository_recent" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/s3/classes" isTestSource="false" packagePrefix="repository_s3" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/upload/classes" isTestSource="false" packagePrefix="repository_upload" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/url/classes" isTestSource="false" packagePrefix="repository_url" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/url/tests" isTestSource="true" packagePrefix="repository_url" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/user/classes" isTestSource="false" packagePrefix="repository_user" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/webdav/classes" isTestSource="false" packagePrefix="repository_webdav" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/wikimedia/classes" isTestSource="false" packagePrefix="repository_wikimedia" />
+      <sourceFolder url="file://$MODULE_DIR$/repository/youtube/classes" isTestSource="false" packagePrefix="repository_youtube" />
+      <sourceFolder url="file://$MODULE_DIR$/rss/classes" isTestSource="false" packagePrefix="core_rss" />
+      <sourceFolder url="file://$MODULE_DIR$/rss/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/search/classes" isTestSource="false" packagePrefix="core_search" />
+      <sourceFolder url="file://$MODULE_DIR$/search/engine/simpledb/classes" isTestSource="false" packagePrefix="search_simpledb" />
+      <sourceFolder url="file://$MODULE_DIR$/search/engine/simpledb/tests" isTestSource="true" packagePrefix="search_simpledb" />
+      <sourceFolder url="file://$MODULE_DIR$/search/engine/solr/classes" isTestSource="false" packagePrefix="search_solr" />
+      <sourceFolder url="file://$MODULE_DIR$/search/engine/solr/tests" isTestSource="true" packagePrefix="search_solr" />
+      <sourceFolder url="file://$MODULE_DIR$/search/engine/solr/tests/fixtures" isTestSource="false" packagePrefix="search_solr" />
+      <sourceFolder url="file://$MODULE_DIR$/search/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tag/classes" isTestSource="false" packagePrefix="core_tag" />
+      <sourceFolder url="file://$MODULE_DIR$/tag/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/theme/boost/classes" isTestSource="false" packagePrefix="theme_boost" />
+      <sourceFolder url="file://$MODULE_DIR$/theme/boost/tests" isTestSource="true" packagePrefix="theme_boost" />
+      <sourceFolder url="file://$MODULE_DIR$/theme/classic/classes" isTestSource="false" packagePrefix="theme_classic" />
+      <sourceFolder url="file://$MODULE_DIR$/theme/classic/tests" isTestSource="true" packagePrefix="theme_classic" />
+      <sourceFolder url="file://$MODULE_DIR$/user/classes" isTestSource="false" packagePrefix="core_user" />
+      <sourceFolder url="file://$MODULE_DIR$/user/profile/field/checkbox/classes" isTestSource="false" packagePrefix="profilefield_checkbox" />
+      <sourceFolder url="file://$MODULE_DIR$/user/profile/field/checkbox/tests" isTestSource="true" packagePrefix="profilefield_checkbox" />
+      <sourceFolder url="file://$MODULE_DIR$/user/profile/field/datetime/classes" isTestSource="false" packagePrefix="profilefield_datetime" />
+      <sourceFolder url="file://$MODULE_DIR$/user/profile/field/datetime/tests" isTestSource="true" packagePrefix="profilefield_datetime" />
+      <sourceFolder url="file://$MODULE_DIR$/user/profile/field/menu/classes" isTestSource="false" packagePrefix="profilefield_menu" />
+      <sourceFolder url="file://$MODULE_DIR$/user/profile/field/menu/tests" isTestSource="true" packagePrefix="profilefield_menu" />
+      <sourceFolder url="file://$MODULE_DIR$/user/profile/field/social/classes" isTestSource="false" packagePrefix="profilefield_social" />
+      <sourceFolder url="file://$MODULE_DIR$/user/profile/field/social/tests" isTestSource="true" packagePrefix="profilefield_social" />
+      <sourceFolder url="file://$MODULE_DIR$/user/profile/field/text/classes" isTestSource="false" packagePrefix="profilefield_text" />
+      <sourceFolder url="file://$MODULE_DIR$/user/profile/field/text/tests" isTestSource="true" packagePrefix="profilefield_text" />
+      <sourceFolder url="file://$MODULE_DIR$/user/profile/field/textarea/classes" isTestSource="false" packagePrefix="profilefield_textarea" />
+      <sourceFolder url="file://$MODULE_DIR$/user/profile/field/textarea/tests" isTestSource="true" packagePrefix="profilefield_textarea" />
+      <sourceFolder url="file://$MODULE_DIR$/user/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/webservice/classes" isTestSource="false" packagePrefix="core_webservice" />
+      <sourceFolder url="file://$MODULE_DIR$/webservice/rest/classes" isTestSource="false" packagePrefix="webservice_rest" />
+      <sourceFolder url="file://$MODULE_DIR$/webservice/rest/tests" isTestSource="true" packagePrefix="webservice_rest" />
+      <sourceFolder url="file://$MODULE_DIR$/webservice/soap/classes" isTestSource="false" packagePrefix="webservice_soap" />
+      <sourceFolder url="file://$MODULE_DIR$/webservice/soap/tests" isTestSource="true" packagePrefix="webservice_soap" />
+      <sourceFolder url="file://$MODULE_DIR$/webservice/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/admin/tool/pluginskel/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/admin/tool/pluginskel/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/admin/tool/pluginskel/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/admin/tool/pluginskel/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/admin/tool/pluginskel/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/admin/tool/pluginskel/vendor/symfony/yaml" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

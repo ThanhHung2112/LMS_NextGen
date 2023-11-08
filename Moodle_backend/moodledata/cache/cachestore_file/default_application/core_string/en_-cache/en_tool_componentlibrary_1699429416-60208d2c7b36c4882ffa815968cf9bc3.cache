@@ -1,0 +1,9 @@
+a:13:{s:6:"copied";s:7:"Copied!";s:4:"copy";s:4:"Copy";s:15:"copytoclipboard";s:17:"Copy to clipboard";s:9:"installer";s:673:"<h3>Component library setup</h3>
+    <p>Before you can see the content of the component library you will need to have shell access to your Moodle installation and be able to write to folder /admin/tool/componentlibrary and have npm installed on your Moodle server.</p>
+    <p>If you meet these requirements you can navigate to your Moodle root folder and run:</p>
+    <pre>$ npm install</pre>
+    <pre>$ npm install grunt</pre>
+    <p>This will fetch all the required packages for building the component library docs.</p>
+    <p>Once they are installed you can run:</p>
+    <pre>$ grunt componentlibrary</pre>
+    <p>For more info see the README.md file in this plugin.</p>";s:10:"pluginname";s:20:"UI Component library";s:16:"privacy:metadata";s:62:"The Component library plugin does not store any personal data.";s:8:"runjsdoc";s:114:"JavaScript documentation is generated separately to the component library. To generate it please run `grunt jsdoc`";s:8:"showboth";s:14:"Show with both";s:11:"showdefault";s:12:"Show default";s:8:"showhelp";s:14:"Show with help";s:9:"showmixed";s:10:"Show mixed";s:12:"showrequired";s:18:"Show with required";s:14:"toggleviewinfo";s:37:"Toggle the view of this form instance";}

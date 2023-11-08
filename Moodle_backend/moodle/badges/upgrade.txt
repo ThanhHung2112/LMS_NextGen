@@ -1,0 +1,58 @@
+This files describes API changes in /badges/*,
+information provided here is intended especially for developers.
+=== 4.0 ===
+* Function print_badge_tabs has been deprecated in favour of manage_badge_action_bar instead
+
+=== 3.11 ===
+* $CFG->badges_site_backpack setting has been completely removed because it's not required anymore. From now, the primary
+site backpack will be the first one in the "Manage backpacks" list (so, the one with lower sortorder value).
+* Final deprecation for:
+ - BADGE_BACKPACKURL constant has been removed.
+ - badges/backpack.js file has been removed.
+* The following methods have been deprecated:
+ - badges_check_backpack_accessibility()
+ - badges_setup_backpack_js()
+ - badges_local_backpack_js()
+
+=== 3.10 ===
+* Users can now specify a backpack that differs from the site backpack. In order to do this, connection details need to
+be set in 'Manage backpacks' with OR without auth details.
+* Introduced new functions in backpack_api
+** 'import_badge_assertion' to facilitate cross domain badge imports.
+** 'update_assertion' updates a previously defined/created assertion.
+* New badge lib functions introduced
+** badges_save_external_backpack() - This method handles inserts/updates to the site wide backpacks' configuration details.
+** badges_save_backpack_credentials() - This method handles inserts/updates any authentication details to connect to the backpacks created. This can either be site OR user backpack authentication details
+** badges_get_user_backpack() - Gets a specific user's backpack. Defaults to current user's backpack if none provided.
+** badges_get_site_primary_backpack() - Get the primary backpack set for the site as defined in $CFG->badges_site_backpack
+* badges_open_badges_backpack_api() - Now accepts a backpackid(badge_external_backpack id) to check whether the version of the provided backpack.
+  This was introduced because now there is a difference between a site and user backpack. If null, defaults to site_backpack.
+* badges_get_site_backpack() - Accepts an additional $userid param if we want to get a specific user's backpack. Defaults to 0 if we are trying to get the site/admin level backpack
+* badges_external_get_mapping() - Accepts an additional argument to indicate which value it wants returned. Defaults to 'externalid' which contains the OBv2 badge URL
+
+=== 3.9 ===
+* BADGE_BACKPACKAPIURL and BADGE_BACKPACKWEBURL are deprecated and should not be used.
+* OBv2 has been set to the default value when the obversion is not defined.
+
+=== 3.7 ===
+* BADGE_BACKPACKURL is deprecated and should not be used.
+* Incorrect term "badge competencies" has been refactored to "alignments" everywhere.
+
+=== 3.6 ===
+
+* The WebService core_badges_get_user_badges now returns more information for each badge: notification, nextcron, email, version, language, imageauthorname, imageauthoremail, imageauthorurl, imagecaption, endorsement, competencies and relatedbadges.
+
+=== 2.7 ===
+
+* get_completed_criteria_sql() - This method was added to award_criteria class and must be overriden
+  in all criteria classes. This method returns an array consisting of SQL JOIN statement, WHERE conditions,
+  and any parameters that might be required. The results are used in lib/badgeslib.php in review_all_criteria()
+  to reduce to the minimum the number of users to review and award badges.
+* New optional parameter $filtered in review() allows to indicate that some expensive checks can be skipped
+  if the list of users has been initially filtered based on met criteria.
+* New optional parameter $archive in delete() in badge class in badgeslib.php
+  allows to indicate that a badge should be archived instead of fully deleted.
+  If this parameter is set to FALSE, a badge will all its information, criteria,
+  and awards will be removed from the database.
+* BADGE_BACKPACKURL constant has been moved from badges/lib/backpacklib.php to lib/badgeslib.php, and URI scheme
+  name ('http://') has been removed.

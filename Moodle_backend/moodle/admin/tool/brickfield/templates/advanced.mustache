@@ -1,0 +1,62 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template tool_brickfield/advanced
+
+    This template renders advanced page.
+
+    Example context (json):
+    {
+        "griditems": [
+            {
+                "icon": "some-icon-name",
+                "iconalt": "some-icon-alt",
+                "heading": "some-heading",
+                "content": "some-content"
+            }
+        ]
+    }
+}}
+<div id="tool_brickifeld_advanced_page">
+    <div class="tool_brickfield_banner">
+        <div class="tool_brickfield_banner_heading">
+            <h2>{{#str}} bannerheadingone, tool_brickfield{{/str}}</h2>
+            <img src="pix/i/Brickfield-logo-black.png" alt="Brickfield Logo">
+        </div>
+        <p>{{#str}} bannercontentone, tool_brickfield, https://www.brickfield.ie/moodle_talk_to_sales/{{/str}}</p>
+    </div>
+    <div class="tool_brickfield_grid">
+        {{#griditems}}
+        <div class="tool_brickfield_grid_item">
+            <div class="tool_brickfield_grid_heading">
+                <img src="{{icon}}" alt="{{iconalt}}">
+                <h3>{{heading}}</h3>
+            </div>
+            <div class="tool_brickfield_grid_content">
+                <p>{{content}}</p>
+            </div>
+        </div>
+        {{/griditems}}
+    </div>
+    <div class="tool_brickfield_footer">
+        <h2 class="accesshide">{{#str}} footerheading, tool_brickfield {{/str}}</h2>
+        <p>{{#str}}bannercontenttwo, tool_brickfield{{/str}}</p>
+        <a href="https://www.brickfield.ie/moodle_free_demo/">
+            {{#str}}buttonone, tool_brickfield{{/str}}
+        </a>
+    </div>
+</div>
