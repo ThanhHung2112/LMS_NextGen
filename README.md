@@ -12,6 +12,13 @@ LMSNextGen is an LMS system intergrated AI features. This repository follows the
 This project aims to offer a comprehensive Learning Management System (LMS) with a focus on user-friendly features and efficient task management.
 
 
+## Datasets
+
+## Requirements
+
+## Usage
+
+## LICENSE
 
 
 
