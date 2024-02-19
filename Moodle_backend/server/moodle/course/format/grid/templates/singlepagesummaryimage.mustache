@@ -1,0 +1,50 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template format_grid/singlepagesummaryimage
+
+    Single page summary image.
+
+    Context variables required for this template:
+    * centre - If true, centre the content.
+    * image - Image markup.
+    * left - If true, align the content to the left.
+    * right - If true, align the content to the right.
+    * summary - Summary markup.
+
+    Example context (json):
+    {
+        "centre": true,
+        "alttext": "The image",
+        "imageuri": "https://mymoodle/pluginfile.php/358/format_grid/displayedsectionimage/301/39/myimage.jpg.webp",
+        "left": false,
+        "right": false,
+        "summary": "Summary markup"
+    }
+}}
+{{#left}}
+<div class="d-flex flex-row">
+{{/left}}
+{{#centre}}
+<div class="d-flex flex-column align-items-center">
+{{/centre}}
+{{#right}}
+<div class="d-flex flex-row-reverse">
+{{/right}}
+    <div class="p-1"><img class="img-responsive" src="{{imageuri}}" alt="{{alttext}}"></div>
+    <div class="p-1{{^centre}} w-100{{/centre}}">{{{summary}}}</div>
+</div>

@@ -1,0 +1,15 @@
+{
+  "name": "moodle-course-management",
+  "builds": {
+    "moodle-course-management": {
+      "jsfiles": [
+        "shared.js",
+        "console.js",
+        "dd.js",
+        "item.js",
+        "category.js",
+        "course.js"
+      ]
+    }
+  }
+}

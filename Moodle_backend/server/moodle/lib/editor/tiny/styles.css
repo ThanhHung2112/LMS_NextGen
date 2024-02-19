@@ -1,0 +1,35 @@
+.jsenabled .tox-tinymce-aux {
+    z-index: 1000;
+}
+
+.jsenabled .tox-shadowhost.tox-fullscreen,
+.jsenabled .tox.tox-tinymce.tox-fullscreen {
+    z-index: 1050;
+}
+
+/**
+ * These styles are required to ensure that icons loaded from Moodle are displayed correctly in TinyMCE.
+ * The first selector targets the menu.
+ * The second selector targets the context menu.
+ */
+.tox .tox-tbtn svg[data-buttonsource="moodle"] image,
+.tox-collection__item-icon svg[data-buttonsource="moodle"] image {
+    width: inherit;
+    height: inherit;
+}
+
+.tox.tox-tinymce .tox-toolbar__group {
+    padding-right: 0;
+}
+
+/* Prevent navbar obscuring modal content (ignores fullscreen). */
+.tox.tox-tinymce:not(.tox-fullscreen) + .tox .tox-dialog-wrap {
+    padding-top: var(--navbar-height);
+}
+
+/* Modify Tiny's max-height calculation here to factor in navbar height on small viewports (ignores fullscreen). */
+@media only screen and (max-width: 767px) {
+    body:not(.tox-force-desktop) .tox.tox-tinymce:not(.tox-fullscreen) + .tox .tox-dialog-wrap .tox-dialog {
+        max-height: calc((100vh - 8px * 2) - var(--navbar-height)) !important; /* stylelint-disable-line declaration-no-important */
+    }
+}

@@ -1,0 +1,17 @@
+s:1154:"<p>Database enables participants to create, maintain, and search a collection of entries.</p>
+
+<p>The structure of the entries is defined using different types of fields, such as short text, dropdown list, text area, URL, image, or file.</p>
+
+<p>As a teacher, you can comment and rate entries. You can also allow students to rate and comment on entries (peer evaluation). Ratings can be aggregated to form a final grade, which is recorded in the gradebook.</p>
+
+<p>If the Database auto-linking filter is enabled, any entries in a database will be automatically linked where the words or phrases appear within the course.</p>
+
+<p>You can use Database to:</p>
+
+<ul>
+<li>Create a collaborative collection of links, books, book reviews, journal references, etc.</li>
+<li>Display student-created photos, posters, websites or poems for peer comment and review.</li>
+</ul>
+
+<div class="helpdoclink"><a href="https://docs.moodle.org/401/en/mod/data/view" target="_blank" rel="noreferrer noopener"><i class="icon fa fa-book fa-fw iconhelp icon-pre"></i>More help<i class="icon fa fa-external-link fa-fw fa-externallink" title="Opens in new window"></i></a></div>
+";

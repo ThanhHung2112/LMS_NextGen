@@ -1,0 +1,98 @@
+This files describes API changes in /calendar/* ,
+information provided here is intended especially for developers.
+
+=== 4.1 ===
+* New method `calendar_format_event_location` which will format the location property of an event, converting any
+  links into suitable markup
+
+=== 4.0 ===
+* The following external functions now accepts an optional parameter 'searchvalue' to search the events:
+  - core_calendar_external::get_calendar_action_events_by_timesort
+  - core_calendar_external::get_calendar_action_events_by_courses
+  - core_calendar_external::get_calendar_action_events_by_course
+* Added core_calendar_delete_subscription, which allows to delete the calendar subscription.
+* Updated calendar_can_manage_user_event() function to check permissions to user events.
+* The following functions have been deprecated because they were no longer used:
+  - calendar_process_subscription_row()
+  - calendar_import_icalendar_events()
+* The following has been removed after being deprecated in 3.8
+  * CALENDAR_EVENT_GLOBAL
+* The following have been deprecated because the three-month pseudo block has been removed:
+  - fake_block_threemonths() renderer method.
+  - calendar_threemonth.js.
+  - calendar_threemonth and threemonth_month templates.
+  - Behat step definitions i_hover_over_day_of_this_month_in_calendar and i_click_day_of_this_month_in_calendar.
+
+=== 3.10 ===
+* The core_calendar\local\event\value_objects\times_interface class now has new method get_usermidnight_time() which
+  returns the user midnight time for a given event.
+
+=== 3.9 ===
+* Plugins can now create their own calendar events, both standard and action ones. To do it they need to specify
+  $event->component when creating an event. Component events can not be edited or deleted manually.
+  See https://moodledev.io/docs/apis/core/calendar#component-events
+* The following functions have been deprecated because they were no longer used:
+  - calendar_add_event_metadata()
+  - core_calendar_renderer::event()
+
+=== 3.8 ===
+* The following functions have been finally deprecated and can not be used anymore:
+  * calendar_wday_name()
+  * calendar_get_block_upcoming()
+  * calendar_print_month_selector()
+  * calendar_cron()
+  * calendar_get_mini()
+  * calendar_get_upcoming()
+* Added core_calendar_external::get_timestamps(), which allows an array containing an arbitrary number of arrays of
+  date/time data to be converted and returned as timestamps, along with an optional key.
+
+=== 3.6 ===
+* calendar_get_default_courses() function now has optional $userid parameter.
+* calendar_set_filters() function now has optional $user parameter.
+* The core_calendar\local\event\container class now provides two new helper methods for getting and setting the requesting user:
+  set_requesting_user() and get_requesting_user().
+* The following functions have been finally deprecated and can not be used anymore:
+  * calendar_preferences_button()
+* added core_calendar_get_valid_event_timestart_range callback for course events when the update_event_start_day function is used
+  in the local api.
+
+=== 3.5 ===
+* core_calendar_external::get_calendar_events now returns the categoryid for category events.
+
+=== 3.4 ===
+* calendar_get_mini, and calendar_get_upcoming have been deprecated. Please update to use the new exporters and renderers.
+* added core_calendar_get_valid_event_timestart_range and core_calendar_event_timestart_updated callbacks for module events
+  when the update_event_start_day function is used in the local api.
+
+=== 3.3 ===
+* calendar_event_hook() has been removed. Developers should be using the Moodle events system to achieve this behaviour,
+  rather than using a hacky calendar specific implementation.
+* calendar_wday_name() is deprecated and no longer used in core.
+* calendar_get_block_upcoming() is deprecated, please use block_calendar_upcoming::get_upcoming_content() instead.
+* calendar_print_month_selector() is deprecated and no longer used in core.
+* calendar_cron() is deprecated and should not be used. Please use the core\task\calendar_cron_task instead.
+
+=== 3.2 ===
+* calendar_preferences_button() is now deprecated. Calendar preferences have been moved to the user preferences page.
+
+=== 2.9 ===
+default values changes in code:
+* core_calendar_external::get_calendar_events_parameters() 'timeend' default option changed; now, by default,
+  all events are returned, not only the past ones.
+* calendar types need to be updated to be compatible with standard PHP date/time code
+
+=== 2.5 ===
+required changes in code:
+* calendar_add_icalendar_event() now requires a valid subscriptionid
+* calendar_process_subscription_row() throws exception for invalid subscriptionid
+* calendar_update_subscription_events() now throws a dml_exception instead of moodle_exception for bad subscriptions
+* calendar_get_mini() function now has optional $placement and $courseid paramaters.
+
+optional - no changes needed:
+* calendar_update_subscription() should now be used to update Ical subscriptions.
+
+=== 2.4 ===
+
+required changes in code:
+
+* calendar_get_popup() function now just returns id, instead of the string "id=$id"

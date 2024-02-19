@@ -1,0 +1,95 @@
+.tool_brickfield_floatprinticon {
+    margin-top: -30px;
+    float: right;
+}
+
+.tool_brickfield_analysisbutton {
+    width: 100%;
+    text-align: center;
+}
+
+/* Advanced Page CSS */
+
+#tool_brickifeld_advanced_page {
+    margin: 20px 20px 20px 10px;
+}
+
+.tool_brickfield_banner_heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tool_brickfield_banner_heading > img {
+    height: 50px;
+}
+
+.tool_brickfield_banner > p {
+    text-align: center;
+}
+
+.tool_brickfield_grid_heading {
+    font-family: 'Varela Round', Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #040d29;
+    padding-bottom: 4px;
+}
+
+.tool_brickfield_grid_content {
+    color: #040d29;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.tool_brickfield_grid_heading > img {
+    height: 30px;
+    padding-right: 16px;
+}
+
+.tool_brickfield_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 20px 30px;
+}
+
+.tool_brickfield_grid > div {
+    margin: 10px;
+    padding: 20px;
+    flex-basis: 30%;
+    border: 1px solid grey;
+    max-width: 500px;
+    min-width: 250px;
+    flex-grow: 4;
+    border-radius: 15px 15px 15px 50px;
+}
+
+.tool_brickfield_grid_heading {
+    display: flex;
+}
+
+.tool_brickfield_footer > a {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #4054b2;
+    border-radius: 5px;
+    padding: 15px 50px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.tool_brickfield_footer {
+    text-align: center;
+}
+
+.tool_brickfield_footer > a:hover {
+    color: #fff;
+    background-color: #253687;
+    text-decoration: none;
+}
+
+.tool_brickfield_footer > p {
+    margin-bottom: 25px;
+}

@@ -1,0 +1,422 @@
+<style>
+    /* Loading animation  */
+    .loading-overlay {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff; /* Màu nền đục */
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        z-index: 99; /* Đảm bảo hiển thị phía trên tất cả các phần tử khác */
+    }
+
+    .loading-spinner {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #3498db; /* Màu của vòng quay */
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        z-index: 100;
+        animation: spin 2s linear infinite; /* Tạo hiệu ứng quay */
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .icon.activityicon.nofilter {
+        width: 50px !important;
+        height: 50px;
+    }
+
+    .activity-header {
+        display: none;
+    }
+
+    .ml-wrapper {
+        max-width: 830px;
+        margin: 0 auto;
+    }
+
+    .ml-content {
+        margin-top: 30px;
+        padding: 20px 15px;
+    }
+
+    .ml-content.ml-content-control {
+        padding: 0px;
+    }
+
+    .ml-button {
+        text-decoration: none;
+        color: #333;
+        background-color: #CED4DA;
+        padding: 8px 10px;
+        border-radius: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: opacity linear 0.2s;
+        outline: none;
+        border: none;
+    }
+
+    .ml-button:hover {
+        text-decoration: none;
+        color: #333;
+        opacity: 0.8;
+    }
+
+    .ml-button.ml-button--edit {
+        color: #fff;
+        background-color: #0F6CBF;
+    }
+
+    .ml-summary-table td {
+        padding: 5px 10px;
+    }
+
+    .ml-summary-table td {
+        border: 1px solid #DFE3E6;
+        color: #555;
+        background-color: #F7F7F7;
+    }
+
+    .ml-summary-table tr:nth-child(2) td{
+        background-color: #fff;
+    }
+
+    .ml-summary-table tr td:nth-child(1) {
+        width: 30%;
+        font-weight: 700;
+    }
+
+    /* Upload form */
+    .ml-upload-form {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        max-width: 400px;
+        margin: 0 auto;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .ml-call-api {
+        display: none;
+    }
+
+    .ml-content.ml-content-upload-file {
+        display: none;
+    }
+
+    .ml-content.ml-content-manual {
+        display: none;
+
+    }
+
+    .ml-manual-form-input {
+        width: 100%;
+        height: 250px;
+        padding: 20px;
+        font-size: 16px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        color: #333;
+        resize: none;
+        margin-bottom: 20px;
+    }
+
+    .ml-manual-form-submit {
+        padding: 8px 30px;
+    }
+
+    
+    /* Create Vietnamese questions */
+    .ml-button.ml-button--vietnamese {
+        background-color: #FFC47E;
+    }
+
+    .ml-content.ml-content--vietnamese {
+        display: none;
+
+    }
+
+    .ml-number-form-group {
+        margin-top: 30px;
+    }
+
+    .ml-vietnamese-question-answer {
+        margin-bottom: 30px;
+    }
+
+    .ml-vietnamese-input-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ml-vietnamese-input {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #333;
+        resize: none;
+        margin-bottom: 20px;
+    }
+
+
+</style>
+
+<div class="ml-wrapper">
+    <h1>
+        {{# is_edit }}Edit assignment{{/is_edit}}
+        {{^ is_edit }}Create assignment{{/is_edit}}
+
+    </h1>
+
+    {{^ has_num }}
+    <!--  Control assignment for admin  -->
+    <div class="ml-content ml-content-control">
+        <div class="ml-button-group">
+            <button class="ml-button ml-question-generator">Question Generation with AI</button>
+            <button class="ml-button ml-button--edit ml-question-manually">Add Assignment Manually</button>
+            <button class="ml-button ml-button--vietnamese">Add New Assignment</button>
+        </div>
+    </div>
+
+    <div class="ml-content ml-content-upload-file" data-file-path="{{ uploaded_file_path }}">
+        <form class="ml-upload-form" method="post" enctype="multipart/form-data">
+            <label class="ml-upload-label" for="file">
+                {{# is_edit }}Choose another file{{/is_edit}}
+                {{^ is_edit }}Choose file{{/is_edit}}
+            </label>
+            <input class="ml-upload-choose-file" type="file" name="file" id="file"><br>
+            <input class="ml-upload-submit" type="submit" name="submit" value="Submit">
+
+            <input style="display: none" type="text"
+                   name="question_and_summarize" class="question_and_summarize">
+            <input style="display: none"
+                   type="text" name="file_name" class="file_path_database">
+        </form>
+    </div>
+
+    <div class="ml-content ml-content-manual">
+        <form class="ml-manual-form"  method="post">
+            <h3 class="ml-manual-form-title">
+                {{# is_edit }}Edit manual Assignment{{/is_edit}}
+                {{^ is_edit }}Create manual Assignment{{/is_edit}}
+
+            </h3>
+            <textarea class="ml-manual-form-input" onfocusin="removeLeadingTrailingSpaces(this);"
+                      name="question" id="" cols="30" rows="10">
+                {{ question }}
+            </textarea>
+            <input class="ml-button ml-button--edit ml-manual-form-submit" type="submit" value="Save">
+        </form>
+    </div>
+
+    <div class="ml-content ml-content-number">
+        <form class="ml-number-of-question-form"  method="post">
+            <h3 class="ml-manual-form-title">
+                {{# is_edit }}Edit Vietnamese Assignment{{/is_edit}}
+                {{^ is_edit }}Create Vietnamese Assignment{{/is_edit}}
+            </h3>
+            <div class="ml-number-form-group">
+                <label for="ml-num-input" >Enter number of question</label>
+                <input name="number-of-questions" class="ml-num-input" id="ml-num-input" value="3"/>
+                <input class="ml-button ml-button--edit ml-manual-form-submit" type="submit" value="Next">
+            </div>
+            
+        </form>
+    </div>
+    {{/ has_num }}
+
+    {{# has_num }}
+    <div class="ml-content ml-content-vietnamese">
+        <form class="ml-number-of-question-form"  method="post">
+            <h3 class="ml-manual-form-title">
+                Create Vietnamese Assignment
+            </h3>
+            {{# number_of_question }}
+            <div class="ml-vietnamese-question-answer">
+                <div class="ml-vietnamese-input-group">
+                    <label for="question{{ id }}" class="ml-vietnamese-label">Question {{ id }}:</label>
+                    <textarea onfocusin="removeLeadingTrailingSpaces(this);"
+                            name="question{{ id }}" class="ml-vietnamese-input" type="text" id="question{{ id }}">
+                    </textarea>
+                </div>
+                <div class="ml-vietnamese-input-group">
+                    <label for="answer{{ id }}" class="ml-vietnamese-label">Corrected Answer:</label>
+                    <textarea onfocusin="removeLeadingTrailingSpaces(this);"
+                            name="answer{{ id }}" class="ml-vietnamese-input" type="text" id="answer{{ id }}">
+                    </textarea>
+                </div>
+            </div>
+             
+            {{/number_of_question}}
+            <input name="is-vietnamese-assign" style="display: none;" value="1"/>
+            <div class="ml-button-group">
+                {{# is_edit }}
+                    <button class="ml-button ml-button--edit">Edit assignment</button>
+                {{/is_edit}}
+                    
+                {{^ is_edit }}
+                    <button class="ml-button ml-button--edit">Create assignment</button>
+                {{/is_edit}}
+
+                
+                <a href="http://localhost/mod/demo/view.php?id={{ course_id }}"
+                class="ml-button">Cancel</a>
+            </div>
+        </div>
+            </div>
+        </form>
+    </div>
+    {{/ has_num }}
+</div>
+
+<!--Thêm thư viện jquery để call api generate question-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // Change icon AI Assignment
+    let img = document.querySelector('.icon.activityicon.nofilter')
+    img.src = "https://thumbs.dreamstime.com/b/artificial-intelligence-ai-processor-chip-vector-icon-symbol-graphic-design-logo-web-site-social-media-mobile-app-ui-158205566.jpg"
+
+    // Change module Name
+    let moduleName = document.querySelector('.active.active_tree_node.nav-link')
+    moduleName.innerText = 'AI Assignment'
+
+    // Xử lý khi focus vào textarea
+    function removeLeadingTrailingSpaces(textarea) {
+        textarea.value = textarea.value.trim();
+    }
+    // Xử lý xóa dấu cách của textarea khi trang vừa tải xong
+    let textarea = document.querySelector('.ml-manual-form-input')
+    removeLeadingTrailingSpaces(textarea);
+
+
+    // Xử lý hiện form phù hợp
+    let uploadButton = document.querySelector('.ml-question-generator')
+    let uploadWrapper = document.querySelector('.ml-content-upload-file')
+    
+    let manualButton = document.querySelector('.ml-question-manually')
+    let manualWrapper = document.querySelector('.ml-content-manual')
+
+    let vietnameseButton = document.querySelector('.ml-button--vietnamese')
+    let numberWrapper = document.querySelector('.ml-content-number')
+    
+    uploadButton.onclick = function() {
+        uploadWrapper.style.display = 'block'
+        manualWrapper.style.display = 'none'
+        numberWrapper.style.display = 'none'
+    }
+
+    manualButton.onclick = function() {
+        manualWrapper.style.display = 'block'
+        uploadWrapper.style.display = 'none'
+        numberWrapper.style.display = 'none'
+    }
+
+    vietnameseButton.onclick = function() {
+        numberWrapper.style.display = 'block'
+        manualWrapper.style.display = 'none'
+        uploadWrapper.style.display = 'none'
+    }
+
+
+
+    // Hiệu ứng loading
+    const loadingOverlay = document.createElement("div");
+    loadingOverlay.className = "loading-overlay";
+    loadingOverlay.innerText = "Generating Questions...";
+
+    const loadingProgress = document.createElement("div");
+    loadingProgress.className = "loading-spinner";
+
+
+    loadingOverlay.appendChild(loadingProgress);
+
+    document.body.appendChild(loadingOverlay);
+    // Hiển thị hiệu ứng "loading"
+    function showLoading() {
+        console.log('Loading...... cực cháy')
+        document.querySelector('.loading-overlay').style.display = 'flex';
+    }
+    // Ẩn hiệu ứng "loading"
+    function hideLoading() {
+        document.querySelector('.loading-overlay').style.display = 'none';
+    }
+
+
+
+    // Thêm hiệu ứng loading + call api + redirect lại trang assign ban đầu
+
+    let submitQuestionGenerator = document.querySelector('.ml-upload-submit')
+    let divWithFilePath = document.querySelector('.ml-content.ml-content-upload-file')
+    // Đây là đường dẫn tuyệt đối
+    let filePath = divWithFilePath.getAttribute('data-file-path')
+    if (filePath) {
+        showLoading()
+        // Call api
+        fetch('http://localhost:5000/questions-generate', {
+            method: 'POST',
+            body: JSON.stringify({
+                uploaded_file_path: filePath,
+            }),
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            mode: 'cors'
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            let extra_input = document.querySelector('.question_and_summarize')
+            let uploadForm = document.querySelector('.ml-upload-form')
+            let submitButton = document.querySelector('.ml-upload-submit')
+            let filePathInput = document.querySelector('.file_path_database')
+
+            let parts = filePath.split("/")
+            let fileName = parts[parts.length - 1];
+
+            extra_input.value = JSON.stringify(data)
+            filePathInput.value = fileName
+
+            submitButton.click()
+
+        })
+    }
+
+    
+</script>
+
+{{# vietnamese_assign }}
+    <script>
+        let buttonAppearFormType2 = document.querySelector('.ml-button--vietnamese')
+        buttonAppearFormType2.click()
+    </script>
+{{/vietnamese_assign}}
+
+{{# manual_assign }}
+    <script>
+        let buttonAppearFormType1 = document.querySelector('.ml-question-manually')
+        buttonAppearFormType1.click()
+    </script>
+{{/manual_assign}}
+
+{{# ai_assign }}
+    <script>
+        let buttonAppearFormType0 = document.querySelector('.ml-question-generator')
+        buttonAppearFormType0.click()
+    </script>
+{{/ai_assign}}

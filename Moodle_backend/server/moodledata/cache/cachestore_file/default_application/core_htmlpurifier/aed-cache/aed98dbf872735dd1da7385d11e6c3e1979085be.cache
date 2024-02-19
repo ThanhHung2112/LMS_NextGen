@@ -1,0 +1,14 @@
+s:1263:"<p>The external tool activity module enables students to interact with learning resources and activities on other web sites. For example, an external tool could provide access to a new activity type or learning materials from a publisher.</p>
+
+<p>To create an external tool activity, a tool provider which supports LTI (Learning Tools Interoperability) is required. A teacher can create an external tool activity or make use of a tool configured by the site administrator.</p>
+
+<p>External tool activities differ from URL resources in a few ways:</p>
+
+<ul>
+<li>External tools are context aware i.e. they have access to information about the user who launched the tool, such as institution, course and name</li>
+<li>External tools support reading, updating, and deleting grades associated with the activity instance</li>
+<li>External tool configurations create a trust relationship between your site and the tool provider, allowing secure communication between them</li>
+</ul>
+
+<div class="helpdoclink"><a href="https://docs.moodle.org/401/en/mod/lti/view" target="_blank" rel="noreferrer noopener"><i class="icon fa fa-book fa-fw iconhelp icon-pre"></i>More help<i class="icon fa fa-external-link fa-fw fa-externallink" title="Opens in new window"></i></a></div>
+";

@@ -1,0 +1,20 @@
+s:1134:"<p>The quiz activity enables a teacher to create quizzes comprising questions of various types, including multiple choice, matching, short-answer and numerical.</p>
+
+<p>The teacher can allow the quiz to be attempted multiple times, with the questions shuffled or randomly selected from the question bank. A time limit may be set.</p>
+
+<p>Each attempt is marked automatically, with the exception of essay questions, and the grade is recorded in the gradebook.</p>
+
+<p>The teacher can choose when and if hints, feedback and correct answers are shown to students.</p>
+
+<p>Quizzes may be used</p>
+
+<ul>
+<li>As course exams</li>
+<li>As mini tests for reading assignments or at the end of a topic</li>
+<li>As exam practice using questions from past exams</li>
+<li>To deliver immediate feedback about performance</li>
+<li>For self-assessment</li>
+</ul>
+
+<div class="helpdoclink"><a href="https://docs.moodle.org/401/en/mod/quiz/view" target="_blank" rel="noreferrer noopener"><i class="icon fa fa-book fa-fw iconhelp icon-pre"></i>More help<i class="icon fa fa-external-link fa-fw fa-externallink" title="Opens in new window"></i></a></div>
+";

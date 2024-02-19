@@ -1,0 +1,1 @@
+a:6:{s:5:"allow";s:16:"Use this service";s:23:"ltiservice_toolsettings";s:13:"Tool Settings";s:28:"ltiservice_toolsettings_help";s:51:"Allow the tool to save and retrieve setting values.";s:8:"notallow";s:23:"Do not use this service";s:10:"pluginname";s:21:"Tool Settings Service";s:16:"privacy:metadata";s:66:"The Tool Settings Service plugin does not store any personal data.";}

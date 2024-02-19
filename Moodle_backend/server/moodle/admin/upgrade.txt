@@ -1,0 +1,61 @@
+This files describes API changes in /admin/*.
+
+=== 4.1 ===
+
+* A new admin setting supportavailability allows admins to configure who the "contact site support" feature is available to
+  (everyone, authenticated users, or nobody).
+  -For new sites and those upgrading from 3.11.x or older, the default will be "Limited to authenticated users".
+  -For sites upgrading from 4.0.x, the default will be "available to anyone visiting the site", to main consistent behaviour through the upgrade.
+
+=== 4.0.1 ===
+
+* A new callback xxx_pre_enable_plugin_actions has been added in admin/modules.php. Plugins can use this callback to
+  force additional actions (e.g. displaying notifications, modals, etc.) before enabling the plugin. The expected
+  return value (bool) from the plugin callback method specifies whether the process of enabling the plugin should
+  continue after the added actions or not.
+
+=== 3.11 ===
+
+* New admin setting admin_setting_encryptedpassword allows passwords in admin settings to be
+  encrypted (with the new \core\encryption API) so that even the admin cannot read them.
+* Web services administration has been moved from Plugins into the Server category. If you have
+  Behat tests containing steps like `Given I navigate to "Plugins > Web services > ..."`, you will
+  want to replace them with `Given I navigate to "Server > Web services > ..."`.
+
+=== 3.9 ===
+
+* The following functions, previously used (exclusively) by upgrade steps are not available anymore because of the upgrade cleanup performed for this version. See MDL-65809 for more info:
+    - upgrade_fix_block_instance_configuration()
+    - upgrade_theme_is_from_family()
+    - upgrade_find_theme_location()
+    - linkcoursesectionsupgradescriptwasrun setting
+    - upgrade_block_positions()
+
+=== 3.8 ===
+
+* Admin setting "Open to Google" (opentogoogle) has been renamed to the more generic "Open to search engines" (opentowebcrawlers).
+  This is a more accurate representation of what is being set and the config string has also been moved and updated to reflect this.
+
+=== 3.7 ===
+
+* Admin setting "Allow blocks to use the dock" (allowblockstodock) has been removed & stings deprecated.
+  Docking of blocks is no longer supported within the core themes (Boost, Classic).
+  Please see MDL-64506 for further details.
+
+=== 3.3 ===
+
+* The admin settings admin_setting_configselect and admin_setting_configmultiselect now support the optgroup tag.
+  Grouping of options can be created with this new tag.
+  For using it, the option parameters needs the Group names as indexes:
+  [
+    "Spain" =>  ["madrid" => "Madrid", "barcelona" => "Barcelona"],
+    "France" => ["paris" => "Paris", "marseille" => "Marseille"],
+  ]
+
+=== 3.2 ===
+
+* Admin settings have been refined to better support right-to-left languages. In RTL,
+  most fields should not have their direction flipped, a URL, a path to a file, ...
+  are always displayed LTR. The admin setting will now best guess if they should be
+  RTLized based on their PARAM_* type. To override that guess, use
+  admin_setting::set_force_ltr(true/false).

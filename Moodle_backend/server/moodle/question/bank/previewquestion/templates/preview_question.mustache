@@ -1,0 +1,112 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template qbank_previewquestion/preview_question
+
+    The preview page for the question type preview.
+    * actionurl - Url to post to
+    * session - Moodle session
+    * slot - The identifying number of the first question that was added to this usage
+    * question - The html of the actual question from the engine
+    * questionicon - The icon of the question type
+    * questiontitle - The name of the question
+    * versiontitle - The string for displaying the version
+    * questionidumber - The idnumber of the question
+    * restartdisabled - The attributes to enable or disable the button, same for finishdisabled and filldisabled
+    * techinfo - Technical information like fraction, state, behaviour etc
+    * exporttoxml - Link to export the question to xml
+    * redirecturl - Url to the base view
+    * comments - Comments api html
+    * extrapreviewelements - Any plugin implementing the callback and sending extra html to view something in the preview page
+
+    Example context (json):
+    {
+        "actionurl": "/",
+        "session": "E2PwCfrnzz",
+        "slot": "1",
+        "question": "<div>question html</div>",
+        "questionicon": "<i class='icon fa fa-search-plus fa-fw' title='Preview question' aria-label='Preview question'></i>",
+        "questiontitle": "Question title",
+        "versiontitle": "Version 3 (latest)",
+        "questionidumber": "qidnumber1",
+        "restartdisabled": "disabled='disabled'",
+        "finishdisabled": "disabled='disabled'",
+        "filldisabled": "disabled='disabled'",
+        "techinfo": "<div>Behaviour being used: Deferred feedback</div>",
+        "redirecturl": "/",
+        "exporttoxml": "Download this question in Moodle XML format",
+        "comments": "html from comments api",
+        "extrapreviewelements": "<div>callback to get html from plugins need to show info in preview</div>"
+    }
+}}
+<form id="responseform" method="post" action="{{{actionurl}}}" enctype="multipart/form-data" autocomplete="off">
+    <div class="d-flex">
+        <h2 class="mt-2">{{{questionicon}}}</h2>
+        <h2 class="ml-2 mt-2"> {{questiontitle}}</h2>
+        <h3 class="px-2 py-1 ml-2 mt-2">
+            <span class="badge bg-primary text-light">{{versiontitle}}</span>
+        </h3>
+    </div>
+    {{#newerversion}}
+    <div class="alert alert-primary">
+        {{{newerversion}}}
+    </div>
+    {{/newerversion}}
+    <div class="d-flex">
+        <div class="badge-primary h-50 px-2 mt-n2">
+            <span class="accesshide">ID number</span>
+            {{questionidumber}}
+        </div>
+    </div>
+    <br>
+    <div>
+        <input type="hidden" name="sesskey" value="{{session}}">
+        <input type="hidden" name="slots" value="{{slot}}">
+        <input type="hidden" name="scrollpos" value="" id="scrollpos">
+    </div>
+    {{{question}}}
+    <div id="previewcontrols" class="controls input-group">
+        <input type="submit" name="restart" value="{{#str}} restart, question{{/str}}" class="btn btn-secondary mr-1 mb-1" id="id_restart_question_preview" {{{restartdisabled}}}>
+        <input type="submit" name="save" value="{{#str}} save, question{{/str}}" class="btn btn-secondary mr-1 mb-1" id="id_save_question_preview" {{{finishdisabled}}}>
+        <input type="submit" name="fill" value="{{#str}} fillincorrect, question{{/str}}" class="btn btn-secondary mr-1 mb-1" {{{filldisabled}}}>
+        <input type="submit" name="finish" value="{{#str}} submitandfinish, question{{/str}}" class="btn btn-secondary mr-1 mb-1" id="id_finish_question_preview" {{{finishdisabled}}}>
+        {{^redirect}}
+            <input type="button" name="close" value="{{#str}} closepreview, question{{/str}}" class="btn btn-secondary mr-1 mb-1" id="close-previewquestion-page">
+        {{/redirect}}
+        {{#redirect}}
+            <a href="{{{redirecturl}}}" class="btn btn-secondary mr-1 mb-1" role="button">{{#str}} closepreview, question{{/str}}</a>
+        {{/redirect}}
+    </div>
+</form>
+<br>
+{{#comments}}
+    <a data-toggle="collapse" href="#commentcollapse" role="button" aria-expanded="false" aria-controls="commentcollapse">
+        {{#pix}} t/collapsed, core {{/pix}}
+        {{#str}} commentplural, qbank_comment{{/str}}
+    </a>
+    <div class="collapse" id="commentcollapse">
+        {{{comments}}}
+    </div>
+    {{{options}}}
+{{/comments}}
+{{^comments}}
+    {{{options}}}
+{{/comments}}
+{{{techinfo}}}
+{{#extrapreviewelements}}
+    {{{extrapreviewelements}}}
+{{/extrapreviewelements}}

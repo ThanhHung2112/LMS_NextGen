@@ -1,0 +1,13 @@
+{
+  "name": "moodle-core-blocks",
+  "builds": {
+    "moodle-core-blocks": {
+      "jsfiles": [
+        "shared.js",
+        "blocks.js",
+        "manager.js",
+        "blockregion.js"
+      ]
+    }
+  }
+}

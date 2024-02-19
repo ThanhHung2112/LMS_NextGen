@@ -1,0 +1,14 @@
+s:945:"<p>The file module enables a teacher to provide a file as a course resource. Where possible, the file will be displayed within the course interface; otherwise students will be prompted to download it. The file may include supporting files, for example an HTML page may have embedded images.</p>
+
+<p>Note that students need to have the appropriate software on their computers in order to open the file.</p>
+
+<p>A file may be used</p>
+
+<ul>
+<li>To share presentations given in class</li>
+<li>To include a mini website as a course resource</li>
+<li>To provide draft files of software programs so students can edit and submit them for assessment</li>
+</ul>
+
+<div class="helpdoclink"><a href="https://docs.moodle.org/401/en/mod/resource/view" target="_blank" rel="noreferrer noopener"><i class="icon fa fa-book fa-fw iconhelp icon-pre"></i>More help<i class="icon fa fa-external-link fa-fw fa-externallink" title="Opens in new window"></i></a></div>
+";

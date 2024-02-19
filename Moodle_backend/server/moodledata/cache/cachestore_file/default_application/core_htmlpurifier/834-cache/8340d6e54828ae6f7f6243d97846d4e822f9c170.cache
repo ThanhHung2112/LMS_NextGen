@@ -1,0 +1,11 @@
+s:888:"<p>The folder module enables a teacher to display a number of related files inside a single folder, reducing scrolling on the course page. A zipped folder may be uploaded and unzipped for display, or an empty folder created and files uploaded into it.</p>
+
+<p>A folder may be used</p>
+
+<ul>
+<li>For a series of files on one topic, for example a set of past examination papers in pdf format or a collection of image files for use in student projects</li>
+<li>To provide a shared uploading space for teachers on the course page (keeping the folder hidden so that only teachers can see it)</li>
+</ul>
+
+<div class="helpdoclink"><a href="https://docs.moodle.org/401/en/mod/folder/view" target="_blank" rel="noreferrer noopener"><i class="icon fa fa-book fa-fw iconhelp icon-pre"></i>More help<i class="icon fa fa-external-link fa-fw fa-externallink" title="Opens in new window"></i></a></div>
+";

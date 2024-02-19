@@ -1,0 +1,108 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template core_calendar/event_item
+
+    Calendar event item.
+
+    The purpose of this template is to render the event item.
+
+    Classes required for JS:
+    * none
+
+    Data attributes required for JS:
+    * none
+
+    Example context (json):
+    {
+        "id": 1,
+        "name": "Sample event name",
+        "normalisedeventtype": "course",
+        "course": {
+            "id": 1
+        },
+        "canedit": true,
+        "candelete": true,
+        "isactionevent": true,
+        "icon": {
+            "key": "i/courseevent",
+            "component": "core",
+            "alttext": "Some course event",
+            "iconurl": "#"
+        },
+        "editurl": "#",
+        "url": "#"
+    }
+}}
+<div{{!
+    }} data-type="event"{{!
+    }} data-course-id="{{course.id}}"{{!
+    }} data-event-id="{{id}}"{{!
+    }} class="event mt-3"{{!
+    }} data-event-component="{{component}}"{{!
+    }} data-event-eventtype="{{eventtype}}"{{!
+    }} data-eventtype-{{normalisedeventtype}}="1"{{!
+    }} data-event-title="{{name}}"{{!
+    }} data-event-count="{{eventcount}}"{{!
+    }}>
+    <div class="card rounded">
+        <div class="box card-header clearfix calendar_event_{{normalisedeventtype}}">
+            <div class="commands float-sm-right">
+                {{#canedit}}
+                    {{#candelete}}
+                        <a href="{{deleteurl}}" data-action="delete" aria-label="{{#str}}delete{{/str}}" title="{{#str}}delete{{/str}}">
+                            {{#pix}}t/delete, core{{/pix}}
+                        </a>
+                    {{/candelete}}
+                    {{^isactionevent}}
+                        <a href="{{editurl}}" data-action="edit" aria-label="{{#str}}edit{{/str}}" title="{{#str}}edit{{/str}}">
+                            {{#pix}}t/edit, core{{/pix}}
+                        </a>
+                    {{/isactionevent}}
+                {{/canedit}}
+            </div>
+            {{#icon}}
+                <div class="d-inline-block mt-1 align-top">
+                    {{#iconurl}}
+                        <img alt="{{alttext}}" title="{{alttext}}" src="{{{iconurl}}}" class="icon {{iconclass}}">
+                    {{/iconurl}}
+                    {{^iconurl}}
+                        {{#pix}} {{key}}, {{component}}, {{alttext}} {{/pix}}
+                    {{/iconurl}}
+                </div>
+            {{/icon}}
+            <div class="d-inline-block">
+                <h3 class="name d-inline-block">{{{name}}}</h3>
+            </div>
+        </div>
+        <div class="description card-body">
+            {{> core_calendar/event_details }}
+        </div>
+        {{#action.actionable}}
+            <div class="card-footer text-right bg-transparent">
+                <a href="{{action.url}}" class="card-link">{{{action.name}}}</a>
+            </div>
+        {{/action.actionable}}
+        {{^action.actionable}}
+            {{#isactionevent}}
+            <div class="card-footer text-right bg-transparent">
+                <a href="{{url}}" class="card-link">{{#str}} gotoactivity, core_calendar {{/str}}</a>
+            </div>
+            {{/isactionevent}}
+        {{/action.actionable}}
+    </div>
+</div>

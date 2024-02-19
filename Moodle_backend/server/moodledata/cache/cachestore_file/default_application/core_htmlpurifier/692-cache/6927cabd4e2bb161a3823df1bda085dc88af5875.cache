@@ -1,0 +1,23 @@
+s:2098:"<p>The forum activity module enables participants to have asynchronous discussions i.e. discussions that take place over an extended period of time.</p>
+
+<p>There are several forum types to choose from, such as a standard forum where anyone can start a new discussion at any time; a forum where each student can post exactly one discussion; or a question and answer forum where students must first post before being able to view other students' posts. A teacher can allow files to be attached to forum posts. Attached images are displayed in the forum post.</p>
+
+<p>Participants can subscribe to a forum to receive notifications of new forum posts. A teacher can set the subscription mode to optional, forced or auto, or prevent subscription completely. If required, students can be blocked from posting more than a given number of posts in a given time period; this can prevent individuals from dominating discussions.</p>
+
+<p>Forum posts can be rated by teachers or students (peer evaluation). Ratings can be aggregated to form a final grade which is recorded in the gradebook.</p>
+
+<p>Forums have many uses, such as</p>
+
+<ul>
+<li>A social space for students to get to know each other</li>
+<li>For course announcements (using a news forum with forced subscription)</li>
+<li>For discussing course content or reading materials</li>
+<li>For continuing online an issue raised previously in a face-to-face session</li>
+<li>For teacher-only discussions (using a hidden forum)</li>
+<li>A help centre where tutors and students can give advice</li>
+<li>A one-on-one support area for private student-teacher communications (using a forum with separate groups and with one student per group)</li>
+<li>For extension activities, for example ‘brain teasers’ for students to ponder and suggest solutions to</li>
+</ul>
+
+<div class="helpdoclink"><a href="https://docs.moodle.org/401/en/mod/forum/view" target="_blank" rel="noreferrer noopener"><i class="icon fa fa-book fa-fw iconhelp icon-pre"></i>More help<i class="icon fa fa-external-link fa-fw fa-externallink" title="Opens in new window"></i></a></div>
+";

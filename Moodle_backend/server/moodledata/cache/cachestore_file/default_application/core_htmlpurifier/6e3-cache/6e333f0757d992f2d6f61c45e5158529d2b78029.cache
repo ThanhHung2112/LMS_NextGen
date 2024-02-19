@@ -1,0 +1,15 @@
+s:968:"<p>The page module enables a teacher to create a web page resource using the text editor. A page can display text, images, sound, video, web links and embedded code, such as Google maps.</p>
+
+<p>Advantages of using the page module rather than the file module include the resource being more accessible (for example to users of mobile devices) and easier to update.</p>
+
+<p>For large amounts of content, it's recommended that a book is used rather than a page.</p>
+
+<p>A page may be used</p>
+
+<ul>
+<li>To present the terms and conditions of a course or a summary of the course syllabus</li>
+<li>To embed several videos or sound files together with some explanatory text</li>
+</ul>
+
+<div class="helpdoclink"><a href="https://docs.moodle.org/401/en/mod/page/view" target="_blank" rel="noreferrer noopener"><i class="icon fa fa-book fa-fw iconhelp icon-pre"></i>More help<i class="icon fa fa-external-link fa-fw fa-externallink" title="Opens in new window"></i></a></div>
+";
