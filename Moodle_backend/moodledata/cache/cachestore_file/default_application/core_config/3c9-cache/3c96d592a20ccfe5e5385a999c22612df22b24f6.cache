@@ -1,5 +1,0 @@
-a:10:{s:13:"convertformat";s:3:"gif";s:7:"density";s:3:"120";s:15:"latexbackground";s:7:"#FFFFFF";s:13:"latexpreamble";s:115:"\usepackage[latin1]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\RequirePackage{amsmath,amssymb,latexsym}
-";s:11:"pathconvert";s:26:"c:\imagemagick\convert.exe";s:9:"pathdvips";s:29:"c:\texmf\miktex\bin\dvips.exe";s:11:"pathdvisvgm";s:31:"c:\texmf\miktex\bin\dvisvgm.exe";s:9:"pathlatex";s:29:"c:\texmf\miktex\bin\latex.exe";s:11:"pathmimetex";s:0:"";s:7:"version";s:10:"2022112800";}

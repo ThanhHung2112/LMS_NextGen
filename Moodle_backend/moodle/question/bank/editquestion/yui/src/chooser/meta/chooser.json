@@ -1,7 +1,0 @@
-{
-    "moodle-qbank_editquestion-chooser": {
-        "requires": [
-            "moodle-core-chooserdialogue"
-        ]
-    }
-}

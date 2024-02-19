@@ -1,8 +1,0 @@
-a:5:{s:20:"additionaldelimiters";s:0:"";s:8:"httpsurl";s:53:"https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js";s:13:"mathjaxconfig";s:162:"
-MathJax.Hub.Config({
-    config: ["Accessible.js", "Safe.js"],
-    errorSettings: { message: ["!"] },
-    skipStartupTypeset: true,
-    messageStyle: "none"
-});
-";s:22:"texfiltercompatibility";s:1:"0";s:7:"version";s:10:"2022112800";}
