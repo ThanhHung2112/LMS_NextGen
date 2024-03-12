@@ -31,13 +31,15 @@ This project aims to offer a comprehensive Learning Management System (LMS) with
   <img src="https://github.com/ThanhHung2112/LMS/blob/main/img_for_readme/system_design.png?raw=true"/>
   <br/>
 </p>
-1. Backend and Frontend: Moodle
+1. Backend and Frontend: **Moodle**
 * Moodle serves as the backend and frontend for the LMS, handling course management, user authentication, and providing an intuitive interface for users.
-2. API Design and Integration: Flask
+
+2. API Design and Integration: **Flask**
 * Flask is used to design and implement APIs for integrating AI features into the LMS. These APIs facilitate communication between the AI modules and the Moodle system, allowing seamless integration of recommendation systems, assignment generation, and grammar error correction functionalities.
+
 3. AI Models:
-* T5 Transformer: Utilized for natural language processing tasks such as text generation and grammar error correction.
-* BERT (Bidirectional Encoder Representations from Transformers): Used for tasks such as text classification and language understanding.
+* **T5 Transformer**: Utilized for natural language processing tasks such as text generation and grammar error correction.
+* **BERT (Bidirectional Encoder Representations from Transformers)**: Used for tasks such as text classification and language understanding.
 
 ## Demo Project
 Click on to watch video below 👇🏻
