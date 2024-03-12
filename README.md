@@ -55,11 +55,11 @@ This project aims to offer a comprehensive Learning Management System (LMS) with
 
 ## Demo Project
 
-Click [here](https://www.youtube.com/watch?v=d5GoHRTfkoI) to watch the demo video.
+Click [here](https://www.youtube.com/watch?v=d5GoHRTfkoI){:target="_blank"} to watch the demo video.
 
 ## Usage
 
-For detailed installation instructions, please refer to [this guide](https://docs.google.com/document/d/1-6CWZIH3tAfjefyjPojpbRn2zMGBLLKlyr0pNBjxgoY/edit?fbclid=IwAR3qhrwKdev-F_k2IrBirUCMVWfyNd0OuHjH4xyeFK3cbJIDaehIUGUdClU).
+For detailed installation instructions, please refer to [this guide](https://docs.google.com/document/d/1-6CWZIH3tAfjefyjPojpbRn2zMGBLLKlyr0pNBjxgoY/edit?fbclid=IwAR3qhrwKdev-F_k2IrBirUCMVWfyNd0OuHjH4xyeFK3cbJIDaehIUGUdClU){:target="_blank"}.
 
 ## Support Us
 
