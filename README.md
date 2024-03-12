@@ -1,5 +1,9 @@
 # LMSNextGen
-
+<p align="center">
+     <br>
+     <img src="https://img.youtube.com/vi/d5GoHRTfkoI/maxresdefault.jpg"/>
+     <br/>
+   </p>
 LMSNextGen is an LMS system integrated with AI features. This repository follows the structured approach outlined by DEHA Company and encompasses three key functionalities:
 
 1. **Recommendation System:**
@@ -33,15 +37,15 @@ This project aims to offer a comprehensive Learning Management System (LMS) with
 
 ## Technology Stack
 
-1. Backend and Frontend: **Moodle**
-   - Moodle serves as the backend and frontend for the LMS, handling course management, user authentication, and providing an intuitive interface for users.
-   
-   <p align="center">
+<p align="center">
      <br>
      <img src="https://github.com/ThanhHung2112/LMS/blob/main/img_for_readme/system_design.png?raw=true"/>
      <br/>
    </p>
-
+   
+1. Backend and Frontend: **Moodle**
+   - Moodle serves as the backend and frontend for the LMS, handling course management, user authentication, and providing an intuitive interface for users.
+   
 2. API Design and Integration: **Flask**
    - Flask is used to design and implement APIs for integrating AI features into the LMS. These APIs facilitate communication between the AI modules and the Moodle system, allowing seamless integration of recommendation systems, assignment generation, and grammar error correction functionalities.
 
@@ -51,9 +55,7 @@ This project aims to offer a comprehensive Learning Management System (LMS) with
 
 ## Demo Project
 
-Click on to watch video below 👇🏻
-
-[![Watch the video](https://img.youtube.com/vi/d5GoHRTfkoI/maxresdefault.jpg)](https://www.youtube.com/watch?v=d5GoHRTfkoI)
+Click [here](https://www.youtube.com/watch?v=d5GoHRTfkoI) to watch the demo video.
 
 ## Usage
 
