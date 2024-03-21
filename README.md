@@ -33,7 +33,7 @@ Click on to watch video below 👇🏻
 2. API Design and Integration: **Flask**
    - Flask is used to design and implement APIs for integrating AI features into the LMS. These APIs facilitate communication between the AI modules and the Moodle system, allowing seamless integration of recommendation systems, assignment generation, and grammar error correction functionalities.
 
-3. AI Mretrained Models:
+3. Pretrained Models:
    - **T5 Transformer**: Utilized for natural language processing tasks such as text generation and grammar error correction.
    - **BERT (Bidirectional Encoder Representations from Transformers)**: Used for tasks such as text classification and language understanding.
 
