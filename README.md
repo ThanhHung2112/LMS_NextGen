@@ -10,13 +10,13 @@ LMSNextGen is an LMS system integrated with AI features. This repository follows
 
 This project aims to offer a comprehensive Learning Management System (LMS) with a focus on user-friendly features and efficient task management.
 
-## Demo Project
+# Demo Project
 
 Click on to watch video below 👇🏻
 
 [![Watch the video](https://img.youtube.com/vi/d5GoHRTfkoI/maxresdefault.jpg)](https://www.youtube.com/watch?v=d5GoHRTfkoI)
 
-## Technology Stack
+# Technology Stack
 
 1. Backend and Frontend: **Moodle**
    - Moodle serves as the backend and frontend for the LMS, handling course management, user authentication, and providing an intuitive interface for users.
@@ -34,36 +34,47 @@ Click on to watch video below 👇🏻
      <br/>
 </p>
 
-## Installatioin
+# Installatioin
 
-### 1. Install Moodle
+## Install Moodle
 
-Access [Moodle](https://download.moodle.org/releases/supported/) and download version 4.1.6.
+For detailed installation instructions, please refer to [this guide](https://docs.google.com/document/d/1-6CWZIH3tAfjefyjPojpbRn2zMGBLLKlyr0pNBjxgoY/edit?fbclid=IwAR3qhrwKdev-F_k2IrBirUCMVWfyNd0OuHjH4xyeFK3cbJIDaehIUGUdClU)(in vietnamese).
+
+1. Access [Moodle](https://download.moodle.org/releases/supported/) and download version 4.1.6.
 
 **Database requiements:**
 - MariaDB>=10.6.7
 - MySQL>=8.0
 - Postgres==13
 - Oracle=19c
-  
 
+2. After extract the downdload file, Run the file `Start Moodle.exe` in your folder.
+3. Run XAMPP in the directory `server/xampp-control.exe`. You might get some error in when running Moodle. However, don't worry just follows the instruction of Moodle and Fix these error
 
+## Moodle Error
 
+In XAMPP GUI, Click on `Config` then select `config PHP (php.ini)`. Following the Moodle instruction and comment or uncomment the necessary library or extension.
 
-For detailed installation instructions, please refer to [this guide](https://docs.google.com/document/d/1-6CWZIH3tAfjefyjPojpbRn2zMGBLLKlyr0pNBjxgoY/edit?fbclid=IwAR3qhrwKdev-F_k2IrBirUCMVWfyNd0OuHjH4xyeFK3cbJIDaehIUGUdClU).
+![image](https://github.com/ThanhHung2112/LMS_AI/assets/73764342/309b3bb6-b60c-41e6-84fa-6b1e335c2dec)
 
-   <p align="center">
-     <br>
-     <img src="https://github.com/ThanhHung2112/LMS/blob/main/img_for_readme/recommendation_system.png?raw=true"/>
-     <br/>
-   </p>
-      <p align="center">
-     <br>
-     <img src="https://github.com/ThanhHung2112/LMS/blob/main/img_for_readme/Auto-Generated_and_Auto-Graded_Assignments.png?raw=true"/>
-     <br/>
-   </p>
-   <p align="center">
-     <br>
-     <img src="https://github.com/ThanhHung2112/LMS/blob/main/img_for_readme/CEFR.png?raw=true"/>
-     <br/>
-   </p>
+## Implement AI Features
+
+1. Replace `sever/moodle` folder in Moold with this [folder](https://github.com/ThanhHung2112/LMS_AI/tree/main/Moodle_backend/server/moodle), note that you have to make sure that the folder name is `moodle` after replacing.
+
+2. Open Shell
+
+Run `xampp-control.exe` and open `Shell` in XAMPP GUI. Other terminal won work in this situation.
+
+3. To upgrade your database. Run the following commands.
+
+```bash
+cd sever/moodle
+php admin/cli/upgrade.php    
+```
+4. Down load this [database.sql](https://drive.google.com/file/d/1MoqW56mVGOzqqDBIvO5lxoO4TcpMcRAy/view?usp=sharing)
+
+Run the SQL file in the Moodle database that you have initialized during the initial setup.
+
+For the convenience of demonstrating AI features, the developers have decided to create additional tables with the prefix "mdl_demo". Note: These tables have not been designed in a rigorous manner and may have some degree of redundancy. They are mainly used for quickly demoing AI features.
+
+This is not finish yet. I will continue for soon... 
