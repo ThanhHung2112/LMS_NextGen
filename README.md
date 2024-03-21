@@ -10,6 +10,15 @@ LMSNextGen is an LMS system integrated with AI features. This repository follows
 
 This project aims to offer a comprehensive Learning Management System (LMS) with a focus on user-friendly features and efficient task management.
 
+# Features
+
+1. Recommend couses based on enrolled course and course skills
+2. Auto generate asignments based on documentation. Support for `.pdf`, `.doc`, `.docs` and `.txt` file
+3. Auto grading asignments
+4. Grammar error correction
+5. Tenses prediction
+6. CEFR levels prediction
+
 # Demo Project
 
 Click on to watch video below 👇🏻
