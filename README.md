@@ -68,7 +68,7 @@ In XAMPP GUI, Click on `Config` then select `config PHP (php.ini)`. Following th
 
 ## Implement AI Features
 
-1. Replace `sever/moodle` folder in Moold with this [folder](https://github.com/ThanhHung2112/LMS_AI/tree/main/Moodle_backend/server/moodle), note that you have to make sure that the folder name is `moodle` after replacing.
+1. Replace `sever/moodle` folder in Moodle with this [folder](https://github.com/ThanhHung2112/LMS_AI/tree/main/Moodle_backend/server/moodle), note that you have to make sure that the folder name is `moodle` after replacing.
 
 2. Open Shell
 
