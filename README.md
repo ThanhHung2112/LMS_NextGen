@@ -12,16 +12,16 @@ This project aims to offer a comprehensive Learning Management System (LMS) with
 
 # Features
 
-1. Recommend couses based on enrolled course and course skills
-2. Auto generate asignments based on documentation. Support for `.pdf`, `.doc`, `.docs` and `.txt` file
-3. Auto grading asignments
-4. Grammar error correction
-5. Tenses prediction
-6. CEFR levels prediction
+1. Recommend couses based on enrolled course and course skills.
+2. Automatic generation of assignments from documentation files (PDF, DOC, DOCX, TXT).
+3. Automated assignment grading.
+4. Grammar error correction.
+5. Tenses prediction.
+6. CEFR levels prediction.
 
 # Demo Project
 
-Click on to watch video below 👇🏻
+Watch the demo video by clicking on the image below 👇🏻
 
 [![Watch the video](https://img.youtube.com/vi/d5GoHRTfkoI/maxresdefault.jpg)](https://www.youtube.com/watch?v=d5GoHRTfkoI)
 
@@ -45,11 +45,9 @@ Click on to watch video below 👇🏻
 
 # Installatioin
 
-## Install Moodle
-
 For detailed installation instructions, please refer to [this guide](https://docs.google.com/document/d/1-6CWZIH3tAfjefyjPojpbRn2zMGBLLKlyr0pNBjxgoY/edit?fbclid=IwAR3qhrwKdev-F_k2IrBirUCMVWfyNd0OuHjH4xyeFK3cbJIDaehIUGUdClU) (in vietnamese).
 
-1. Access [Moodle](https://download.moodle.org/releases/supported/) and download version 4.1.6.
+## Install Moodle
 
 **Database requiements:**
 - MariaDB>=10.6.7
@@ -57,30 +55,34 @@ For detailed installation instructions, please refer to [this guide](https://doc
 - Postgres==13
 - Oracle=19c
 
-2. After extract the downdload file, Run the file `Start Moodle.exe` in your folder.
+1. Access [Moodle](https://download.moodle.org/releases/supported/) and download version 4.1.6.
+2. After extract the downdload file, Run the file **Start Moodle.exe** in your folder.
 3. Run XAMPP in the directory `server/xampp-control.exe`. You might get some error in when running Moodle. However, don't worry just follows the instruction of Moodle and Fix these error
 
 ## Moodle Error
 
-In XAMPP GUI, Click on `Config` then select `config PHP (php.ini)`. Following the Moodle instruction and comment or uncomment the necessary library or extension.
+In XAMPP GUI, Click on **Config** then select **config PHP (php.ini)**. Following the Moodle instruction and comment or uncomment the necessary library or extension.
 
 ![image](https://github.com/ThanhHung2112/LMS_AI/assets/73764342/309b3bb6-b60c-41e6-84fa-6b1e335c2dec)
 
 ## Implement AI Features
 
-1. Replace `sever/moodle` folder in Moodle with this [folder](https://github.com/ThanhHung2112/LMS_AI/tree/main/Moodle_backend/server/moodle), note that you have to make sure that the folder name is `moodle` after replacing.
+**1. Replace moodle fodler**
 
-2. Open Shell
+Replace `sever/moodle` folder in Moodle with this [**folder**](https://github.com/ThanhHung2112/LMS_AI/tree/main/Moodle_backend/server/moodle), note that you have to make sure that the folder name is **moodle** after replacing.
 
-Run `xampp-control.exe` and open `Shell` in XAMPP GUI. Other terminal won work in this situation.
+**2. Open Shell**
 
-3. To upgrade your database. Run the following commands.
+Run **xampp-control.exe** and open **Shell** in XAMPP GUI. Other terminal won work in this situation.
+
+**3. To upgrade your database. Run the following commands.**
 
 ```bash
 cd sever/moodle
-php admin/cli/upgrade.php    
+php admin/cli/upgrade.php
 ```
-4. Down load this [database.sql](https://drive.google.com/file/d/1MoqW56mVGOzqqDBIvO5lxoO4TcpMcRAy/view?usp=sharing)
+**4. Migrate database**
+Down load this [database.sql](https://drive.google.com/file/d/1MoqW56mVGOzqqDBIvO5lxoO4TcpMcRAy/view?usp=sharing)
 
 Run the SQL file in the Moodle database that you have initialized during the initial setup.
 
@@ -88,6 +90,14 @@ For the convenience of demonstrating AI features, the developers have decided to
 
 ![image](https://github.com/ThanhHung2112/LMS_NextGen/assets/73764342/01c4c92e-b852-483b-9308-53eca72158fa)
 
+**5. Clear cache**
+
 To save changes to the Moodle system, it is necessary to clear the saved caches.
 
-Select `Site admin` >> `Development` >> `Debugging`, then select option `DEVELOPER: extra Moodle debug messages for developers` in `Debug messages`
+Select **Site admin** >> **Development** >> **Debugging**, then select option **DEVELOPER: extra Moodle debug messages for developers** in **Debug messages**
+
+Finally, click on **Purge all caches** at the footer of the page
+
+
+
+
