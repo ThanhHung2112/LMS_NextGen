@@ -47,7 +47,7 @@ Click on to watch video below 👇🏻
 
 ## Install Moodle
 
-For detailed installation instructions, please refer to [this guide](https://docs.google.com/document/d/1-6CWZIH3tAfjefyjPojpbRn2zMGBLLKlyr0pNBjxgoY/edit?fbclid=IwAR3qhrwKdev-F_k2IrBirUCMVWfyNd0OuHjH4xyeFK3cbJIDaehIUGUdClU)(in vietnamese).
+For detailed installation instructions, please refer to [this guide](https://docs.google.com/document/d/1-6CWZIH3tAfjefyjPojpbRn2zMGBLLKlyr0pNBjxgoY/edit?fbclid=IwAR3qhrwKdev-F_k2IrBirUCMVWfyNd0OuHjH4xyeFK3cbJIDaehIUGUdClU) (in vietnamese).
 
 1. Access [Moodle](https://download.moodle.org/releases/supported/) and download version 4.1.6.
 
@@ -86,4 +86,8 @@ Run the SQL file in the Moodle database that you have initialized during the ini
 
 For the convenience of demonstrating AI features, the developers have decided to create additional tables with the prefix "mdl_demo". Note: These tables have not been designed in a rigorous manner and may have some degree of redundancy. They are mainly used for quickly demoing AI features.
 
-This is not finish yet. I will continue for soon... 
+![image](https://github.com/ThanhHung2112/LMS_NextGen/assets/73764342/01c4c92e-b852-483b-9308-53eca72158fa)
+
+To save changes to the Moodle system, it is necessary to clear the saved caches.
+
+Select `Site admin` >> `Development` >> `Debugging`, then select option `DEVELOPER: extra Moodle debug messages for developers` in `Debug messages`
