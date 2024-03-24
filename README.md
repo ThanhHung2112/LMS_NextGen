@@ -162,6 +162,7 @@ After running this command, the API Service will start and be ready to operate o
 ## Here's a guide on how to use each endpoint along with the corresponding payload and response:
 
 **Endpoint /questions-generate:**
+
 __*Payload*
 ```bash
 {
@@ -199,6 +200,7 @@ __*Response*
 ```
 
 **Endpoint /recommend-course:**
+
 __*Payload*
 ```bash
 ["Course ID 1", "Course ID 2", "Course ID 3"]
@@ -211,6 +213,7 @@ __*Response*
 ```
 
 **Endpoint /grammar-analysis**
+
 __*Payload*
 ```bash
 {
@@ -251,6 +254,7 @@ __*Response*
 ```
 
 **Endpoint /check-legit-answer:**
+
 __*Payload*
 ```bash
 {
