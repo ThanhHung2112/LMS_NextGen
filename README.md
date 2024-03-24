@@ -159,4 +159,110 @@ After executing all the above commands, your terminal will display the address w
 
 After running this command, the API Service will start and be ready to operate on your computer
 
+## Here's a guide on how to use each endpoint along with the corresponding payload and response:
+
+**Endpoint /questions-generate:**
+__*Payload*
+```bash
+{
+   "uploaded_file_path": "/path/to/your/uploaded/file.txt"
+}
+```
+__*Response*
+```bash
+{
+   "summarize_texts": [
+       {
+           "id": 1,
+           "summarize": "Summarized text 1"
+       },
+       {
+           "id": 2,
+           "summarize": "Summarized text 2"
+       },
+       ...
+   ],
+   "questions_generated": [
+       {
+           "id": 1,
+           "question": "Generated Question 1",
+           "answer": "Answer 1"
+       },
+       {
+           "id": 2,
+           "question": "Generated Question 2",
+           "answer": "Answer 2"
+       },
+       ...
+   ]
+}
+```
+
+**Endpoint /recommend-course:**
+__*Payload*
+```bash
+["Course ID 1", "Course ID 2", "Course ID 3"]
+```
+__*Response*
+```bash
+{
+   "recommended_list": [4, 5, 6]
+}
+```
+
+**Endpoint /grammar-analysis**
+__*Payload*
+```bash
+{
+   "student_answer": "Student's answer goes here."
+}
+```
+__*Response*
+```bash
+{
+   "student_answer": "Student's answer goes here.",
+   "predicted_level": "Predicted English level",
+   "corrected_texts": [
+       {
+           "id": 1,
+           "corrected_text": "Corrected text 1"
+       },
+       {
+           "id": 2,
+           "corrected_text": "Corrected text 2"
+       },
+       ...
+   ],
+   "spell_check": [
+       {
+           "wrong": "Misspelled word",
+           "correct": "Corrected word"
+       },
+       ...
+   ],
+   "grammar_check": [
+       {
+           "sentence": "Incorrect sentence",
+           "tense": "Predicted tense"
+       },
+       ...
+   ]
+}
+```
+
+**Endpoint /check-legit-answer:**
+__*Payload*
+```bash
+{
+   "student_answer": "Student's answer goes here.",
+   "summarize": "Summarized text to compare with"
+}
+```
+__*Response*
+```bash
+{
+   "label": "Label"
+}
+```
+
 
