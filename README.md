@@ -43,7 +43,7 @@ Watch the demo video by clicking on the image below 👇🏻
      <br/>
 </p>
 
-# Installatioin
+# Installation
 
 For detailed installation instructions, please refer to [this guide](https://docs.google.com/document/d/1-6CWZIH3tAfjefyjPojpbRn2zMGBLLKlyr0pNBjxgoY/edit?fbclid=IwAR3qhrwKdev-F_k2IrBirUCMVWfyNd0OuHjH4xyeFK3cbJIDaehIUGUdClU) (in vietnamese).
 
@@ -98,6 +98,49 @@ Select **Site admin** >> **Development** >> **Debugging**, then select option **
 
 Finally, click on **Purge all caches** at the footer of the page
 
+**6. API Service**
 
+To set up the Python environment and necessary libraries to run this Flask application, you can follow the steps below:
+
+Step 1: Install Python
+
+First, you need to install Python on your computer. You can download Python from the official Python website (https://www.python.org/downloads/) and then install it following the instructions on the website.
+
+Step 2: Download the directory containing the application models:
+
+Download from the driver and unzip directly into the API_Service directory.
+Link download: [pretrained model and sample training dataset](https://drive.google.com/drive/folders/1URsEiaf9a1dUTFdjetF386EmgAhD5PDU?usp=sharing)
+
+Step 3: Install Python libraries
+
+Launch cmd, then navigate to the directory containing the Flask application source code using the cd command:
+cd <path to the directory where the application source code was downloaded>
+to perform the following tasks:
+
+Using pip, you can install the necessary Python libraries for the Flask project. You can create a Python virtual environment to manage the project's libraries. Open a command prompt and execute the following commands:
+
+Create a Python virtual environment (recommended to avoid version conflicts)
+
+python -m venv myenv
+
+Activate the virtual environment (on Windows)
+
+myenv\Scripts\activate
+
+Install libraries from the requirements.txt file
+
+pip install -r requirements.txt
+
+Activate the virtual environment (if not activated already)
+
+myenv\Scripts\activate
+
+Run the Flask application
+
+python api_service.py
+
+After executing all the above commands, your terminal will display the address where the application is running. Use this address to route service processing for the Moodle LMS system.
+
+After running this command, the API Service will start and be ready to operate on your computer
 
 
