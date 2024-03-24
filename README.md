@@ -98,7 +98,7 @@ Select **Site admin** >> **Development** >> **Debugging**, then select option **
 
 Finally, click on **Purge all caches** at the footer of the page
 
-**6. API Service**
+## API Service
 
 To set up the Python environment and necessary libraries to run this Flask application, you can follow the steps below:
 
