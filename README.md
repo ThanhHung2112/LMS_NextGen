@@ -107,6 +107,7 @@ To set up the Python environment and necessary libraries to run this Flask appli
 First, you need to install Python on your computer. You can download Python from the official Python website (https://www.python.org/downloads/) and then install it following the instructions on the website.
 
 ## Step 2: Download the directory containing the application models:
+![image](https://github.com/ThanhHung2112/LMS_NextGen/blob/main/img_for_readme/Capture.PNG)
 
 Download from the driver and unzip directly into the API_Service directory.
 Link download: [pretrained model and sample training dataset](https://drive.google.com/drive/folders/1URsEiaf9a1dUTFdjetF386EmgAhD5PDU?usp=sharing)
@@ -114,7 +115,11 @@ Link download: [pretrained model and sample training dataset](https://drive.goog
 ## Step 3: Install Python libraries
 
 Launch cmd, then navigate to the directory containing the Flask application source code using the cd command:
-cd <path to the directory where the application source code was downloaded>
+![image](https://github.com/ThanhHung2112/LMS_NextGen/blob/main/img_for_readme/cmd.PNG)
+
+```bash
+cd <path to the API_Service Directory>
+```
 to perform the following tasks:
 
 Using pip, you can install the necessary Python libraries for the Flask project. You can create a Python virtual environment to manage the project's libraries. Open a command prompt and execute the following commands:
@@ -148,6 +153,7 @@ myenv\Scripts\activate
 ```bash
 python api_service.py
 ```
+![image](https://github.com/ThanhHung2112/LMS_NextGen/blob/main/img_for_readme/terminal.PNG)
 
 After executing all the above commands, your terminal will display the address where the application is running. Use this address to route service processing for the Moodle LMS system.
 
