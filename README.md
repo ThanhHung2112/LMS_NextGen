@@ -21,6 +21,7 @@ Feel free to explore the code and use it as a reference for your own projects an
 5. Tenses prediction.
 6. CEFR levels prediction.
 
+If you feel interesting in our model concept, check [**Traning folder**](https://github.com/ThanhHung2112/LMS_NextGen/tree/main/Training%20model) and [**gec.ipynb**](https://github.com/ThanhHung2112/LMS_NextGen/blob/main/Libs/gec.ipynb) notebook for a deeper understanding.
 # Demo Project
 
 Watch the demo video by clicking on the image below 👇🏻
