@@ -10,6 +10,8 @@ LMSNextGen is an LMS system integrated with AI features. This repository follows
 
 This project aims to offer a comprehensive Learning Management System (LMS) with a focus on user-friendly features and efficient task management.
 
+Feel free to explore the code and use it as a reference for your own projects and don't forget to star this 😁
+
 # Features
 
 1. Recommend couses based on enrolled course and course skills.
@@ -268,5 +270,16 @@ __*Response*
    "label": "Label"
 }
 ```
+## Acknowledgements
+
+This app was built using the following open-source libraries, tools and datasets:
+
+* [Moodle](https://github.com/moodle/moodle)
+* [Flask](https://github.com/pallets/flask)
+* [Question Qenerator](https://github.com/AMontgomerie/question_generator)
+* [Cousera Dataset](https://www.kaggle.com/datasets/leewanhung/coursera-dataset)
+* [C4 (Colossal Clean Crawled Corpus) Dataset](https://paperswithcode.com/dataset/c4)
+* [MultiNLI (Multi-Genre Natural Language Inference) Dataset](https://paperswithcode.com/dataset/multinli)
+* [English tense Dataset](https://www.kaggle.com/datasets/leewanhung/tense-dataset/)
 
 
