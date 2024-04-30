@@ -277,7 +277,7 @@ This app was built using the following open-source libraries, tools and datasets
 
 * [Moodle](https://github.com/moodle/moodle)
 * [Flask](https://github.com/pallets/flask)
-* [Question Qenerator](https://github.com/AMontgomerie/question_generator)
+* [Question Generator](https://github.com/AMontgomerie/question_generator)
 * [Cousera Dataset](https://www.kaggle.com/datasets/leewanhung/coursera-dataset)
 * [C4 (Colossal Clean Crawled Corpus) Dataset](https://paperswithcode.com/dataset/c4)
 * [MultiNLI (Multi-Genre Natural Language Inference) Dataset](https://paperswithcode.com/dataset/multinli)
